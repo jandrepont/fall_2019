@@ -1,0 +1,650 @@
+\chapter{Introduction}
+\section{Riemann Integral}
+\label{sec:Riemann Integral}
+In this section we detail some problems that occur with the Riemann integral and help
+motivate the use of another integral. Much of this follows from \cite{axler_measure}. 
+\subsection{Basic Definitions}
+\label{subsec:Basic Definitions}
+\begin{defn}[Partition]
+    Supppose $ a, b\in \mathbb{R}  $ with $ a < b $. A partition $ [a,b]  $ is a finite
+    list of the form $ x_0, x_1, \cdots , x_n $ where 
+    \[
+    a = x_0 < x_1 < \cdots < x_n = b
+    \]
+    \label{def:Partition}
+\end{defn}
+Where 
+\[
+    [a,b] = [x_0, x_1] \cup [x_1, x_2] \cupt \cdots \cup [x_{n-1}, x_n] 
+\]
+\begin{defn}[Notation for infimum and supremum]
+    If $ f $ is a real-valued function and $ A $ is a subset of the domain of $ f $, then 
+    \[
+        \inf_A f = \inf \{f(x) : x \in A \} \quad \text{ and } \quad \sup_A f = \sup \{f(x) : x
+        \in A\} 
+    \]
+    \label{def:Notation for infimum and supremum}
+\end{defn}
+Where the inf is just the greatest lower bound of the set and sup is the least upper bound
+of the set. 
+The following definition allows us to approximate the area under the graph of a
+nonnegative function : 
+\begin{defn}[Lower and upper Riemann sums]
+    Suppose $ f: [a,b] \to \mathbb{R} $ is a bounded function and $ P $ is a partition $
+    x_0, \cdots , x_n $ of [a,b]. The lower Riemann sum $ L\left( f, P, [a,b]\right)  $
+    and the upper Riemann sum $ U\left( f, P, [a,b]\right)  $ are defined by : 
+    \[
+        L\left( f, P, [a,b]\right) = \sum_{j=1}^{n} \left( x_j - x_{j-1} \right)
+        \inf_{[x_{j-1}, x_j]} f 
+    \] and 
+    \[
+        U\left( f, P, [a,b]\right) = \sum_{j=1}^{n} \left( x_j - x_{j-1} \right)
+        \sup_{[x_{j-1}, x_j]} f 
+    \]
+
+    \label{def:Lower and upper Riemann sums}
+\end{defn}
+Consider $ x^2 $ with a partition of 16 on $ [0,1] $. Then each partition is of length $
+\frac{ 1 }{ 16 }  $ and the formula gives us 
+\[
+    L\left( x^2, P_{16}, [0,1] \right) = \frac{ 1 }{ 16  } \sum_{j=1}^{16} \frac{ \left(
+    j-1\right) ^2 }{ n^2 } = \frac{ 2n^2 - 3n + 1 }{ 6n^2 } 
+\]
+which are found using the formula 
+\[
+1 + 4 + 9 + \cdots + n^2 = \frac{ n\left( 2n^2 + 3n + 1\right)  }{ 6 } 
+\]
+\subsection{Inequalities with Riemann sums}
+\label{subsec:Inequalities with Riemann sums}
+Adding more points to a partition increases or decreases or lower and upper sums,
+respectively. 
+\begin{ftheo}[Inequalities with Riemann Sums]
+    Suppose $ f : [a,b] \to \mathbb{R}  $ is a bounded function and $ P $, $ P' $ are
+    partitions of $ [a,b] $ such that the list defining $ P $ is a subset of the list
+    defining $ P' $. Then  
+    \[
+        L\left( f , P, [a,b] \right) \leq L'\left( f, P', [a,b] \right) \leq U'\left( f, P',
+    [a,b] \right) \leq U\left( f, P', [a,b] \right)    \]
+    \label{th:Inequalities with Riemann Sums}
+\end{ftheo}
+\begin{proof} $ \\ $
+    Suppose that we have two partitions consisting of 
+    \[
+    P = x_0, \cdots, x_n \quad \text{ and } \quad P' = x'_0, \cdots , x'_N
+    \]
+    of [a,b]. For each j in $ P $ we can find the sublist that covers the length $ x_{j-1}
+    \to x_j $ from some $ k \in \set{ 0, \cdots , N-1  }  $ to some $ m $ : 
+    \[
+        x_{j-1} = x_'k < x_'{k-1} < \cdots < x_'{k+m} = x_j 
+    \]
+    Thus, we now have two sums to compare 
+    \begin{align*} 
+    \left(x_{j}-x_{j-1}\right) \inf _{\left[x_{j-1}, x_{j}\right]}
+    f&=\sum_{i=1}^{m}\left(x_{k+i}^{\prime}-x_{k+i-1}^{\prime}\right) \inf_{\left[x_{j-1},
+    x_{j}\right]} f \\  
+     &\leq \sum_{i=1}^{m}\left(x_{k+i}^{\prime}-x_{k+i-1}^{\prime}\right) \inf_{\left[x_{k + i-1},
+    x_{k + i}\right]} f 
+    \end{align*} this is due to the fact that the infimum of each set of real numbers is
+    less than or equal to the supremum of that set, and, as the partition increases and m
+    grows larger, the sub partition of $ P' $ approaches the supremum of the original
+    partition $ P $. 
+    $ \\ $
+    For the supremum we use an analogous argument : $ \\ $
+    Using the same partitions $ P, P' $ and the values $ k,m $ we compare two sums  
+    Thus, we now have two sums to compare 
+    \begin{align*} 
+    \left(x_{j}-x_{j-1}\right) \sup_{\left[x_{j-1}, x_{j}\right]}
+    f&=\sum_{i=1}^{m}\left(x_{k+i}^{\prime}-x_{k+i-1}^{\prime}\right) \sup_{\left[x_{j-1},
+    x_{j}\right]} f \\  
+     &\geq \sum_{i=1}^{m}\left(x_{k+i}^{\prime}-x_{k+i-1}^{\prime}\right) \sup_{\left[x_{k + i-1},
+    x_{k + i}\right]} f 
+    \end{align*} this is due to the fact that the sup of each set of real numbers is
+    greater than or equal to the infimum of that set, and, as the partition increases and m
+    grows larger, the sub partition of $ P' $ approaches the infimum of the original
+    partition $ P $. 
+\end{proof}
+
+\begin{ftheo}[Lower Riemann sums $ \leq  $ Upper Riemann Sums]
+    Suppose $ f : [a,b] \to \mathbb{R}  $ is a bounded function and $ P, P' $ are
+    partitions of $ [a,b]  $. Then 
+    \[
+   L\left( f , P, [a,b] \right) \leq U\left( f , P', [a,b] \right)
+    \]
+    \label{th:Lower Riemann sums leq Upper Riemann Sums}
+\end{ftheo}
+\begin{proof}
+    Using \ref{th:Inequalities with Riemann Sums} and $ P'' $ as the merging of $ P, P' $ we have 
+    \begin{align*}
+        L\left( f , P, [a,b] \right) &\leq L\left( f , P'', [a,b] \right) \\ 
+                                     &\leq U\left( f , P'', [a,b] \right)\\ 
+                                     &\leq L\left( f , U', [a,b] \right) 
+    \end{align*} 
+\end{proof}
+\subsection{Riemann Integral}
+\label{subsec:Riemann Integral}
+
+\begin{defn}[Lower and upper Riemann integrals]
+    Suppose $ f: [a,b] \to \mathbb{R} $ is a bounded function. The lower Riemann integral
+    $ L\left( f, [a,b] \right) $ and the upper Riemann integral $ U\left( f, [a,b]\right)
+    $ are defined as 
+    \[
+     L\left( f, [a,b] \right) = \sup_P  L\left( f, P, [a,b] \right)  
+    \]
+    and 
+    \[
+     U\left( f, [a,b] \right) = \inf_P  U\left( f, P, [a,b] \right)  
+    \]
+    \label{def:Lower and upper Riemann integrals}
+\end{defn}
+Where $ P $ denotes all possible partitions of $ [a,b] $. 
+\begin{ftheo}[Lower Riemann Integral $ \leq  $ Upper Riemann Integral ]
+    Suppose $ f : [a,b] \to \mathbb{R}  $ is a bounded function. Then 
+    \[
+    L\left( f, [a,b] \right) \leq U\left( f, [a,b] \right)  
+    \]
+    \label{th:Lower Riemann Integral leq Upper Riemann Integral }
+\end{ftheo}
+\begin{proof}
+    This is due to an extension of \ref{th:Lower Riemann sums leq Upper Riemann Sums}. 
+    Let $ P^1 $ be the partition where $ x_0 = a, x_1 = b $ and let each number in $ P^i $ denote
+    an additional partition, such that $ P^2 $ has 2 partitions and 
+    \[
+        P = \cup_{i=1}^{n} P^i
+    \]
+    Then 
+    \[
+        \sup L\left( f, P, [a,b] \right) = L\left( f, P^n, [a,b] \right)
+    \]
+    and 
+    \[
+        \inf U\left( f, P, [a,b] \right) = U\left( f, P^n, [a,b] \right)
+    \] 
+    using \ref{th:Lower Riemann sums leq Upper Riemann Sums} we have 
+    \[
+    L\left( f, P^n, [a,b] \right) \leq U\left( f, P^n, [a,b] \right) 
+    \]
+    which by def(\ref{def:Lower and upper Riemann sums}) completes the proof.   
+\end{proof}
+\begin{defn}[Riemann integrable]
+    A bounded function on a closed bounded integral is called Riemann integrable if its
+    lower Riemann integral equals its upper Riemann Integral 
+    \label{def:Riemann integrable}
+\end{defn}
+
+\begin{defn}[Riemann integral]
+    If $ f:[a,b] \to \mathbb{R} $ is Riemann integrable, then the Riemann integral 
+    $ \int\limits_{a}^{b}  $ is defined by 
+    \[
+        \int\limits_{a}^{b} f = L\left( f, [a,b]\right) = U\left( f, [a,b]\right) 
+    \]
+    \label{def:Riemann integral}
+\end{defn}
+
+\begin{exmp}[Computing a Riemann integral]
+    Define $ f : [0,1] \to \mathbb{R}  $ by $ f(x) = x^2  $. Then 
+    \[
+        U\left( f, [0,1]\right) \leq \inf_{n \in \mathbb{Z}^+} \frac{ 2n^2 + 3n + 1 }{
+        6n^2 } = \frac{ 1 }{ 3 } = \sup_{n \in \mathbb{Z}^+} \frac{ 2n^2 - 3n + 1 }{
+        6n^2 } \leq L\left( f, [0,1]\right) 
+    \]
+\end{exmp}
+
+Thus, \[
+\int\limits_{0}^{1} f = \frac{ 1 }{ 3 } 
+\]
+
+\subsection{Continuity and Riemann Integration}
+\label{subsec:Continuity and Riemann Integration}
+\begin{ftheo}[Continuous Functions are Riemann Integrable]
+    Every continuous real-valued function on each closed bounded interval is Riemann
+    integrable.
+    \label{th:Continuous Functions are Riemann Integrable}
+\end{ftheo}
+\begin{proof}
+    Suppose that $ a,b \in \mathbb{R} $ and $ a < b $ with $ f : [a,b] \to \mathbb{R} $ is
+    continous. Therefore $ f $ is bounded and uniformly continuous\footnote{See
+    \cite{rudin:principles} Theorem 4.19}. Let $ \epsilon >0 $. Because $ f $ is uniformly
+    continous there exists a $ \delta > 0 $ such that 
+    \[
+        \left | f(s) - f(t)  \right | < \epsilon  \quad \text{ for all } s,t \in [a,b]
+        \text{ with } \left | s - t \right | < \delta  
+    \]
+    Let $ n \in \mathbb{Z} $ be such that $ \frac{ b-a }{ n  } < \delta  $. 
+    Let P be the equally spaced partition $ a = x_0, x_1, \cdots , x_n  = b $ of [a,b]
+    with 
+    \[
+        x_j - x_{j-1} = \frac{ b - a }{ n } 
+    \] for each $ j = 1, \cdots , n  $. Also, Since 
+    \[
+     U\left(f,[a, b]\right) = \inf_P U\left(f, P ,[a, b]\right) \implies U\left(f,[a,
+     b]\right) \leq U\left(f, P ,[a, b]\right)
+    \] The same follows in the opposite direction for the lower sum.
+    Then, 
+    \begin{align*}
+        U\left(f,[a, b]\right)-L\left(f,[a, b]\right) &\leq  U\left(f,P,[a,
+        b]\right)-L\left(f,P,[a, b]\right) \\ 
+                                                      &= \frac{ b-a }{ n } \sum_{j=1}^{n}
+                                                      \left( \sup_{[x_j - x_{j-1}] } f -
+                                                      \inf_{[x_j - x_{j-1}] } f \right)
+                                                      \\ 
+     &= \left( b-a\right) \epsilon   \\ 
+    \end{align*}
+    Since this is true for arbitrary $ \epsilon >0 $ the proof is done.  
+\end{proof}
+
+\subsection{Exercises}
+
+\section{Riemann Integral Is Not Good Enough}
+\label{sec:Riemann Integral Is Not Good Enough}
+\begin{exmp}[Function that is not Riemann Integrable]
+    $ \\ $Let $ f : [0,1] \to \mathbb{R} $ with 
+    \[
+    f(x) = \begin{cases}
+        1& \text{ if x is rational } \\ 
+        0& \text{ if x is irrational }   \\ 
+    \end{cases}
+    \]
+    if $ [a,b] \subset [0,1]  $ with $ a<b  $, then 
+    \[
+        \inf_{[a,b] } f = 0 \quad \text{ and } \quad \sup_{[a,b]} = 1
+    \]
+    Then we have $ L\left(f,P,[0, 1]\right) = 0 $ and $ U\left(f,P,[a, b]\right) = 1 $ for
+    any partition of $ [0,1] $ and the function is not integrable. 
+\end{exmp}
+
+\begin{exmp}[Riemann integration does not work with unbounded functions]
+    $ \\ $Define $ f: [a,b] \to \mathbb{R} $ by 
+    \[
+    f(x) = \begin{cases}
+        \frac{ 1 }{ \sqrt{x} }  &\text{ if } 0 < x \leq 1 \\
+        0  &\text{ if } x = 0 \\ 
+    \end{cases}
+    \]
+    if the partition is on $ [0,1] $ then we have $ sup f = \infty $ for any partition of
+    $ [0,1]  $. However, we know, from standard calculus that 
+    \[
+        \lim_{a\to 0} \int\limits_{a}^{1} = \lim_{a\to 0} \left( 2 - 2\sqrt{a} \right) = 2
+    \] 
+
+\end{exmp}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage 
+
+
+
+
+
+\section{Measure Theory}
+\label{sec:Measure Theory}
+\section{Lebesgue Measure}
+\label{sec:Lebesgue Measure}
+\section{Convergence of Measurable Functions}
+\label{sec:Convergence of Measurable Functions}
+\section{Integration with respect to measure}
+\label{sec:Integration with respect to measure}
+\section{Limits of Integrals and Integrals of Limits}
+\label{sec:Limits of Integrals and Integrals of Limits}
+\section{LP theory}
+\label{sec:LP theory}
+\section{Inner Product Spaces}
+\label{sec:Inner Product Spaces}
+The material here is summarized from \cite{firstcourse_wfa}. 
+\subsection{Definition of Inner Product}
+\label{subsec:Definition of Inner Product}
+\begin{defn}[Inner Product]
+    for $ X , Y \in \mathbb{R}^n $ we define the inner product
+    as 
+    \[
+    \langle X , Y \rangle = \sum_{i=1}^{n} x_iy_j
+    \]
+    \label{def:Inner Product}
+\end{defn}
+When studying Fourier series and Fourier transform we will be using the complex
+exponential. Thus, we can use the conjugate the second factor to get the same result. 
+\begin{defn}[Complex Inner Product]
+    for $ Z , W \in \mathbb{C}^n $ we define the inner product
+    as 
+    \[
+        \langle Z , W \rangle = \sum_{i=1}^{n} z_i\overline{w_j}
+    \]
+    \label{def:Complex Inner Product}
+\end{defn}
+This ensures that the length of a vector in $ \mathbb{C}^n $ is real. 
+\begin{defn}[Length of Complex Vector]
+    asdfasdf
+    \begin{align*}
+        \text{Length} (Z) &= \sqrt{ \langle Z , Z \rangle } \\
+                          &= \sqrt{ \sum_{i=1}^{n} z_i\overline{z_i}} \\ 
+                          &= \sqrt{ \sum_{i=1}^{n} \left | z_i \right | ^2  }
+    \end{align*} 
+    \label{def:Length of Complex Vector}
+\end{defn}
+\begin{defn}[Inner Product Space] $ \\ $
+    A vector space with an inner product.
+    \label{def:Inner Product Space}
+\end{defn}
+\begin{defn}[Norm of a vector]
+    \[
+        \| v \|^{ }_{ } = \sqrt{ \langle v  , v  \rangle }
+    \]
+    \label{def:Norm of a vector}
+\end{defn}
+\begin{defn}[Distance between two Vectors]
+    \[
+        \text{dist} (v,w) = \| v - w \|^{ }_{ } 
+    \]
+    \label{def:Distance between two Vectors}
+\end{defn}
+
+
+\subsection{ $ \mathscr{ L } ^2 $ and $ \mathscr{ L } ^1 $ Spaces}
+\label{subsec: $ \mathscr{ L } ^2 $ and $ \mathscr{ L } ^1 $ Spaces}
+\begin{defn}[ $ \mathscr{ L } ^2 $ Space] $ \\ $
+    Consider the interval $ [a,b] $ where $ t \in [a,b] $, the space $
+    \mathscr{L}^2([a,b]) $ is the set of all square integrable functions defined for t. 
+    \[
+        \mathscr{L}^2([a,b]) = \set{ f : [a,b] \to \mathbb{C}; \int\limits_{a}^{b} \left |
+         f(t) \right |^2 \ dt < \infty  } 
+    \]
+    \label{def: $ \mathscr{ L } ^2 $ Space}
+\end{defn}
+
+This allows for both continuous and discontinuous functions. The condition of a finite
+square integral physically means tha the total energy of the signal is finite. 
+\begin{exmp}[Function membership in $ \mathscr{L}^2$]
+    $ \\ $
+    The set of functions $ \set{ 1, t, t^2, \cdots  }  $ is linearly independent and
+    belongs to $ \mathscr{L}^2[0,1] $. 
+    $ \\ $
+    The function $ f(t) = 1 / t $ is not a member of this space since 
+    \[
+    \int\limits_{0}^{1} \left( 1 / t\right) ^2 \ dt = \infty
+    \]
+\end{exmp}
+
+\subsubsection{ $ \mathscr{L}^2 $ Inner Product} We first simply consider a discretized
+space and set $ a=0, b=1 $. Let $ N $ be a large integer and let $ t_i = i / N $ for $ 1
+\leq i \leq N $. If a function $ f $ is continous, the the values of it can be
+approximated on the interval $ [t_i, t_{i+1} ) $ by $ f(t_i) $. This gives us 
+\[
+f_N = \left( f(t_1), f(t_2) , \cdots , f(t_N)  \right) \in \mathbb{R}^n
+\]. Where the approximation is better as N grows larger. Now, consider two approximations
+$ f_N, g_N $. How do we define $ \langle f_N , g_N \rangle  $? Using \ref{def:Complex
+Inner Product} we have 
+\begin{align*}
+    \langle f_N , g_N \rangle  &= \sum_{i=1}^{N} f(t_i) \overline{ g(t_i) } \\ 
+    &= \sum_{i=1}^{N} f(i / N) \overline{ g(i/N) } \\ 
+\end{align*}
+This, however, can result in a large sum as N grows large. Thus, we consider the averaged
+inner product : 
+\[
+    \frac{ 1 }{ N } \langle f_N , g_N \rangle  &= \sum_{i=1}^{N} f(t_i) \overline{ g(t_i)
+    } \frac{ 1 }{ N } \\ 
+\]
+which we can take the limit of to get 
+\[
+    \frac{ 1 }{ N } \langle f_N , g_N \rangle  &= \sum_{i=1}^{N} f(t_i) \overline{ g(t_i)
+    } \triangle t \quad \text{ with } \triangle t = 1 / N\\ 
+\]
+This is a Riemann sum approximation of $ \int\limits_{0}^{1} f(t) \overline{g(t)} \ dt$ on
+the partition $ [0, \cdots, t_N = 1] $. 
+\begin{defn}[ $ \mathscr{ L } ^2 $ inner product]
+    \[
+        \langle f , g \rangle _{ \mathscr{ L } ^2 } = \int\limits_{a}^{b} f(t) \overline{
+        g(t) } \ dt \qquad \text{ for }  f,g \in \mathscr{L}^2[a,b]
+    \]
+\end{defn}
+\subsubsection{Convergence in $ \mathscr{L}^2 $}
+\begin{defn}[Convergence in $ \mathscr{L}^2 $]
+    $ \\ $
+    A sequence $ f_n $ converges to $ f $ in $ \mathscr{L}^2[a,b] $ if, for any $ \epsilon
+    >0 $ we have $ \exists  N \in \mathbb{N} $ if $ n \geq N $ then 
+    \[
+    \|f_n - f\|_{L^2 } < \epsilon  
+    \]
+    \label{def:L2Convergence}
+\end{defn}
+This is sometimes called convergence in the mean. We also have two other types of
+convergence. 
+
+\begin{defn}[Pointwise Convergence]
+    A sequence $ f_n $ converges to $ f $ pointwise on the interval $ a \leq t \leq b
+    $ if for each $ t \in [a,b]  $ and each $ \epsilon >0 $, there exists a positive
+    integer $ N $ such that if $ n \geq N $ then 
+    \[
+        \left | f_n(t) - f(t) \right | < \epsilon  
+    \]
+    \label{def:Pointwise Convergence}
+\end{defn}
+Note that N depends on both t and $ \epsilon   $.  
+\begin{defn}[Uniform Convergence]
+    A sequence $ f_n $ converges to $ f $ uniformly on the interval $ a \leq t \leq b $ if
+    for each small tolerance $ \epsilon >0 $, there exists a positive integer N such that
+    if $ n \geq N $, then 
+    \[
+        \left | f_n(t) - f(t) \right | < \epsilon  \qquad \forall t \in [a,b]
+    \]
+    \label{def:Uniform Convergence}
+\end{defn}
+Uniform converge only depends on $ \epsilon  $
+
+If $ f_n $ uniformly converges on $ [a,b] $ then the values of $ f_n $ are close to $ f  $
+over the entire interval. If $ f_n $ converges to $ f $ pointwise, then for each fixed $ t
+$, $ f_n(t) $ is close to $ f(t) $ for large $ n $. However, the rate of convergence is
+dependent on the point t. Thus, 
+\[
+\text{uniform cv } \implies \text{ pointwise cv } \quad \text{ but } \quad  \text{
+pointwise cv } \nRightarrow \text{ uniform cv }  
+\]
+Finally, if $ f_n $ converges to $ f $ in $ \mathscr{L}^2[a,b] $, then, $ f_n \to f $ on
+average. But there may be values where $ f_n(t)  $ is far from $ f(t)  $. This is why this
+is sometimes called convergence in the mean. If the set of these values is either finite
+or countably infinite then it has measure zero. Since intervals of length zero have no
+effect on integration, we say that convergence occurs if the difference is less that $
+\epsilon >0 $ except for a set a set of measure zero. 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{convergencel2}
+    \caption{convergence in $ \mathscr{L}^2  $}
+    \label{fig:convergencel2}
+\end{figure}
+\newpage
+\begin{ftheo}[Uniform Converge Implies $ \mathscr{L}^2 $ Convergence]
+    $ \\ $
+    If $ f_n \to f $ uniformly to $ f $ as $ n \to \infty  $ on a finite interval $ a \leq
+    t \leq b$, then this sequence also converges in $ \mathscr{L}^2[a,b] $. The converse
+    of this is not true.            
+    \label{th:Uniform Converge Implies $ \mathscr{L}^2 $ Convergence}
+\end{ftheo}
+\begin{proof}
+    Using \ref{def:Uniform Convergence} we have 
+    \[
+        \left | f_n(t) - f(t)  \right | < \epsilon \quad \text{ for } n \geq N \text{ and
+        } a \leq t \leq b
+    \]
+    Using \ref{def:L2Convergence} we get 
+    \begin{align*}
+        \|f_n - f\|_{L^2 } &= \int\limits_{a}^{b} \left | f_n(t) - f(t) \right | ^2 \ dt \\
+         &\leq \int\limits_{a}^{b} \epsilon^2  \ dt  \\ 
+         &= \epsilon ^2 \left( b - a\right)  \\ 
+    \end{align*}
+    Thus, for $ n \geq N $ we have 
+    \[
+        \|f_n - f\|_{L^2 } \leq \epsilon \sqrt{b - a} 
+    \]
+    For the converse, consider 
+    \[
+        f_n(t) = \begin{cases}
+            1  &\quad 0 < t < 1/n \\ 
+            0 &\quad \text{otherwise}  \\ 
+        \end{cases}
+    \]
+    which has 
+    \[
+        \|f_n\|_{L^2 } = \int\limits_{0}^{1} \left | f_n(t) \right | ^2 \ dt = 
+        \int\limits_{0}^{1/n} 1 \ dt = 1/n  
+    \]
+    which is dependent on how close t is to the origin. 
+\end{proof}
+
+
+\subsection{Orthogonality}
+\label{subsec:Orthogonality}
+\begin{defn}[Orthogonality]
+    \begin{itemize}
+      \item The vectors X and Y are orthogonal if $ \langle X , Y \rangle = 0 $. 
+      \item The collection of vectors $ e_i $ are said to be orthonormal if each $ e_i $
+          has length 1 and $ \langle e_i , e_j \rangle = 0 $ for $ i \neq j $.
+      \item Two subspaces $ V_1  $ and $ V_2 $ of V are said to be orthogonal if each
+          vector in $ V_1  $ is orthogonal to every vector in $ V_2 $. 
+    \end{itemize}
+    \label{def:Orthogonality}
+\end{defn}
+\begin{exmp}[]
+    For the space $ \mathscr{L}^2[0,1] $ any two functions where the first functions is
+    zero, on the set where the second is nonzero will be orthogonal.  
+\end{exmp}
+
+\begin{exmp}[]
+    Let $ f(t) = \sin t  $ and $ g(t) = \cos t $. These functions are orthogonal in $
+    \mathscr{L}^2[-\pi,\pi] $ 
+    \begin{align*}
+        \langle f , g \rangle  &= \int\limits_{-\pi}^{\pi} \sin(t)\cos(t) \ dt \\
+                               &= \frac{ 1 }{ 2 } \int\limits_{-\pi}^{\pi} \sin(2t) \ dt
+                            \\ 
+                               &= -\frac{ 1 }{ 4 }\cos(2t) \Big|_{-\pi}^\pi   \\
+                                &= 0
+    \end{align*}
+    Furthermore, 
+    \[
+        \int\limits_{-\pi}^{\pi} \sin^2(t) \ dt = \|\sin(t)\|_{L^2} =
+        \int\limits_{-\pi}^{\pi} \cos^2(t) \ dt = \|\cos(t)\|_{L^2 } = \pi
+    \]
+   The orthonormal functions can be found simply : 
+   \begin{align*}
+       \|\cos(t) \|_{L^2 } &= \pi \\
+       \cos(t)  &= \sqrt{\pi} \\ 
+       \frac{ \cos(t) }{ \sqrt{\pi} }  &= 1 \\ 
+   \end{align*}
+   Taking the $ \mathscr{L}^2[-\pi,\pi] $ norm we get 
+   \begin{align*}
+       \int\limits_{-pi}^{\pi} \frac{ \cos^2(t) }{ \pi } \ dt =& \frac{ 1 }{ \pi }
+       \int\limits_{-\pi}^{\pi} \cos^2(t) \ dt \\ 
+       &= \int\limits_{-\pi}^{\pi} \frac{ 1 }{ 2 } + \frac{\cos(2t) }{ 2 } \ dt  \\ 
+       &= \frac{ 1 }{ 2 } t  + \frac{ 1 }{ 4 } \sin(2t) \Big|_{-\pi}^\pi = 1  \\ 
+   \end{align*}
+   The same is true for sin with the orthonormal function $ \frac{ \sin(t) }{ \sqrt{\pi} }  $ 
+\end{exmp}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{ftheo}[]
+    Suppose $ V_0 $ is a subspace of an inner product space $ V $. Suppose $e =  \set{ e_1,
+    \cdots, e_N }  $ is an orthonormal basis for $ V_0 $. If $ v \in V_0 $, then 
+    \[
+    v = \sum_{i=1}^{N} \langle v  , e_i \rangle e_i
+    \]
+    \label{th:}
+\end{ftheo}
+\begin{proof}
+    Since $ e $ is a basis for we can express any vector as a linear combination 
+    \[
+        v = \sum_{i=1}^{N} \alpha_ie_i
+    \]
+    For fixed $ \alpha_k $, take the inner product of both sides. 
+    \[
+    \langle v  , e_k \rangle = \sum_{i=1}^{N} \langle \alpha_je_j , e_k \rangle 
+    \]
+    Since these are orthonormal we get one nonzero term at $ j = k $. 
+    \[
+    \langle v  , e_k \rangle = \alpha_k \langle e_k , e_k \rangle = \alpha_k
+    \]
+    Thus, $ \alpha_k = \langle v  , e_k \rangle  $
+\end{proof}
+\subsection{Orthogonal Projections}
+\label{subsec:Orthogonal Projections}
+\begin{defn}[Orthogonal Projection]
+    Suppose $ V_0 $ is a finite-dimensional subspace of an inner product space V. For any
+    vector $ v\in V $, the orthogonal projecion of $ v $ onto $ V_0 $ is the unique vector
+    $ v_0 \in V_0 $ that is closes to $ v  $
+    \[
+        \| v - v_0 \|^{ }_{ } = \min_{u \in V_0} \| v - u \|^{ }_{ } 
+    \]
+    \label{def:Orthogonal Projection}
+\end{defn}
+\begin{ftheo}[]
+    Suppose $ V_0 $ is a finite-dimensional subspace of an inner product space V. Let $ b
+    $ be any element in $ V $. Then its orthogonal projection ,$ v_0 $, has the property 
+    \[ \langle v - v_0 , u \rangle = 0 \forall u \in V_0 \]
+    \label{th:}
+\end{ftheo}
+\newpage
+\begin{ftheo}[Orthogonal Projection]
+    Suppose $ V $ is an inner product space and $ V_0 $ is a $ N- $dimensional subspace
+    with orthonormal basis $ e_i $. The orthogonal projection of a vector $ v \in V $ onto
+    $ V_0 $ is given by 
+    \[
+        v_0 = \sum_{i=1}^{N} \alpha_ie_i \qquad \text{ with } \alpha_i = \langle v     ,
+        e_i \rangle 
+    \]
+    \label{th:Orthogonal Projection}
+\end{ftheo}
+
+\begin{exmp}[0.22]
+    
+\end{exmp}
+\begin{exmp}[0.23]
+    
+\end{exmp}
+\begin{defn}[Orthogonal Complement]
+    Suppose $ V_0 $ is a subspace of an inner product space V. The orthogonal complement
+    of $ V_0 $, denoted $ V_0^\perp  $ is the set of all vectors in V orthogonal to $ V_0
+    $ 
+    \label{def:Orthogonal Complement}
+\end{defn}
+
+

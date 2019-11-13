@@ -1,0 +1,39 @@
+\BOOKMARK [0][-]{chapter.1}{Intro and Basics}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Class notes}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Techniques : Change of Variables}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{Change of Variables for ODE's}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{Change of Variables for PDE}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.3}{Chain Rule}{section.1.2}% 6
+\BOOKMARK [1][-]{section.1.3}{Problem Set 1}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.4}{Solutions to Problem Set 1}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.4.1}{Exercise 1}{section.1.4}% 9
+\BOOKMARK [2][-]{subsection.1.4.2}{Exercise 2 : Change of variables }{section.1.4}% 10
+\BOOKMARK [2][-]{subsection.1.4.3}{Fourier Transform}{section.1.4}% 11
+\BOOKMARK [2][-]{subsection.1.4.4}{Partial Differential Operators}{section.1.4}% 12
+\BOOKMARK [2][-]{subsection.1.4.5}{Proof of the basic Green Formula in the 2D case}{section.1.4}% 13
+\BOOKMARK [2][-]{subsection.1.4.6}{Green Formulas}{section.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.4.7}{Boundary conditions and well-posedness}{section.1.4}% 15
+\BOOKMARK [0][-]{chapter.2}{Finite Differences}{}% 16
+\BOOKMARK [1][-]{section.2.1}{Class notes}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.2}{Building a Finite Difference Scheme}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.3}{Exercise sheet 2}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.3.1}{1D schemes}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.2}{Transfer Functions }{section.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.3.3}{Excercise 3 : Equivalent differential equation}{section.2.3}% 22
+\BOOKMARK [2][-]{subsection.2.3.4}{Compact Finite Differences}{section.2.3}% 23
+\BOOKMARK [2][-]{subsection.2.3.5}{Shooting method}{section.2.3}% 24
+\BOOKMARK [2][-]{subsection.2.3.6}{2D Laplacian}{section.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.3.7}{Exercise 7 : 2D Taylor Formula}{section.2.3}% 26
+\BOOKMARK [0][-]{chapter.3}{Laplace and Poisson Equations}{}% 27
+\BOOKMARK [1][-]{section.3.1}{Class notes}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.2}{Exercises}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.3}{Solutions}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.1}{E2 : Laplace equation on a rectangle}{section.3.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.2}{E3 : Laplace equation on a disk}{section.3.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.3}{E4 : 1D and 2D Laplacian matrices}{section.3.3}% 33
+\BOOKMARK [2][-]{subsection.3.3.4}{E5 : 9-point 2D laplacian - Fourth order scheme }{section.3.3}% 34
+\BOOKMARK [0][-]{chapter.4}{Class notes}{}% 35
+\BOOKMARK [0][-]{chapter.5}{Ordinary Differential Equations}{}% 36
+\BOOKMARK [1][-]{section.5.1}{Elementary Integration Methods}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.1.1}{First Order Equations}{section.5.1}% 38
+\BOOKMARK [2][-]{subsection.5.1.2}{Linear Differential Equations}{section.5.1}% 39

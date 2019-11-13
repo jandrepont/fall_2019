@@ -1,0 +1,132 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{asmar_fourpde}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b7941ec26ce1f019addd866eefef6b07}{%
+           family={{Asmar}},
+           familyi={A\bibinitperiod},
+           given={Nakhlé\bibnamedelima H.},
+           giveni={N\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{b7941ec26ce1f019addd866eefef6b07}
+      \strng{fullhash}{b7941ec26ce1f019addd866eefef6b07}
+      \strng{bibnamehash}{b7941ec26ce1f019addd866eefef6b07}
+      \strng{authorbibnamehash}{b7941ec26ce1f019addd866eefef6b07}
+      \strng{authornamehash}{b7941ec26ce1f019addd866eefef6b07}
+      \strng{authorfullhash}{b7941ec26ce1f019addd866eefef6b07}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd edition}
+      \field{title}{Partial Differential Equations : with Fourier Series and Boundary Value Problems}
+      \field{year}{2005}
+    \endentry
+    \entry{axler_measure}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=de1667a4906a794cacb4181d860e7e9c}{%
+           family={Axler},
+           familyi={A\bibinitperiod},
+           given={Shelder},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Prelimnary edition}%
+      }
+      \strng{namehash}{de1667a4906a794cacb4181d860e7e9c}
+      \strng{fullhash}{de1667a4906a794cacb4181d860e7e9c}
+      \strng{bibnamehash}{de1667a4906a794cacb4181d860e7e9c}
+      \strng{authorbibnamehash}{de1667a4906a794cacb4181d860e7e9c}
+      \strng{authornamehash}{de1667a4906a794cacb4181d860e7e9c}
+      \strng{authorfullhash}{de1667a4906a794cacb4181d860e7e9c}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Measure, Integration & Real analysis}
+      \field{year}{2019}
+    \endentry
+    \entry{firstcourse_wfa}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=43b2550647e813cb16c87bf891545630}{%
+           family={{Boggess}},
+           familyi={B\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=07f0c067e24670c4ade94342b89d7d82}{%
+           family={{Narcowich}},
+           familyi={N\bibinitperiod},
+           given={Francis\bibnamedelima J.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{f5b4b5702bc15a522f4c219c0a4b0339}
+      \strng{fullhash}{f5b4b5702bc15a522f4c219c0a4b0339}
+      \strng{bibnamehash}{f5b4b5702bc15a522f4c219c0a4b0339}
+      \strng{authorbibnamehash}{f5b4b5702bc15a522f4c219c0a4b0339}
+      \strng{authornamehash}{f5b4b5702bc15a522f4c219c0a4b0339}
+      \strng{authorfullhash}{f5b4b5702bc15a522f4c219c0a4b0339}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A First Course in Wavelets with Fourier Analysis}
+      \field{year}{2009}
+    \endentry
+    \entry{rudin:principles}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=33be2fc2739d3493c6d6cc5d56a4c41e}{%
+           family={Rudin},
+           familyi={R\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Publishing Co.}%
+      }
+      \strng{namehash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{fullhash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{bibnamehash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{authorbibnamehash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{authornamehash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{authorfullhash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Principles of Mathematical Analysis}
+      \field{year}{1976}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

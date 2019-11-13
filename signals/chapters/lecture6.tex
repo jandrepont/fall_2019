@@ -1,0 +1,352 @@
+\section{Intro}
+\label{sec:Intro}
+\section{Definition and reconstruction theroem}
+\label{sec:Definition and reconstruction theroem}
+
+\section{Properties Or how to choose $ \psi $ }
+\label{sec:Properties}
+Many possible choices for function $ \psi \in \mathbb{R} \text{ or } \mathbb{C} $ and
+analytic. There is a link between regularity of the signal to analyze $ f $ and the
+wavelet transform $ Cf(a,b) $ This link is dependent on the number of null moments of $
+\psi $.
+\begin{ftheo}[]
+    Let $ f\in \mathscr{ C } ^n $ and $ f _{  }^{ (n) }  $ is bounded and $ \psi  $ has n
+    null moments 
+    defined as 
+    \[
+        \int\limits_{ }^{ } t^k \psi (t) \ dt = 0 \quad \forall k \in \set{ 0,\cdots, n } 
+    \]
+
+
+    $ \\ $
+    Then 
+    \[
+        \left | Cf(a,b)  \right | = k \left( a ^{n + 1/2}\right) \quad k \in \mathbb{R}
+    \]
+    \label{th:}
+\end{ftheo}
+
+\begin{proof}
+   Let $ f \in \mathscr{ C } ^n $  thus we can expand this using Taylor's formula : 
+   \[
+       f(t) = \sum_{k=0}^{n-1} \frac{ f^{(k)} }{k!  } \left( t-u\right) ^k + \frac{
+           f^{(n)}(c) }{ n! } (t-u)^n \quad u \leq c \leq t 
+   \]
+   \begin{align*}
+       Cf(a,b) &= \frac{ 1 }{ \sqrt{a} } \int\limits_{ }^{ } f(t)\psi ( \frac{ t-b }{ a } )
+       \ dt \\
+       Cf(a,b) &= \sum_{k=0}^{n-1} \frac{ f^k(a) }{ k! } \int\limits_{}^{ } \left(
+       t-u\right) ^k \psi\left( \frac{ t-b }{ a } \right) \frac{ dt }{ \sqrt{a} }\\ 
+        &\text{ Let } x = \frac{ t-b }{ a }  \\ 
+           Cf(a,b) &= \sum_{k=0}^{n-1} \frac{ f^{(k)}(u) }{ k! } \int\limits_{}^{} \left(
+           ax+b - u \right) ^k \psi(x)\sqrt{a} \ dx + 
+           \sqrt{a} \frac{ f^{(n)} (c) }{ n!  } \int\limits_{ }^{ } \left( ax + b -
+           u\right) ^n \psi (x) \ dx 
+       \end{align*}
+       Using the fact that $ \forall 0 \leq k \leq n $ gives 
+       \[
+           \int\limits_{}^{ } t^k \psi(t) \ dt = 0
+       \]
+       we obtain 
+      \[
+          Cf(a,b) = \sqrt{a} \frac{ f^{(n)}(c) }{ n! } \int\limits_{ }^{ } \left( ax + b -
+          u \right) ^n \overline{\psi}(x) \ dx 
+      \] 
+      using 
+      \[
+      \left( \alpha + \beta \right) ^n \leq 2^n\left( \left | a \right | ^n + \left | b
+      \right | ^n \right) 
+      \]
+      then 
+   %   \begin{align*}
+   %       Cf(a,b) &\leq \frac{ f^{(n)} (c) 2^n a^{n+1/2} }{ n! } \int\limits_{ }^{ }\left|
+   %       x^n \right| \left|\overbar{\psi}(x)\right| \ dx 
+   %       +  \frac{ f^{(n)}(c)  }{ n! } 2^n\sqrt{a} \underbrace{\int\limits_{
+   %           }^{ } \left | b-?\right| ^n \left | \overline{\psi}(x) \right | \ dx 
+   %   \end{align*}
+      if $ f\in \mathscr{ C } ^n $ we can choose $ u = b $ then 
+      \[
+          Cf(a,b) \leq k a^{n+1/2} 
+      \] with 
+      \[
+          k = 2^n \frac{ \sup(f)^{(n)} }{ n! } \int\limits_{ }^{ } \left | x^n \right |
+          \left | \overline{\psi}(x) \right | \ dx
+      \]
+\end{proof}
+  \begin{enumerate}[label={(\alph*)}]
+      \item $ \psi $ has p null moments $ p < n  $
+      \item $ \psi  $ has p null moments $ p > n $
+  \end{enumerate}
+\[
+    Cf(a,b) = \underbrace{\sum_{n-1}^{k=0} \frac{ f^{(k)(x) }{ k! } \int\limits_{ }^{ } \left(
+            t-u\right) ^k \overline{\psi} \frac{ \left( t-b\right)  }{ a } \frac{ dt }{
+    \sqrt{a}  }}_{S_n-1} + \frac{ f^{(n)}(c) }{ n! } \int\limits_{ }^{ } \left( t-u\right) 
+\]
+Case 1 : 
+$ p < n  $ then $ S_n -1 \neq 0  $. 
+
+$ \\ $
+
+\subsection{Properties of $ \psi $}
+$ \psi  $ can be either:  
+\begin{itemize}
+  \item  real or complex and either complex analytic or non-analytic. 
+  \item Finite support of large size that scales with a
+  \item $ \psi  $ can be "regular" 
+  \item $ \psi $ can have $ n  $ null moments
+\end{itemize}
+a)
+Look at the exercise 
+\[
+    f(t) = \cos 2\pi\lambda_0t 
+\]
+\subsection{Include Figures for Analytic vs. Non-analytic Functions}
+\label{subsec:Include Figures for Analytic vs. Non-analytic Functions}
+
+
+b)
+$ Cf(a,b)  $ uses $ f(t_0)  $ if $ t_0 \in $ supp$(\psi_{a,b}) $ the number of values of
+$ Cf(a,b)  $ which uses $ f\left( t_0 \right)  $ depends on the size of the support of $
+\psi $. We don't want all $ Cf(a,b) $ to contain $ t_0 $ as we want differing information
+for differening $ Cf(a,b) $.
+
+\subsubsection{c) Regularity of $ \psi $}
+Using the reconstruction formula, we write the reconstructed signal as a weighted sum of
+$ \psi_{a,b}  $ where 
+\[
+    f(t) = \int\limits_{ }^{ } \int\limits_{ }^{ } Cf(a,b) \psi_{a,b} (t) \frac{ da\  db
+    }{ a^2 } 
+\]
+In practice, the reconstructed signal is a finite sum of $ \psi_{a,b}  $. So if $
+\psi_{a,b}  $ is not continuous $ f_r  $ wil be non continuous, for example : 
+\subsection{Insert image of Haar wavelet reconstruction}
+\label{subsec:Insert image of Haar wavelet reconstruction}
+
+\[
+    \psi (t) 
+\]
+
+\subsubsection{d) Number of Null Moments}
+The speed of convergence of $ Cf(a,b) $ for $ a \to 0 $ depends on this number of null
+moments. 
+
+\begin{defn}[Lipshitz function]
+    $ f $ is $ \alpha  $ Lipshitz at $ v  $, $ \alpha \geq 0  $ means 
+    \[
+        \exists P_v(t) = \sum_{k=0}^{m-1} \frac{ f _{  }^{ (k) } (v)  }{ k!  } \left( t-v
+        \right) ^k 
+    \] $ m = [\alpha]  $, then $ \forall t \in \mathbb{R} $ 
+    \[
+        \left | f(t) - P_v(t)  \right | \leq K \left | t-v  \right | ^{\alpha} 
+    \]
+    $ f $ is uniformly lipshitz in $ [a,b]  $ then $ \forall v \in [a,b] , \forall t \in \mathbb{R} $
+    \[
+        \left | f(t) - P_v(t)  \right | \leq K \left | t-v  \right | ^{\alpha} 
+    \]
+    \label{def:Lipshitz function}
+\end{defn}
+
+Also, if $ f = g'  $ with $ g $ being $ \alpha  $ Lipshitz, then $ f $ is $ \left( \alpha
+-1 \right)  $ Lipshitz. 
+
+\begin{exmp}[]
+    \[
+    \delta_0 = u' \text{ with ...} 
+    \]
+\end{exmp}
+
+
+
+\begin{ftheo}[]
+    $ \psi  $ has $ n  $ null moments 
+    \[
+        \forall k \in [0, n-1] , \ \int\limits_{ }^{ } t^k \psi(t) \ dt = 0
+    \]
+    $ f $ is $ \alpha  $ Liptshitz , $ \alpha < n  $ at $ v  $. 
+    Then 
+    \[
+        \left | Cf(a,b)  \right | \leq Aa^{\alpha + 1/2 } \left( 1 + \left | \frac{ b-v
+        }{ a }  \right | \alpha \right) 
+    \]
+    \label{th:}
+\end{ftheo} 
+
+
+\begin{proof}
+    $ f(t) = P_v(t) + \Epsilon (t)  $ with $ \left | \Epsilon (t)  \right | \leq k \left |
+    t-v \right |\alpha   $
+    \[
+        Cf(a,b) = \int\limits_{ }^{ } f(t) \psi_{a,b} )(t) \ dt 
+    \]
+    \[
+        = \sum_{k=0}^{m-1} \frac{ f^{(k)} (v)  }{ k!  } \int\limits_{ }^{ } \left( t-v
+        \right) ^k \psi_{a,b} (t) \ dt + \int\limits_{ }^{ } \Epsilon(t) \psi_{a,b} (t) \
+        dt 
+    \]
+    Let $ x = \frac{ t-b }{ a }  $
+    \[
+        f(t) = \sum_{k=0}^{m-1} \frac{ f^{(k)}(v)  }{ k!  } \int\limits_{}^{ } \left( ax +
+        b - v \right) ^k \psi(x) \sqrt{a} \ dx + \sqrt{a} \int\limits_{ }^{ } \Epsilon(ax
+        + b - v) \psi(x) \ dx
+    \]
+    \[
+        \left | Cf(a,b)  \right | \leq \sqrt{a} \int\limits_{ }^{ } \left | \Epsilon(ax +
+        b - v) \right | \psi(x) \ dx 
+    \]
+    \[
+        \leq \sqrt{a} K \int\limits_{ }^{ } \left | ax + b - v  \right | ^{\alpha} \psi(x)
+        \ dx 
+    \]
+    $ \left | a+b \right | ^{\alpha}  \leq 2^{\alpha} \left( \left | a \right|^{\alpha} +
+    \left | b \right | ^{\alpha} \right) $
+    \[
+        \left | Cf(a,b)  \right | \leq k2^{\alpha} \sqrt{a} \left( \int\limits_{ }^{ } a
+        _{  }^{ \alpha  } \left | x \right | _{  }^{ \alpha  } \psi(x) \ dx + \left | b -
+    v \right | _{  }^{ \alpha  } \left |\psi(x) \right | dx \right) 
+    \]
+
+\end{proof}
+
+
+If $ \alpha = -1  $ at $ v  $, we have a strong singularity at $ v  $, which coefficients
+$ Cf(a,b)  $ will be influenced by this. We search $ \set{ (a,b) | v \in \text{supp}
+\psi_{a,b} }  $. Consider $ \text{supp} \left( \psi \right) = [-c, c]  $ then 
+\[
+    \set{ (a,b) \bracevert v \in \text{supp} \left( \psi_{a,b} \right)  } = \set{ (a,b)
+    \bracevert \left | \frac{ v - b }{ a }  \right |  } 
+\]
+For $ \set{ (a,b) \Big / v - ac < b < v + ac  }  $ is influenced by the behavoir of $ f $
+at $ v  $. If $ f $ is singular at $ v  $ the $ Cf(a,b)  $ will have high values in this
+case. 
+
+\begin{ftheo}[]
+    $ \psi  $ has n null moments, $ \psi  $ rapdily decreases to 0 : 
+    \[
+        \forall m \in \mathbb{N}, \exists C_m s.t. \psi(t) \leq \frac{ C_m  }{ 1 + \left |
+        t \right | ^m  } 
+    \]  
+    then : 
+    \[
+        \psi(t) = \left( -1\right) ^n \frac{ d^n\theta (t)  }{ dt^n  } 
+    \] with $ \theta  $ rapidly decreasing function 
+
+    \[
+        Cf(a,b) = a^n \frac{ d^n  }{ dt^n  } \left( f * \overline{\theta}_a \right) (b) 
+    \]
+    with 
+    \[
+        \theta_a(t) = \frac{ 1 }{ \sqrt{a}  } \theta\left( -\frac{ t }{ a } \right) 
+    \]
+    \label{th:}
+\end{ftheo}
+
+\begin{proof}
+    We prove the first step : $ \\ $
+    $ \psi  $ is rapdily decreasing then $ \widehat{\psi}  $ is $ \mathscr{ C }^{\infty}
+    $ and $ \psi  $ has n null moments then 
+    \[
+        \int\limits_{ }^{ } t^k \psi(t) \ dt = 0 
+    \] for $ k < n  $. 
+    \[
+        \widehat{f} _{  }^{ (k)  } \left( \lambda \right) = \widehat{ \left( -2i\pi t
+        \right) ^k f(t)   } \left( \lambda \right) 
+    \]
+    \[
+        \widehat{f}(0) = \int\limits_{ }^{ } f(t) \ dt 
+    \]
+    \[
+        \int\limits_{ }^{ } t^k \psi(t) \ dt = \frac{ 1 }{ \left( -2i\pi \right) ^k  }
+        \int\limits_{}^{} \left( -2i\pi t \right) ^k t^k e^{ -2i\pi \lambda_0 t} \ dt           
+    \]
+    with $ \lambda_0 = 0 $
+    \[
+        0 = \int\limits_{}^{ } t^t \psi(t) \ dt \imples 0 = \left( -i\right) ^k
+        \widehat{\psi} _{  }^{ (k)  } (0) 
+    \]
+    then $ \widehat{\psi}  $ is such that $ \widehat{\psi}(0) = \widehat{\psi}'(0) =
+    \widehat{\psi}''(0) = \cdots = \widehat{\psi} _{  }^{ (n-1)  } = 0  $
+    then $ \widehat{\psi} (\lambda) = \left(-2i\pi\lambda\right)^n\theta(\lambda)  $. 
+    Then $ \psi(t) = \mathscr{ F } ^{-1} \left( \left( -2i\pi\lambda \right) ^n
+    \widehat{\theta} (\lambda) \right)  = \left( -1\right) ^n \theta^{(n)} (t)$
+    We now show $ \theta $ is rapidly decreasing. 
+    $ \\ $
+    Assume that $ n = 1 $ thus, $ \psi  $ has 1 null moment $ \psi(t) = -\theta ' (t)  $.
+    $ \\ $ We have 
+    \[
+        \forall m, \exists C_m s.t. \left | \psi(t)  \right | < \frac{ C_m  }{ 1 + \left |
+        t\right | ^m  } 
+    \]
+    also, 
+    \[
+        \theta(t) = \int\limits_{t}^{\infty } \psi(t) \ dt
+    \]
+    \[
+        \left | \theta(t)  \right | \leq \int\limits_{t}^{\infty} \left | \psi(u)  \right
+        | du \leq \int\limits_{t}^{\infty} \frac{ C_{m+1}  }{ 1 + \left | u \right |
+            ^{m+1}  } \leq C_{m+1} \int\limits_{t}^{\infty} \frac{ 1 }{ \left | u \right |
+        ^{m+1}  } 
+    \]
+    \begin{align*}
+        \left | \theta(t)  \right |  &\leq \frac{ C_{m+1}   }{ m } \left[ \frac{ 1 }{
+            \left | u \right | ^m  }  \right] _{ t }^{
+        \infty }   \\ 
+                                     &\leq \frac{ C_{n+1}  }{ n  } \frac{ 1 }{ \left | t
+                                     \right | ^m  } \\ 
+                                      &\leq \frac{ cst  }{ \left | t \right | m  }  \\ 
+    \end{align*}
+    We are supposed to end up with $ \leq \frac{ dm  }{ 1 + \left | t \right | ^m  }  $
+\[
+    \psi(t) = \left( -1\right) ^n \frac{ \partial ^n \theta  }{ \partial t^n  } (t) 
+\]
+with $ \theta  $ rapidly decreasing. 
+use $ Cf(a,b) = f * \psi_{a}(b)   = f * (-1)^n \theta^{(n)} (b) $
+then 
+\[
+    Cf(a,b) = f * a^{n + 1/2} \theta _{ a }^{ (n)  } (b) = a^{n+1/2} \frac{ \partial ^n
+    }{ \partial b^n  } \left( f * \theta_a \right) (b)
+\]
+\end{proof}
+
+\subsubsection{Interpretation}
+In practice $ Cf(a,b)  $ is obtained in 2 steps 
+\begin{enumerate}
+    \item Concolving $ f $ by $ \theta_a $. 
+    \item Derivative the result
+\end{enumerate}
+\subsection{Insert image on convolve with $ \theta_a  $}
+\label{subsec:Insert image on convolve with $ \theta_a  $}
+
+$ \theta_a  $ rapidly decreasing then $ \frac{ \theta_a }{ \sqrt{a}  } \to_{a \to 0} \delta_0  $ and, in the
+sense of distributions : 
+\[
+    \forall \varphi \int\limits_{ }^{ } \frac{ \theta_a }{ \sqrt{a}  } (t) \varphi(t) \ dt
+    = \varphi(0) 
+\]
+Assume $ f \in \mathscr{ C } ^n  $ then 
+\[
+    Cf(a,b) = a^n f^{(n)} * \theta_a (b) 
+\]
+\[
+    \lim_{a\to 0} \frac{ Cf(a,b)  }{ a^{n+1/2}  } = \lim_{a\to0}f^{(n)} * \frac{ \theta_a
+    }{ \sqrt{a}  } (b) = f^{(n)}(b)
+\]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

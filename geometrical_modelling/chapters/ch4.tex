@@ -1,0 +1,298 @@
+\chapter{Space Curves} 
+\section{Definition}
+\label{sec:Definition}
+\begin{defn}[Space Curve]
+    A space curve is a curve in $ \mathbb{R}^3 $ which is not planar. 
+    \[
+    f: I \subset \mathbb{R}^2 \to \mathbb{R}^3 \ \mathscr{ C } ^k \ k \geq 2
+    \]
+    \label{def:Space Curve}
+\end{defn}
+
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{space-curves}
+    \caption{Space Curve}
+    \label{fig:space-curves}
+\end{figure}
+
+
+
+
+
+Length is calculated the exact same way. 
+\section{Curvature and Principle Normal}
+\label{sec:Curvature and Principle Normal}
+\begin{defn}[]
+    if $ f : I \to \mathbb{R}^3 $ is arc-length param then the curvature is defined by 
+    \[
+        k(s) = \| f''(s) \|^{ }_{ } 
+    \]
+    NOTE: 
+    $ \\ $
+    $ k(s) \geq 0 $ for $ \mathbb{R}^3 $ 
+    but in $ \mathbb{R}^2, k(s) = \langle f'(s)  , N(s)  \rangle = \pm \|
+    f''(s)\|^{ }_{ }   $ 
+    \label{def:}
+\end{defn}
+
+\begin{prop}
+    If $ f $ is any parametrization 
+    \[
+        k(t) = \frac{ \| f'(t) \wedge f''(t)  \|^{ }_{ }  }{ \| f'(t) \|^{ 3}_{ }  } 
+    \]
+\end{prop}
+
+\begin{proof}
+    We denote $ \bar{f} = f \circ \sigma^{-1}  $ the arc-length parametrization. 
+    \[
+        \| \bar{f}' (s)  \|^{2 }_{ } = 1 \implies 2 \langle \bar{f}''(s) , \bar{f}'(s)
+        \rangle = 0 
+    \]
+    \[
+        \implies \bar{f}''(s) \perp \bar{f}'(s) 
+    \]
+    \[
+        \imples k(s) = \| \bar{f}''(s) \|^{ }_{ } = \| \bar{f}'(s) \wedge \bar{f}''(s)  \|^{ }_{ } 
+    \]
+    and $ \bar{f} = f \circ \sigma^{-1}  $
+    \[
+        \implies \bar{f}'(s) = f'\left(\overbrace{\sigma^{-1}(s)}^{= t}  \right) \times
+        \left( \sigma^{-1}\right) '(s) = \frac{ f'(t) }{ \| f'(t) \|^{ }_{ }  } 
+    \] 
+    \[
+        \bar{f}''(s) = f''\left( \overbrace{\sigma^{-1}(s)}^{=t}\right) \times \left(
+        \sigma^{-1} ' (s) \right) ^2 + f'\left( \sigma^{-1}(s) \right) \times \lambda
+        \quad \lambda \in \mathbb{R}
+    \]
+    then 
+    \[
+        \| \bar{f}'(s) \wedge \bar{f}''(s)  \|^{ }_{ } = \| \frac{ f'(t) }{ \| f'(t) \|^{
+        }_{ }} \wedge \frac{ f''(t) }{ \| f'(t) \|^{ 2}_{ }  }   \|^{ }_{ } 
+    \]
+\end{proof}
+
+
+\begin{defn}[]
+    Suppose $ f: I \to \mathbb{R}^3 $ is arc-length then 
+    \[
+        \vec{N}(s) = \frac{ 1 }{ k(s)  } \vec{T}(s) = \frac{ f''(s)  }{ \| f''(s) \|^{ }_{ }  }     
+    \]
+    is called the principle normal and 
+    \[
+        \vec{T}(s) = f'(s) \text{ is tangent at } f(s)
+    \]
+    a point $ f(s)  $ is biregular if $ f''(s) \neq 0 $
+    \label{def:}
+\end{defn}
+\subsubsection{Remark}
+A point is biregular if the curvature is $ \neq  $ from 0. 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{nt-for-r3}
+    \caption{NT for R3}
+    \label{fig:nt-for-r3}
+\end{figure}
+
+
+
+
+\begin{defn}[Osculating Plane]
+    The osculating plane at a biregular point is spanned by $ T(s) $ and $ N(s) $
+    \label{def:Osculating Plane}
+    \begin{itemize}
+        \item $ R(s)  = \frac{ 1 }{ k(s) } $ is the readius of curvature 
+        \item $ C(s) = f(s) + R(s)\vec{N}(s)  $ center of curvature 
+        \item $ \mathscr{ S } \left( C(s), R(s) \right)  $ osculating sphere 
+        \item $ \mathscr{ S } \left( C(s), R(s) \right) \cap \left( \text{Osculating
+            Plane} \right)  $ gives us the soculating circle
+    \end{itemize} 
+\end{defn}
+
+\section{Serret-Frenet frame}
+\label{sec:Serret-Frenet frame}
+\begin{defn}[Serret-Fresnet Frame]
+    if $ f $ is defined by arc-length biregular then 
+    \[
+        B(s) = T(s) \wedge N(s) 
+    \]
+    is called the binormal, and 
+    \[
+        \left( f(s), T(s), N(s) , B(s) \right) 
+    \] is called the Serret-Fresnet 
+    \label{def:Serret-Fresnet Frame}
+\end{defn}
+\subsubsection{Remark}
+This frame does not exist at non-biregular points
+
+\begin{defn}[]
+    \begin{itemize}
+        \item the plane : $ \langle N(s) , T(s)  \rangle  $ osculating plane 
+        \item the plane : $ \langle N(s) , B(s)  \rangle  $ normal plane 
+        \item the plane : $ \langle T(s) , B(s)  \rangle  $ rectifiable plane 
+    \end{itemize} 
+    \label{def:}
+\end{defn}
+
+\section{Tortion }
+\label{sec:Tortion }
+\begin{prop}
+    $ B'(s)  $ is colinear to $ N(s) $
+\end{prop}
+\begin{proof}
+\end{proof}
+
+\begin{defn}[Torsion]
+    At a biregular point, $ f\in \mathscr{ C } ^3 $ the torsion $ \tau (s)  $ is defined by 
+    \[
+        B'(s) = -\tau (s) N(s)
+    \]
+    It is a "measure" of how the osculating plane varies and twists 
+    \label{def:Torsion}
+\end{defn}
+
+\begin{prop}
+    \[
+        \tau(s) = \frac{ \det \left( f'(s), f''(s), f'''(s) \right)  }{ \| f''(s) \|^{ 2}_{ }  }   
+    \]
+\end{prop}
+\begin{proof}
+    \[
+        \tau(s) = - \langle N(s) , B'(s) \rangle  \quad B(s) = T(s) \wedge N(s)
+    \]
+    \[
+        \implies B'(s) = T'(s) \wedge N(s) + T(s) \wedge N'(s) 
+    \]
+    $ \implies  $
+    \[
+        \tau(s) = \underbrace{ - \langle N(s) , T'(s) \wedge N(s) \rangle}_{=0} - \langle
+        N(s) , T(s) \wedge N'(s)  \rangle 
+    \] by definition 
+    \[
+        = \det\left( N(s), T(s), N'(s)\right) 
+    \]
+    However, 
+    $ N(s) = R(s)f''(s)  $ and $ T(s) = f'(s) $ which gives 
+    \[
+        N'(s) = R'(s) f''(s) + R(s) f'''(s) 
+    \]
+    \[
+        \tau(s) = \det \left( R(s) f''(s), f'(s) , \underbace{R'(s)f''(s)}_{\text{colinear
+        to} R(s)f''(s) } + R(s)f'''(s)\right) 
+    \]
+    so we can invert the two vectors and introduce a minus sign to get 
+    \[
+        = \det\left( f'(s), f''(s), f'''(s)\right) R^2(s)
+    \]
+    and 
+    \[
+        R(s) = \frac{ 1 }{ k(s) } = \frac{ 1 }{ \| f''(s) \|^{ }_{ }  } 
+    \]
+\end{proof}
+
+\begin{prop}
+    For any param for biregular points we have 
+    \[
+        \tau(t) = \frac{ \det \left( f'(t), f''(t), f'''(t)\right)  }{ \| f'(t) \wedge
+        f''(t) \|^{ 2}_{ }  } 
+    \]
+\end{prop}
+\begin{proof}
+    Admitted
+\end{proof}
+
+\begin{prop}
+    $ f \in \mathscr{ C } ^3 $ biregular $ f : I \to \mathbb{R}^3 $
+    $ \tau(s) \equiv 0 \iff f \text{ planar }  $
+\end{prop} 
+\begin{proof}
+    $ \leftarrow   $ $ T(s)  $ and $ N(s) $ are in the same plane then $ B(s) $ constant
+    and $ B'(s) = 0  $ then $ \tau \equiv 0 $. 
+    $ \\ $
+    $ \implies  $ if $ \tau \equiv 0  $ and $ B'(s) = - \tau(s) N(s)  $ \implies $ B'(s) =
+    0 \forall s $ $ \implies B(s) = \vec{B}_0 $ 
+    we show that 
+    $ \langle B_0 , f(s) \rangle  = $ constant.  
+    $ \\ $However, 
+    \[
+        \left( \langle B_0 , f \rangle \right) ' = \langle B_0 ,  \rangle 
+    \]
+\end{proof}
+
+\section{Serret-Fresnet Formla}
+\label{sec:Serret-Fresnet Formla}
+\begin{defn}[SF Formula ]
+    \[
+    \begin{cases}
+        T'(s) &= k(s)N(s) \\
+        N'(s)  &= k(s)T(s) + \tau(s)B(s) \\ 
+        B'(s) &= -\tau(s)N(s) 
+    \end{cases}
+    \]
+    \label{def:SF Formula }
+\end{defn}
+\begin{proof}
+    1,3 ok. 
+
+\end{proof}
+
+\section{Fundamental Theorem for Local Theory of Curves}
+\label{sec:Fundamental Theorem for Local Theory of Curves}
+\begin{ftheo}[]
+    Let $ k :[a,b] \to \mathbb{R}^t  \in \mathscr{ C } ^1 $ and $ \tau : [a,b] \to
+    \mathbb{R} \in \mathscr{ C } ^1$ then $ \exists ! $ curve $ f:[a,b] \to \mathbb{R}^3
+    \in \mathscr{ C } ^3  $ parameterized by arc-length with curvature $ k $ and torsion
+    $ \tau  $ up to a rigid transformation. 
+    \label{th:}
+\end{ftheo}
+So a curve is completely determined by its tortion and curvature. 
+
+
+\section{Tutorial 3: Plane and Space Curves}
+\label{sec:Tutorial 3: Plane and Space Curves}
+\subsubsection{Exercise 1}
+Calculate the curvature of the planar curve parametrized by $ f(t) = \left( t, \varphi(t) \right)  $
+
+\subsubsection{Exercise 2}
+\begin{enumerate}
+    \item Give a parametrization of the circle of center $ O  $ and radius $ R  $. 
+    \item Calculate the curvature, radius of curvature and center of curvature at every
+        point of the circle. 
+\end{enumerate}
+
+\subsubsection{Exercise 3}
+Show that planar curves with constant curvature are either arc of circles or segments of a
+line. 
+
+\subsubsection{Exercise 4 (Circular Helix) }
+We consider the curve $ f : \mathbb{R} \to \mathbb{R}^3 $ parameterized by 
+\[
+    f(t) = \left( R\cos t, R \sin t, at \right) 
+\]
+\begin{enumerate}
+    \item Determine an arc-length representation
+    \item Dtermine the Serret-Fresnet frame
+    \item Calculate the curvature and torsion
+    \item Calculate the set of curvature centers 
+\end{enumerate}
+
+\subsubsection{Exercise 5}
+Calculate the evolute (i.e. the set of the centers of curvature) of the ellipse. 
+
+\subsubsection{Exercise 6}
+We consider the curve $ \gamma(t) = \left( t^2, t^3\right)   $ for $ t\geq 0 $
+\begin{enumerate}
+    \item Draw the curve. Is the curve regular? 
+    \item Calculate the arc-length, curvature, and express the curvature with arc-length
+        parametrization for $ t > 0 $. 
+    \item Provide a parametrixation of the curve of class $ \mathscr{ C } ^1  $ and
+        regular. 
+    \item Show that there is no parametrization of class $ \mathscr{ C } ^2 $ of the curve
+        at the point $ \left( 0,0\right)  $
+\end{enumerate}
+\subsection{Solutions}
+\label{subsec:Solutions}
+

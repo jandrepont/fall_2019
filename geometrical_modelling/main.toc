@@ -1,0 +1,188 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Needs of CAGD}{5}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Lagrange Interpolation}{5}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.1}Lagrange polynomial}{6}{subsection.1.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}Runge Phenomenon}{8}{subsection.1.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.3}Approximation Result}{8}{subsection.1.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.4}Need to check this}{9}{subsection.1.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Exercise 1 : Lagrange interpolation}{10}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}Solutions }{10}{subsection.1.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{1)}{10}{section*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2)}{11}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{3)}{11}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Interpolation with Splines}{11}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.1}Minimization Result}{13}{subsection.1.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.2}Approximation Result}{16}{subsection.1.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Exercise 2 : Hermite Interpolation }{17}{section.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.1}Solutions}{18}{subsection.1.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{1)}{18}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2)}{18}{section*.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{3)}{18}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{4)}{19}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{5)}{19}{section*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Bezier Curves}{21}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Bernstein Polynomials}{21}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Properties}{21}{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{a) }{22}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{b)}{22}{section*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{c)}{22}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{d)}{22}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{e) }{23}{section*.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{f)}{23}{section*.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Bezier Curves}{24}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Refresher on Convex Hull and Barycenter}{24}{subsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Definition of Bezier Curves}{26}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Properties}{26}{subsection.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Algorithms to evaluate Bezier Curves and their derivatives}{31}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Derivative of Bezier curve}{32}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{1st Method}{32}{section*.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Second Method}{33}{section*.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Tutorial 2: B\IeC {\'e}zier Curves and Bernstein polynomials}{34}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 1 (Bernstein polynomials)}{34}{section*.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 2}{34}{section*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 3}{34}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 4}{34}{section*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 5 (B\IeC {\'e}zier Function) }{35}{section*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 6}{35}{section*.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 7 (Degree elevation) }{35}{section*.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Solutions}{35}{subsection.2.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{1) }{35}{section*.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2)}{37}{section*.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{3)}{37}{section*.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{4)}{37}{section*.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{5)}{38}{section*.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{6)}{39}{section*.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{7)}{40}{section*.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Curves in the Plane}{41}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Introduction}{41}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Generalities on Paramaterized Curves}{43}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Reminder}{43}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Parametrization and Geometric Curves}{45}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}ReParametrization}{46}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Regular Curve}{46}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Remark}{47}{section*.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Metric Properties of Curves}{48}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.1}Length of curves}{48}{subsection.3.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.2}Arc Length Parametrization}{49}{subsection.3.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Remark}{50}{section*.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Remark}{50}{section*.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Planar Curves}{51}{section.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.1}Serret-Fresnet Frame}{51}{subsection.3.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Remark}{51}{section*.35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.2}Curvature}{51}{subsection.3.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.3}Osculating Circle and Center of Curvature}{53}{subsection.3.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.4}Serret-Fresnet Formula}{53}{subsection.3.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.5}Total Curvature}{53}{subsection.3.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Concluding Thoughts}{54}{section*.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Space Curves}{57}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Definition}{57}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Curvature and Principle Normal}{58}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Remark}{59}{section*.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Serret-Frenet frame}{59}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Remark}{60}{section*.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Tortion }{60}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Serret-Fresnet Formla}{61}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Fundamental Theorem for Local Theory of Curves}{61}{section.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.7}Tutorial 3: Plane and Space Curves}{61}{section.4.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 1}{61}{section*.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 2}{62}{section*.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 3}{62}{section*.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 4 (Circular Helix) }{62}{section*.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 5}{62}{section*.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 6}{62}{section*.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.7.1}Solutions}{62}{subsection.4.7.1}

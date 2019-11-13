@@ -1,0 +1,216 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Sources / References}{7}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Bremaud, Mathematical Principles of Sig- nal Processing : Fourier and Wavelet Anal- ysis}{7}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Boggess and Narcowich, A First Course in Wavelets with Fourier Analysis}{7}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Kaiser, A Friendly Guide to Wavelets}{8}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Sidney Burrus and Guo, Introduction to Wavelets and Wavelet Transforms}{8}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Mallat, A Wavelet Tour of Signal Processing}{8}{section.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Stein and Shakarchi, Fourier Analysis : An Introduction}{9}{section.1.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.7}James, A Student\IeC {\textquoteright }s Guide to Fourier Trans- forms }{9}{section.1.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.8}Gasquet and Witomski, Analyse De Fourier et Applications : Filtrage, calcul nume\GenericError {(inputenc) }{Package inputenc Error: Unicode char ́ (U+301)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}rique et ondelettes}{9}{section.1.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Introduction}{11}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Riemann Integral}{11}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Basic Definitions}{11}{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Inequalities with Riemann sums}{12}{subsection.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.3}Riemann Integral}{13}{subsection.2.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.4}Continuity and Riemann Integration}{14}{subsection.2.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.5}Exercises}{15}{subsection.2.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Riemann Integral Is Not Good Enough}{15}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Measure Theory}{17}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Lebesgue Measure}{17}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Convergence of Measurable Functions}{17}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Integration with respect to measure}{17}{section.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Limits of Integrals and Integrals of Limits}{17}{section.2.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.8}LP theory}{17}{section.2.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.9}Inner Product Spaces}{17}{section.2.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.1}Definition of Inner Product}{17}{subsection.2.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.2} $ \mathscr { L } ^2 $ and $ \mathscr { L } ^1 $ Spaces}{18}{subsection.2.9.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{ $ \mathscr {L}^2 $ Inner Product}{18}{section*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Convergence in $ \mathscr {L}^2 $}{19}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.3}Orthogonality}{21}{subsection.2.9.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.4}Orthogonal Projections}{23}{subsection.2.9.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Fourier Series}{25}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Trigonometric Polynomials}{25}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Orthogonality}{27}{subsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}Calculating Fourier Coefficients}{27}{subsection.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Need to check these!!!}{27}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{For Period = $ 2\pi $}{27}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Period = T}{28}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Fourier Series}{30}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Pointwise representation of periodic function by its Fourier Series}{33}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Exercises 1 : Fourier Series}{35}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.1}Speed of convergence of Fourier coefficients and functional regularity}{35}{subsection.3.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.2}Fourier series convergence}{35}{subsection.3.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Discrete Fourier Transform}{41}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.0.1}DFT}{43}{subsection.4.0.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Properties of DFT}{43}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}FFT : Pease algorithm}{44}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Visual Representation of the Algorithm and Computation}{46}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Exercises FFT: Pease Algorithm}{47}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Solutions}{48}{subsection.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{1)}{48}{section*.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2)}{49}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Exercises : Circular Convolution and DFT}{49}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}Solutions}{51}{subsection.4.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{1)}{51}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2)}{53}{section*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Approximation Error}{53}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Conclusion : }{54}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Conclusion again}{54}{section*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Fourier Transform}{55}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Introduction}{55}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}Non-rigorous development of the $ \mathscr { FT } $}{55}{subsection.5.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Fourier Transform in $ \mathscr { L } ^1\left ( \mathbb {R}\right ) $}{57}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Link Between DFT and $ \mathscr { FT } $}{59}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{DFT}{59}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{ $\mathscr { FT }$ }{60}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Comparison with Fourier series}{61}{subsection.5.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Properties of $ \mathscr { FT } $ on $ \mathscr { L } ( \mathbb {R}) $ }{67}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.1}FT and Derivation}{67}{subsection.5.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.2}Notations}{68}{subsection.5.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.3}Properties}{68}{subsection.5.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.4}Usual examples}{68}{subsection.5.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.5}Inverse of FT}{69}{subsection.5.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}FT on $ \mathscr { S } \left ( \mathbb {R}\right ) $ }{70}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Conclusion }{71}{section*.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}FT on $ \mathscr {L}^2(\mathbb {R} ) $}{73}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Properties of $ \mathscr { FT } $ on $ \mathscr {L}^2(\mathbb {R}) $}{73}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}FT and Convolution}{74}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Part A}{74}{section*.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Part B}{74}{section*.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Part C}{74}{section*.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Heisenberg Uncertainty Principle}{74}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}Exercises}{74}{subsection.6.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}Interpretation of Heisenberg's Uncertainty Principle}{74}{subsection.6.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Conclusion About Fourier Transform}{75}{section.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Window Fourier Transform}{77}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Comment:}{78}{section*.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Exercises : Atoms}{78}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Part 1)}{81}{section*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Part 2)}{81}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Continuous Wavelet Transform}{83}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Motivations}{83}{section*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.0.1}Problem ####?}{86}{subsection.8.0.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Random Discussion}{87}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Intro}{89}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Definition and reconstruction theroem}{89}{section.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.4}Properties Or how to choose $ \psi $ }{89}{section.8.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.1}Properties of $ \psi $}{90}{subsection.8.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.2}Include Figures for Analytic vs. Non-analytic Functions}{90}{subsection.8.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{c) Regularity of $ \psi $}{91}{section*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.3}Insert image of Haar wavelet reconstruction}{91}{subsection.8.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{d) Number of Null Moments}{91}{section*.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Interpretation}{94}{section*.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.4}Insert image on convolve with $ \theta _a $}{94}{subsection.8.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}End of FT Lecture, FT of distributions}{95}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Convolution}{95}{section*.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.0.1}FT of distribution}{95}{subsection.9.0.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.0.2}Sawtooth}{96}{subsection.9.0.2}

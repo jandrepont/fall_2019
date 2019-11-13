@@ -1,0 +1,442 @@
+\section{Properties of $ \mathscr{ FT }  $ on $ \mathscr{ L } ( \mathbb{R}) $ }
+\label{sec:Properties of $ \mathscr{ FT }  $ on $ \mathscr{ L } ( \mathbb{R}) $ }
+\begin{ftheo}[Exchange Property]
+    Assume $ f, g\in \mathscr{L}^1( \mathbb{R})    $
+    Then 
+    \[
+        \int\limits_{-\infty}^{\infty} f(u) \widehat{g}(u) \ du =
+        \int\limits_{-\infty}^{\infty} \widehat{f}(u)g(u) \ du 
+    \]
+    \label{theo:Exchange Property}
+\end{ftheo}
+
+\begin{proof}
+    $ -f \in \mathscr{L}^1, \widehat{g} \in \mathscr{ C } ^{\infty} \implies f\widehat{g}
+    \in \mathscr{L}^1 $ then use fubini's theorem. 
+\end{proof}
+
+
+\subsection{FT and Derivation}
+\label{subsec:FT and Derivation}
+\begin{enumerate}
+    \item Assume $ x^kf(x) $ in $ \mathscr{L}^1\left( \mathbb{R}\right)   $ 
+        for $ k\in \set{ 0,\cdots,n }  $. Thus $ \widehat{f}  $ is k times derivable and 
+\[
+    \widehat{f} _{  }^{ (k) } (\lambda) = \widehat{\left( -2i\pi x\right) ^k f(x) } \left(
+    \lambda \right) 
+\]
+    \item Assume $ f\in \mathscr{ C } ^n $ and $ f', \cdots, f^{(n)} \in
+        \mathscr{L}^1\left( \mathbb{R}\right)  $.
+    Then 
+    \[
+        \widehat{f^{(k)}}\left( \lambda \right) = \left( 2i\pi\lambda \right) ^k
+        \widehat{f}\left( \lambda\right) 
+    \]
+    \item $ f\in \mathscr{L}^1\left( \mathbb{R}\right),\ f   $ bounded support then $
+        \widehat{f} \in \mathscr{ C } ^{\infty}  $
+\end{enumerate}
+\begin{proof}
+    \begin{enumerate}
+        \item Direct application of the theorem of derivation 
+            \[
+            \int\limits_{ }^{ } \frac{ \partial  }{ \partial \lambda  } f\left( \lambda,
+            t\right)  = \frac{ \partial  }{ \partial \lambda  } \int\limits_{ }^{ }
+            f(\lambda, t) \ dt
+            \]
+        \item $ n = 1 $. $ f' \in \mathscr{L}^1\left( \mathbb{R}\right)   $. 
+            \[
+                \widehat{f'}\left( \lambda\right) = \lim_{a\to\infty}
+                \int\limits_{a}^{a} e^{ -2i\pi\lambda t} f'(t) \ dt 
+            \] integration by parts 
+            \[
+                \widehat{f'}\left( \lambda \right) = \lim_{a\to\infty} \left[ e^{
+                -2i\pi\lambda t} f(t)  \right] ^a_{-a} + \lim_{a\to\infty}
+                \int\limits_{-a}^{a } 2i\pi\lambda e^{ -2i\pi \lambda t } f(t) \ dt       
+            \]
+            \[
+                \lim_{a\to\infty} \left[ e^{ -2i\pi\lambda t} f(t) \right] _{ -a }^{ a }  
+            \]
+            \[
+                \lim_{a\to\infty} f(t) = 0 \quad \text{ since } \quad f\in
+                \mathscr{L}^1p\left( \mathbb{R}\right) .  
+            \]
+            So, 
+            \[
+                \widehat{f'}\left( \lambda \right) = 2i\pi\lambda \widehat{f}\left(
+                \lambda \right) 
+            \]
+
+     \item $ f\in \mathscr{L}^1\left( \mathbb{R}\right)  $ and $ f $ has a bounded
+         support. Then what can we say about $ t^kf(t)  $. It is also in $
+         \mathscr{L}^1\left( \mathbb{R}\right)   $ and using point 1 we get that $ f\in
+         \mathscr{ C } ^{\infty}  $
+    \end{enumerate}
+\end{proof}
+\subsection{Notations}
+\label{subsec:Notations}
+\begin{itemize}
+    \item[symmetry] : 
+        \[
+            f _{ \sigma }^{  } (x) = f(-x) 
+        \]
+    \item[Translation] : 
+        \[
+        \mathscr{ T } af(x) = f(x-a) 
+        \]
+\end{itemize}
+
+
+
+\subsection{Properties}
+\label{subsec:Properties}
+Assume f in L1 and $ \widehat{f}\left( \lambda \right) = \mathscr{ F } f(\lambda)  $. 
+\begin{enumerate}
+    \item $\overline{ \mathscr{ F } f} = \overline{ \mathscr{ F } } \overline{f} $
+    \item $\left( \mathscr{ F } f\right) _{\sigma} = \overline{ \mathscr{ F } } f =
+        \mathscr{ F } f_{\sigma} $
+    \item $ f $ even $ \implies  \widehat{f} $ even 
+    \item $ f $ odd $ \implies  \widehat{f} $ odd 
+    \item $ f $ real and even then $ \widehat{f}  $ real and even   
+    \item $ \widehat{ \mathscr{ T } a f}\left( \lambda \right) = e^{ -2i\pi\lambda a}
+        \widehat{f}(\lambda)  $ time delay
+    \item $ \mathscr{ T } a \widehat{f}\left( \lambda\right) = \widehat{ e^{ 2i\pia t}f(t)
+        }\left( \lambda \right)   $ frequency delay
+\end{enumerate}
+
+\subsection{Usual examples}
+\label{subsec:Usual examples}
+\begin{align*}
+    e^{ -ax} u(x) &= \frac{ 1 }{ a+2i\pi\lambda  }  \\ 
+    e^{ ax} u(-t)  &= \frac{ -1 }{ -a + 2i\pi\lambda}  \\ 
+    \frac{ x^k }{ k! } e^{ -ax} u(x)  &=  \frac{ 1 }{ \left( a + 2i\pi\lambda \right)
+    ^{k+1}  } \\ 
+        \frac{ x^k }{ k! } e^{ax} &= \frac{ -1 }{ \left(-a + 2i\pi\lambda\right)^{k+1}  }  \\ 
+        e^{ -a \left | x \right | }  &= \frac{ 2a }{ a^2 + 4\pi^2\lambda^2 }  \\ 
+        sign(x) e^{ -a \left | x \right | }  &= \frac{ -4i\pi\lambda }{ a^2 +
+        4\pi^2\lambda^2 }  \\
+            e^{-at^2} /& \sqrt{ \frac{ \pi }{ a } } e^{ \frac{ -\pi^2 }{ a^2 } \lambda^2}    \\
+            \chi _{[-a, a]} (t)  &= \frac{ \sin(2a\pi\lambda)  }{ \pi x }  \\ 
+\end{align*}
+
+\subsection{Inverse of FT}
+\label{subsec:Inverse of FT}
+\begin{ftheo}[Inverse of FT]
+    If $ f \in \mathscr{L}^1\left( \mathbb{R}\right)   $ and $ \widehat{f} \in
+    \mathscr{L}^1\left( \mathbb{R}\right)   $. Then 
+    \[
+        \overline{ \mathscr{ F } } \widehat{f}(t) = f(t) , \quad \forall t \text{ where f
+        cont} 
+    \]
+    But, $ f\in \mathscr{L}^1\left( \mathbb{R}\right) notimply \widehat{f} 
+    \mathscr{L}^1\left( \mathbb{R}\right)   $ 
+    \label{th:Inverse of FT}
+\end{ftheo}
+
+\begin{cor}[]
+    $ f \in \mathscr{L}^1\left( \mathbb{R}\right)   $ and $ f \in \mathscr{ C } ^2  $ and
+    $ f, f', f'' \in \mathscr{ L } ^1 $. Then 
+    \[
+        \widehat{f} \in \mathscr{L}^1\left( \mathbb{R}\right) .  
+    \]
+\end{cor}
+
+\begin{proof}
+    \[
+        \widehat{f''}\left( \lamda \right) = -4\pi^2\lambda^2 \widehat{f}(\lambda) 
+    \]
+    and 
+    \[
+        \lim_{ \left | \lambda  \right | \to \omega } \left | \widehat{f''} \left( \lambda
+        \right)  \right | = 0
+    \] 
+    Then 
+    \[
+    \exists M s.t. \left | \lambda  \right | > M \implies 4\pi^2\lambda^2 \left |
+    \widehat{f} \left( \lambda \right)  \right | < 1
+    \]
+    $ \left | \widehat{f} \right | $ is continuous (RL theom). 
+    \[
+        \text{At } \omega \quad \left | \widehat(\lambda)  \right | < \frac{ 1 }{
+        4\pi^2\lambda^2 } 
+    \]
+    Then 
+    \[
+        \left | \widehat{f}  \right | \in \mathscr{L}^1\left( \mathbb{R}\right)  
+    \]
+\end{proof}
+
+
+\begin{cor}[]
+    $ f, \widehat{f} \in \mathscr{L}^1  $, we have 
+    \[
+        \mathscr{ F } \widehat{f}\left( u\right) = f _{ \sigma  }^{  } (u) = f(-u) 
+    \]
+\end{cor}
+
+\begin{exmp}[]
+    Consider the previous examples. 
+    \[
+        \frac{ 1 }{ \left( a + 2i\pi t \right) ^{k+1}  } = \frac{ \left( -\lambda\right)
+        ^k  }{ k! } e^{ a\lambda } u\left( -\lambda \right) 
+    \]
+    Also, 
+    \[
+        \frac{ -1 }{ \left( -a + 2i\pi t \right) ^{k+1}  } = \frac{ \left( -\lambda\right)
+        ^k }{ k!  }e^{-a\lambda} u(\lambda)
+    \]
+    And 
+    \[
+    \frac{ 1 }{ a^2 + t^2  } = \frac{ \pi }{ a } e^{ -2i\pi \left | \lambda  \right | } 
+    \]
+\end{exmp}
+
+
+
+\section{FT on $ \mathscr{ S } \left( \mathbb{R}\right)  $ }
+\label{sec:FT on $ \mathscr{ S } \left( \mathbb{R}\right)  $ }
+We need to restrict $ \mathscr{L}^1\left( \mathbb{R}\right)   $ in order to 
+\begin{itemize}
+  \item inverse FT
+  \item Use derivation formulas 
+\end{itemize}
+In order to do this we use the Schwartz space. 
+\begin{exmp}[Schwartz space ]
+    \[
+    \mathscr{ S } \left( \mathbb{R}\right) \subset \mathscr{L}^1\left( \mathbb{R}\right)  
+    \]. 
+\end{exmp}
+
+\begin{defn}[Rapidly Decreasing Functions]
+    \[
+        \forall p \in \mathbb{N}, \lim_{p \to \infty} \left | x^p f(x)  \right | = 0
+    \]
+    \label{def:Rapidly Decreasing Functions}
+\end{defn}
+
+\begin{ftheo}[Property 1]    
+If $ f \in \mathscr{L}^1\left( \mathbb{R}\right)  $ and is a rapidly decreasing function,
+then 
+\begin{enumerate}
+    \item $ \forall p, t^pf(t) \in \mathscr{L}^1\left( \mathbb{R}\right)   $
+    \item $ \widehat{f} \in \mathscr{ C } ^{\infty}  $
+\end{enumerate}
+    \label{th:}
+\end{ftheo}
+\begin{proof}
+    $ f $ is rapidly decreasing. 
+    \[
+        \implies \forall p \in \mathbb{N} \quad \lim_{ \left | x \right | \to \infty}
+        \left | x^{p+2} f(x)  \right | = 0
+    \]
+    \[
+        \imples \exists M s.t. \left | x \right | > M  \quad \left | x^{p+2} f(x)  \right
+        | < 1   
+    \]
+    \[
+    \int\limits_{ }^{ } \left | x^p f(x)  \right | \ dx = \int\limits_{ \left | x \right |
+    < M }^{ } \left | x^p f(x)  \right | \ dx + \int\limits_{ \left | x \right | > M
+}^{}  + \int\limits_{ \left | x \right | > M }^{ } \frac{ 1 }{ x^2  } \left | x^{p+2} f(t)
+\right | \ dt 
+    \]
+    \[
+        \leq M^p \int\limits_{ \left | x \right | < M }^{ } \left | f(x)  \right | \ dx +
+        \int\limits_{ \left | x  \right | > M }^{ } \frac{ 1  }{ x^2  } \ dx
+    \]
+    \[
+    \leq \infty 
+    \]
+    Then $ \forall p, \quad x^p f(x) \in \mathscr{L}^1\left( \mathbb{R}\right)   $. 
+    Then
+    \[
+        \widehat{ \left( -2i\pi t \right) ^k f(t) } 
+    \] exisits and it is $ \widehat{f}^{(k)} \left( \lambda \right)  $
+
+\end{proof}
+
+\begin{ftheo}[Property 2]
+    Let $ f \in \mathscr{ C } ^{\infty}  $ and $ \forall k  $ $ f^{(k)} \in
+    \mathscr{L}^1\left( \mathbb{R}\right)   $. Then $ \widehat{f}  $ is rapidly
+    decreasing.     
+    \label{th:Property 2}
+\end{ftheo}
+\begin{proof}
+    \[
+        \widehat{f _{  }^{ (k) } }\left( \lambda \right) = \left( 2i\pi\lambda \right) ^k
+        \widehat{f} \left( \lambda \right)          
+    \]
+    By RL theorem 
+    \[
+        \lim_{ \left | \lambda  \right | \to \infty} \left | \widehat{f _{  }^{ (k)  } }
+         (\lambda)  \right| = 0  
+    \]
+    Then 
+    \[
+        \lim_{ \left | \lambda  \right | \to 0} \left | \lambda^k \widehat{f}(\lambda)
+        \right | = 0
+    \]
+\end{proof}
+\subsubsection{Conclusion }
+The more regular $ f  $ is, the more rapidly $ \widehat{f}  $ converges to zero at
+infinity. The more rapidly $ f $ converges, the more regular $ \widehat{f} $ is. 
+Furthermore, we realize that if $ f \in \mathscr{ C } ^{\infty}  $ and $ f  $ rapidly
+decreasing, then $ \widehat{f}  $ rapidly decreasing and $ \widehat{f} \in \mathscr{ C }
+^{\infty}   $. 
+
+\begin{defn}[Schwartz Space]
+    The vectorial space $ \mathscr{ S } \left( \mathbb{R}\right)  $ of function are those
+    function for which 
+    \[
+     f \in \mathscr{ C } _{  }^{ \infty }  
+    \]
+    \[
+     f _{  }^{ (k)  } \text{ are rapidly decreasing for all k}  
+    \]
+    \label{def:Schwartz Space}
+\end{defn}
+
+We have for $ \mathscr{ S } \left( \mathbb{R}\right) \subset \mathscr{L}^1\left( \mathbb{R}\right)   $
+\begin{enumerate}
+    \item $ \mathscr{ S }  $ stable for derivatives 
+    \item $ \mathscr{ S }  $ stable for $ \mathscr{ FT }  $
+    \item $ \mathscr{ S }  $ stable for x by a polynomial 
+\end{enumerate}
+
+$ \mathscr{ FT }  $ is a bijection from $ \mathscr{ S } \left( \mathbb{R}\right)  $ to
+itself. 
+
+\chapter{FT on $ \mathscr{L}^2(\mathbb{R} )    $}
+In signal processing, we often work with 
+\[
+\int\limits_{ }^{ } \left | f(t)  \right | ^2 \ dt = \text{ the energy of the signal} =
+\|f\|_{2} 
+\]
+$ \mathscr{L}^2(\mathbb{R})  $ is the "natural" space for signals. To define $ \mathscr{
+FT }  $ on $ \mathscr{L}^2(\mathbb{R})  $, we use the density of $ \mathscr{ S } \left(
+\mathbb{R}\right)  $ in $ \mathscr{L}^2(\mathbb{R})  $.
+\begin{ftheo}[Extension Theorem]
+    $ E, F $ vectorial spaces with norm. F is complete. Let G be a dense subspace of E.
+    Let A be a linear continuous application from G to F. Then $ \exists ! $ extension of
+    $ A : E \to F  = \overline{A} $. $ \overline{A} $ is lin and cont and $ \|
+    \overline{A} \|^{ }_{ E, F} = \| A \|^{ }_{ G, F}  $. With 
+    \[
+    \| A \|^{ }_{ G, F} = Sup \left( \frac{ \| A f \|^{ }_{ F}  }{ \| f \|^{ }_{ G}  } \right) 
+    \]
+    \label{th:Extension Theorem}
+\end{ftheo}
+
+
+\section{Properties of $ \mathscr{ FT }  $ on $ \mathscr{L}^2(\mathbb{R})  $}
+\label{sec:Properties of $ \mathscr{ FT }  $ on $ \mathscr{L}^2(\mathbb{R})  $}
+\begin{enumerate}
+    \item $ \forall f\in \mathscr{L}^2(\mathbb{R})  $. $ \mathscr{ F\overline{F} } f =
+        \mathscr{ FF } f = f $ almost everywhere.
+    \item $ \forall f,g \in \mathscr{L}^2(\mathbb{R}) \times \mathscr{L}^2(\mathbb{R})  $. 
+        \[
+            \int\limits_{ }^{ } f(t) \overline{g}(t) \ dt = \int\limits_{ }^{ } \mathscr{
+            F} f(\lambda) \overline{ \mathscr{ F } g} \left( \lambda \right) \ d\lambda 
+        \]
+        \[
+            \langle f,g \rangle _{ L^2 }^{  } = \langle \widehat{f} , \widehat{g}  \rangle
+            _{ L^2 }^{  } 
+        \]
+    \item 
+        \[
+            \| f \|^{ }_{ 2} = \| \widehat{f} \|^{ }_{ 2} 
+        \]
+        energy conservation or Parseval equality. 
+    \item Exchange property. $ f,g \in \mathscr{L}^2(\mathbb{R}) \times \mathscr{L}^2(\mathbb{R})  $
+        \[
+            \int\limits_{ }^{ } f(u) \widehat{g}(u) \ du = \int\limits_{ }^{ }
+            \widehat{f}(u) g(u) \ du 
+        \]
+\end{enumerate}
+\begin{exmp}[]
+    We can do IFT on the functions listed previously to see if we can perform the IFT. 
+\end{exmp}
+
+\section{FT and Convolution}
+\label{sec:FT and Convolution}
+\subsubsection{Part A}
+
+$ f,g \in \mathscr{L}^2\left( \mathbb{R}\right)   $. 
+Then 
+\begin{enumerate}
+    \item $\widehat{f*g} \left( \lambda \right) = \widehat{f}(\lambda) \cdot
+        \widehat{g}(\lambda)  $
+    \item $ \widehat{f \cdot g} \left( \lambda \right) = \widehat{f} * \widehat{g} \left(
+        \lambda \right)  $
+\end{enumerate}
+
+\subsubsection{Part B}
+$ f, g \in \mathscr{ S } \left( \mathbb{R}\right)  $, then 
+\begin{enumerate}
+    \item $\widehat{f*g} = \widehat{f}\cdot\widehat{g} $
+    \item $\widehat{f\cdot g} = \widehat{f} * \widehat{g}$
+\end{enumerate}
+
+\subsubsection{Part C}
+$ f,g \in \mathscr{L}^2(\mathbb{R})  $
+\begin{enumerate}
+    \item $f * g(t) = \overline{F}\left( \widehat{f} \widehat{g}\right) (t) $
+    \item $ \widehat{f\cdot g} = \widehat{f} * \widehat{g} (\lambda) $
+\end{enumerate}
+
+
+\section{Heisenberg Uncertainty Principle}
+\label{sec:Heisenberg Uncertainty Principle}
+\subsection{Exercises}
+\label{subsec:Exercises}
+
+\subsection{Interpretation of Heisenberg's Uncertainty Principle}
+\label{subsec:Interpretation of Heisenberg's Uncertainty Principle}
+Let $ f(t)  $ be our signal and $ \widehat{f}(\lambda) $ be its frequential
+representation. We say that 
+\[
+    \int\limits_{ }^{ } \left | f(t) \right | \ dt = \int\limits_{ }^{ } \left |
+    \widehat{f}(\lambda) \right |^2 \ dt
+\] is the energy of the signal and $ \left | f(t)  \right | ^2 $ is the local density. 
+\begin{itemize}
+  \item We can view a signal as its density of energy. 
+  \item We can summarize $ f(t)  $ by the box there is between time and frequency
+      accuracy. 
+      \[
+          \mu_N : \sigma_t\sigma_{\epsilon} > \frac{ 1 }{ 4\pi } 
+      \]
+\end{itemize}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{heisunbox}
+    \caption{heisUnBox}
+    \label{fig:heisunbox}
+\end{figure}
+
+\section{Conclusion About Fourier Transform}
+\label{sec:Conclusion About Fourier Transform}
+Very useful because  : 
+\begin{enumerate}
+    \item Transform Convolution into product
+    \item Transforms derivative into polynomial
+    \item Easy to compute using the FFT algorithm
+\end{enumerate}
+But, this is a tool adopted for the use of "regular" signals, stationary signals. The tool
+is not performed for iregular sizes. Example : 
+Show $ \delta_0  $ and its fourier Transform. 
+
+Consider 
+\[
+    f(t) = \left( \sin(2\pi 5t) + \sin(2\pi 20t) \right) \mathbbm{1}_{[0,1[} \text{ and } 
+    g(t) = \sin(2\pi 5t) \mathbbm{1}_{[0,\alpha[} + \sin(2\pi 20t)\mathbbm{1}_{[\alpha,1[} 
+\]
+
+Use graphs from python to explain! 
+
+To correct these drawbacks. We use 
+\begin{itemize}
+  \item Window Fourier Transform
+  \item Gabor Transform
+  \item Continuous Wavelet Transform and Discrete Wavelet Transform
+\end{itemize}
+
+
+

@@ -1,0 +1,83 @@
+\BOOKMARK [0][-]{chapter.1}{Sources / References}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Bremaud, Mathematical Principles of Sig- nal Processing : Fourier and Wavelet Anal- ysis}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Boggess and Narcowich, A First Course in Wavelets with Fourier Analysis}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Kaiser, A Friendly Guide to Wavelets}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Sidney Burrus and Guo, Introduction to Wavelets and Wavelet Transforms}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Mallat, A Wavelet Tour of Signal Processing}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{Stein and Shakarchi, Fourier Analysis : An Introduction}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.7}{James, A Student\220s Guide to Fourier Trans- forms }{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.8}{Gasquet and Witomski, Analyse De Fourier et Applications : Filtrage, calcul numerique et ondelettes}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Introduction}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Riemann Integral}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.1.1}{Basic Definitions}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.2}{Inequalities with Riemann sums}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.3}{Riemann Integral}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.4}{Continuity and Riemann Integration}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.5}{Exercises}{section.2.1}% 16
+\BOOKMARK [1][-]{section.2.2}{Riemann Integral Is Not Good Enough}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.3}{Measure Theory}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.4}{Lebesgue Measure}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.5}{Convergence of Measurable Functions}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.6}{Integration with respect to measure}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.7}{Limits of Integrals and Integrals of Limits}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.8}{LP theory}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.9}{Inner Product Spaces}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.9.1}{Definition of Inner Product}{section.2.9}% 25
+\BOOKMARK [2][-]{subsection.2.9.2}{ \040 L \0402 \040and \040 L \0401 \040Spaces}{section.2.9}% 26
+\BOOKMARK [2][-]{subsection.2.9.3}{Orthogonality}{section.2.9}% 27
+\BOOKMARK [2][-]{subsection.2.9.4}{Orthogonal Projections}{section.2.9}% 28
+\BOOKMARK [0][-]{chapter.3}{Fourier Series}{}% 29
+\BOOKMARK [1][-]{section.3.1}{Trigonometric Polynomials}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.1.1}{Orthogonality}{section.3.1}% 31
+\BOOKMARK [2][-]{subsection.3.1.2}{Calculating Fourier Coefficients}{section.3.1}% 32
+\BOOKMARK [1][-]{section.3.2}{Need to check these!!!}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.3}{Fourier Series}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.4}{Pointwise representation of periodic function by its Fourier Series}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.5}{Exercises 1 : Fourier Series}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.5.1}{Speed of convergence of Fourier coefficients and functional regularity}{section.3.5}% 37
+\BOOKMARK [2][-]{subsection.3.5.2}{Fourier series convergence}{section.3.5}% 38
+\BOOKMARK [0][-]{chapter.4}{Discrete Fourier Transform}{}% 39
+\BOOKMARK [1][-]{subsection.4.0.1}{DFT}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.1}{Properties of DFT}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.2}{FFT : Pease algorithm}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.2.1}{Visual Representation of the Algorithm and Computation}{section.4.2}% 43
+\BOOKMARK [1][-]{section.4.3}{Exercises FFT: Pease Algorithm}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.3.1}{Solutions}{section.4.3}% 45
+\BOOKMARK [1][-]{section.4.4}{Exercises : Circular Convolution and DFT}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.4.1}{Solutions}{section.4.4}% 47
+\BOOKMARK [1][-]{section.4.5}{Approximation Error}{chapter.4}% 48
+\BOOKMARK [0][-]{chapter.5}{Fourier Transform}{}% 49
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 50
+\BOOKMARK [2][-]{subsection.5.1.1}{Non-rigorous development of the \040 FT \040}{section.5.1}% 51
+\BOOKMARK [1][-]{section.5.2}{Fourier Transform in \040 L \0401\( R\) }{chapter.5}% 52
+\BOOKMARK [1][-]{section.5.3}{Link Between DFT and \040 FT \040}{chapter.5}% 53
+\BOOKMARK [2][-]{subsection.5.3.1}{Comparison with Fourier series}{section.5.3}% 54
+\BOOKMARK [1][-]{section.5.4}{Properties of \040 FT \040 on \040 L \040\( R\) \040}{chapter.5}% 55
+\BOOKMARK [2][-]{subsection.5.4.1}{FT and Derivation}{section.5.4}% 56
+\BOOKMARK [2][-]{subsection.5.4.2}{Notations}{section.5.4}% 57
+\BOOKMARK [2][-]{subsection.5.4.3}{Properties}{section.5.4}% 58
+\BOOKMARK [2][-]{subsection.5.4.4}{Usual examples}{section.5.4}% 59
+\BOOKMARK [2][-]{subsection.5.4.5}{Inverse of FT}{section.5.4}% 60
+\BOOKMARK [1][-]{section.5.5}{FT on \040 S \040\( R\) \040}{chapter.5}% 61
+\BOOKMARK [0][-]{chapter.6}{FT on \040L2\(R \) }{}% 62
+\BOOKMARK [1][-]{section.6.1}{Properties of \040 FT \040 on \040L2\(R\) }{chapter.6}% 63
+\BOOKMARK [1][-]{section.6.2}{FT and Convolution}{chapter.6}% 64
+\BOOKMARK [1][-]{section.6.3}{Heisenberg Uncertainty Principle}{chapter.6}% 65
+\BOOKMARK [2][-]{subsection.6.3.1}{Exercises}{section.6.3}% 66
+\BOOKMARK [2][-]{subsection.6.3.2}{Interpretation of Heisenberg's Uncertainty Principle}{section.6.3}% 67
+\BOOKMARK [1][-]{section.6.4}{Conclusion About Fourier Transform}{chapter.6}% 68
+\BOOKMARK [0][-]{chapter.7}{Window Fourier Transform}{}% 69
+\BOOKMARK [1][-]{section.7.1}{Exercises : Atoms}{chapter.7}% 70
+\BOOKMARK [0][-]{chapter.8}{Continuous Wavelet Transform}{}% 71
+\BOOKMARK [1][-]{subsection.8.0.1}{Problem ##?}{chapter.8}% 72
+\BOOKMARK [1][-]{section.8.1}{Random Discussion}{chapter.8}% 73
+\BOOKMARK [1][-]{section.8.2}{Intro}{chapter.8}% 74
+\BOOKMARK [1][-]{section.8.3}{Definition and reconstruction theroem}{chapter.8}% 75
+\BOOKMARK [1][-]{section.8.4}{Properties Or how to choose \040 }{chapter.8}% 76
+\BOOKMARK [2][-]{subsection.8.4.1}{Properties of \040}{section.8.4}% 77
+\BOOKMARK [2][-]{subsection.8.4.2}{Include Figures for Analytic vs. Non-analytic Functions}{section.8.4}% 78
+\BOOKMARK [2][-]{subsection.8.4.3}{Insert image of Haar wavelet reconstruction}{section.8.4}% 79
+\BOOKMARK [2][-]{subsection.8.4.4}{Insert image on convolve with \040a }{section.8.4}% 80
+\BOOKMARK [0][-]{chapter.9}{End of FT Lecture, FT of distributions}{}% 81
+\BOOKMARK [1][-]{subsection.9.0.1}{FT of distribution}{chapter.9}% 82
+\BOOKMARK [2][-]{subsection.9.0.2}{Sawtooth}{subsection.9.0.1}% 83

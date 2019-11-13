@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+   sodipodi:docname="convergencel2.svg">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect17"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect28"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect22"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect18"
+       is_visible="true" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8125141"
+     inkscape:cx="466.27768"
+     inkscape:cy="264.06395"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="3840"
+     inkscape:window-height="2049"
+     inkscape:window-x="0"
+     inkscape:window-y="55"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 16.145385,185.805 0.03527,98.40099"
+       id="path8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 5.0799745,279.54936 226.9996055,-0.047"
+       id="path10"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 16.46288,279.50231 c 9.68923,-20.05145 25.097802,-37.29984 43.934087,-49.17992 18.836284,-11.88008 41.040323,-18.35402 63.309823,-18.459 22.45766,-0.10587 44.9089,6.26826 63.96059,18.15904 19.05169,11.89078 34.64112,29.25906 44.4122,49.47993"
+       id="path16"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect18"
+       inkscape:original-d="m 16.46288,279.50231 c 35.748235,-22.54657 71.496202,-45.09288 107.24391,-67.63892 35.7477,-22.54604 72.24879,45.09238 108.37279,67.63897" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 16.46288,279.50231 c 3.669148,-3.38691 7.338018,-6.77356 9.893518,-12.68422 2.555499,-5.91067 3.998069,-14.34657 8.670366,-18.84627 4.672297,-4.4997 12.57476,-5.06417 18.469913,-9.03095 5.895154,-3.96679 9.783668,-11.33615 14.111024,-16.49439 4.327356,-5.15825 9.093955,-8.10601 11.398603,6.42833 2.304649,14.53434 2.14786,46.5504 2.477124,46.53472 0.329263,-0.0157 1.144559,-32.06311 3.527876,-48.24364 2.383317,-16.18054 6.334448,-16.49412 11.04215,-14.96468 4.707706,1.52944 10.218436,4.93035 16.490076,4.58532 6.27165,-0.34502 13.32727,-4.4216 17.62319,-6.25593 4.29593,-1.83433 5.83254,-1.42665 10.09669,3.00994 4.26415,4.4366 11.25777,12.90421 14.84827,3.76325 3.59049,-9.14095 3.77864,-35.88915 4.13926,-35.88915 0.36061,1e-5 0.89369,26.74826 5.34667,38.55456 4.45297,11.80631 12.82552,8.67053 19.33214,7.76121 6.50661,-0.90931 11.14772,0.40776 13.32702,5.62851 2.17929,5.22075 1.89706,14.34624 6.72643,19.37934 4.82937,5.0331 14.76952,5.97381 20.30404,9.75224 5.53451,3.77843 6.66342,10.39512 7.79234,17.01186"
+       id="path26"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect28"
+       inkscape:original-d="m 16.46288,279.50231 c 3.669135,-3.38692 7.338006,-6.77357 11.006611,-10.15995 1.44262,-8.4349 2.885189,-16.8708 4.327387,-25.3058 7.902165,-0.56469 15.804629,-1.12915 23.706548,-1.69333 3.888502,-7.3691 7.777017,-14.73846 11.665127,-22.10729 4.766459,-2.94778 9.533055,-5.89555 14.299188,-8.84292 -0.156525,32.01613 -0.313313,64.03219 -0.470369,96.04915 0.815577,-32.04832 1.630873,-64.09574 2.445913,-96.14322 3.951317,-0.31384 7.902448,-0.62742 11.853275,-0.94074 5.45614,3.38614 10.97552,6.77304 16.46288,10.15995 7.05569,-4.07673 14.11131,-8.15331 21.16656,-12.22957 1.53673,0.40737 3.07334,0.81504 4.60961,1.22296 6.99224,8.46535 13.98586,16.93296 20.97841,25.39987 0.18842,-26.74858 0.37657,-53.49678 0.56445,-80.24478 0.53335,26.748 1.06643,53.49625 1.59925,80.24478 8.37281,-3.13605 16.74536,-6.27184 25.11764,-9.40736 4.64109,1.31672 9.2822,2.6338 13.9229,3.95109 -0.28195,9.12453 -0.56418,18.25002 -0.84666,27.37542 9.941,0.9405 19.88115,1.88121 29.82133,2.82221 1.12912,6.6161 2.25803,13.23279 3.38665,19.84958"
+       sodipodi:nodetypes="cccccccccccccccccccc" />
+  </g>
+</svg>

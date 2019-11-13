@@ -1,0 +1,124 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Intro and Basics}{5}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Class notes}{5}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Techniques : Change of Variables}{11}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.1}Change of Variables for ODE's}{11}{subsection.1.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}Change of Variables for PDE}{11}{subsection.1.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.3}Chain Rule}{13}{subsection.1.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Problem Set 1}{14}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Solutions to Problem Set 1}{17}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.1}Exercise 1}{17}{subsection.1.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.2}Exercise 2 : Change of variables }{17}{subsection.1.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1}{17}{section*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2}{18}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.3}{18}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{3}{19}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exercise 4}{20}{section*.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.3}Fourier Transform}{22}{subsection.1.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.4}Partial Differential Operators}{23}{subsection.1.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.5}Proof of the basic Green Formula in the 2D case}{23}{subsection.1.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{7.1}{24}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.6}Green Formulas}{26}{subsection.1.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.7}Boundary conditions and well-posedness}{27}{subsection.1.4.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{9.1}{27}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{9.2}{28}{section*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Finite Differences}{31}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Class notes}{31}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Building a Finite Difference Scheme}{44}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Exercise sheet 2}{48}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}1D schemes}{48}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{1.1}{48}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{1.2}{49}{section*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{1.3}{49}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Transfer Functions }{50}{subsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1}{50}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2}{50}{section*.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}Excercise 3 : Equivalent differential equation}{51}{subsection.2.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{3.1}{51}{section*.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.4}Compact Finite Differences}{52}{subsection.2.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{1.a}{52}{section*.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.5}Shooting method}{53}{subsection.2.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.6}2D Laplacian}{53}{subsection.2.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{a)}{53}{section*.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{b)}{53}{section*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{c)}{54}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.7}Exercise 7 : 2D Taylor Formula}{54}{subsection.2.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Laplace and Poisson Equations}{55}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Class notes}{55}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Exercises}{62}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Solutions}{67}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{E1 : A property of harmonic functions}{67}{section*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}E2 : Laplace equation on a rectangle}{67}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}E3 : Laplace equation on a disk}{67}{subsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}E4 : 1D and 2D Laplacian matrices}{67}{subsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.4}E5 : 9-point 2D laplacian - Fourth order scheme }{67}{subsection.3.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Class notes}{69}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Ordinary Differential Equations}{79}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Elementary Integration Methods}{79}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}First Order Equations}{79}{subsection.5.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Seperable Variables}{79}{section*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Inhomogeneous Linear Equation}{79}{section*.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}Linear Differential Equations}{80}{subsection.5.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Equations with Constant Coefficients}{80}{section*.24}

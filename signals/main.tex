@@ -1,0 +1,77 @@
+\documentclass[12pt]{book}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{bbm}
+\usepackage[utf8]{inputenc}
+\usepackage{framed,enumitem} 
+\usepackage{pdfpages} 
+\usepackage[english]{babel}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+%\newenvironment{proof}{\paragraph{Proof:}}{\hfill$\square$}
+\usepackage{mathrsfs}
+\usepackage{subfigure} 
+\usepackage{commath}
+\usepackage{empheq,mathtools}
+\usepackage[backend=biber, style=authortitle]{biblatex}
+\addbibresource{References/references.bib}
+\usepackage{mdframed}
+\usepackage{multicol}
+\usepackage{enumitem}
+%\usepackage{unicode-math}
+\usepackage[makeroom]{cancel}
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{transparent}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage[bookmarks]{hyperref}
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+\pdfsuppresswarningpagegroup=1
+
+
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{2}
+
+\newtheorem{theo}{Theorem}[section] % reset theorem numbering for each chapter
+\newtheorem{defn}[theo]{Definition} % definition numbers are dependent on theorem numbers
+\newtheorem{exmp}[theo]{Example} % same for example numbers
+\newtheorem{cor}[theo]{Corollary} % same for corollary numbers
+\newtheorem{prop}[theo]{Proposition} % same 
+
+%make ftheo be framed theorems
+\newenvironment{ftheo}
+  {\begin{mdframed}\begin{theo}}
+  {\end{theo}\end{mdframed}}
+\newcommand{\qed}{\rule{2mm}{2mm}}
+
+
+
+\title{Fourier Analysis and Signal Processing}
+\author{Joel Andrepont, Lecturer : Cecil Amblard}
+\date{Fall 2019}
+\begin{document}
+\maketitle
+\tableofcontents
+\include{chapters/reference} 
+\include{chapters/intro}
+\include{chapters/lecture1} 
+\include{chapters/lecture2}
+\include{chapters/lecture3}
+\include{chapters/lecture4}
+\include{chapters/lecture5}
+\include{chapters/lecture6}
+\include{chapters/lecture7}
+
+
+
+
+
+\printbibliography
+
+\end{document}

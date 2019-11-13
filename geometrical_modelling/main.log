@@ -1,0 +1,2638 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.17)  10 NOV 2019 17:49
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count88
+\mult@box=\box26
+\multicol@leftmargin=\dimen103
+\c@unbalance=\count89
+\c@collectmore=\count90
+\doublecol@number=\count91
+\multicoltolerance=\count92
+\multicolpretolerance=\count93
+\full@width=\dimen104
+\page@free=\dimen105
+\premulticols=\dimen106
+\postmulticols=\dimen107
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\maxbalancingoverflow=\dimen108
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count94
+\c@finalcolumnbadness=\count95
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\mc@col@check@num=\count96
+) (/usr/share/texlive/texmf-dist/tex/latex/esvect/esvect.sty
+Package: esvect 
+\symesvector=\mathgroup4
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen112
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen113
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count97
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count98
+\leftroot@=\count99
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count100
+\DOTSCASE@=\count101
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+\big@size=\dimen114
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count102
+\c@MaxMatrixCols=\count103
+\dotsspace@=\muskip10
+\c@parentequation=\count104
+\dspbrk@lvl=\count105
+\tag@help=\toks15
+\row@=\count106
+\column@=\count107
+\maxfields@=\count108
+\andhelp@=\toks16
+\eqnshift@=\dimen115
+\alignsep@=\dimen116
+\tagshift@=\dimen117
+\tagwidth@=\dimen118
+\totwidth@=\dimen119
+\lineht@=\dimen120
+\@envbody=\toks17
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks24
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks26
+\inpenc@posthook=\toks27
+ (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+)) (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip51
+\fb@frw=\dimen123
+\fb@frh=\dimen124
+\FrameRule=\dimen125
+\FrameSep=\dimen126
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip52
+\enit@outerparindent=\dimen127
+\enit@toks=\toks28
+\enit@inbox=\box54
+\enitdp@description=\count109
+) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count110
+\calc@Bcount=\count111
+\calc@Adimen=\dimen128
+\calc@Bdimen=\dimen129
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count112
+\calc@Cskip=\skip55
+) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)))
+\AM@pagewidth=\dimen130
+\AM@pageheight=\dimen131
+ (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box55
+\AM@global@opts=\toks29
+\AM@toc@title=\toks30
+\c@AM@survey=\count113
+\AM@templatesizebox=\box56
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/02/14 3.18 The Babel package
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+) (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count114
+\U@D=\dimen132
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count115
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count116
+\Gm@cntv=\count117
+\c@Gm@tempcnt=\count118
+\Gm@bindingoffset=\dimen133
+\Gm@wd@mp=\dimen134
+\Gm@odd@mp=\dimen135
+\Gm@even@mp=\dimen136
+\Gm@layoutwidth=\dimen137
+\Gm@layoutheight=\dimen138
+\Gm@layouthoffset=\dimen139
+\Gm@layoutvoffset=\dimen140
+\Gm@dimlist=\toks31
+) (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup5
+) (/usr/share/texlive/texmf-dist/tex/latex/commath/commath.sty) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/empheq.sty
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+ (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count119
+\l_MT_multwidth_dim=\dimen141
+\origjot=\skip56
+\l_MT_shortvdotswithinadjustabove_dim=\dimen142
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen143
+\l_MT_above_intertext_sep=\dimen144
+\l_MT_below_intertext_sep=\dimen145
+\l_MT_above_shortintertext_sep=\dimen146
+\l_MT_below_shortintertext_sep=\dimen147
+)
+\l_EQ_equationtype_int=\count120
+\l_EQ_alignmentmode_int=\count121
+\l_EQ_totalwidth_dim=\dimen148
+\l_EQ_displaywidth_dim=\dimen149
+\l_EQ_temp_linewidth_dim=\dimen150
+\EmphEqdelimitershortfall=\dimen151
+\EmphEqdelimiterfactor=\count122
+\g_EQ_toptag_height_dim=\dimen152
+\g_EQ_bottomtag_depth_dim=\dimen153
+\g_EQ_toprow_height_dim=\dimen154
+\g_EQ_bottomrow_depth_dim=\dimen155
+\g_EQ_widesttag_dim=\dimen156
+\EQ_mathdisplay_box=\box57
+\EQ_tag_box=\box58
+\g_EQ_temprow_int=\count123
+) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2017/12/19 v3.10 programmable bibliographies (PK/JW/AB)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count124
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))) (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count125
+ (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write3
+\integerpart=\count126
+\decimalpart=\count127
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count128
+\c@listtotal=\count129
+\c@listcount=\count130
+\c@liststart=\count131
+\c@liststop=\count132
+\c@citecount=\count133
+\c@citetotal=\count134
+\c@multicitecount=\count135
+\c@multicitetotal=\count136
+\c@instcount=\count137
+\c@maxnames=\count138
+\c@minnames=\count139
+\c@maxitems=\count140
+\c@minitems=\count141
+\c@citecounter=\count142
+\c@savedcitecounter=\count143
+\c@uniquelist=\count144
+\c@uniquename=\count145
+\c@refsection=\count146
+\c@refsegment=\count147
+\c@maxextratitle=\count148
+\c@maxextratitleyear=\count149
+\c@maxextradate=\count150
+\c@maxextraalpha=\count151
+\c@abbrvpenalty=\count152
+\c@highnamepenalty=\count153
+\c@lownamepenalty=\count154
+\c@maxparens=\count155
+\c@parenlevel=\count156
+\blx@tempcnta=\count157
+\blx@tempcntb=\count158
+\blx@tempcntc=\count159
+\blx@maxsection=\count160
+\blx@maxsegment@0=\count161
+\blx@notetype=\count162
+\blx@parenlevel@text=\count163
+\blx@parenlevel@foot=\count164
+\blx@sectionciteorder@0=\count165
+\labelnumberwidth=\skip57
+\labelalphawidth=\skip58
+\biblabelsep=\skip59
+\bibitemsep=\skip60
+\bibnamesep=\skip61
+\bibinitsep=\skip62
+\bibparsep=\skip63
+\bibhang=\skip64
+\blx@bcfin=\read1
+\blx@bcfout=\write4
+\c@mincomprange=\count166
+\c@maxcomprange=\count167
+\c@mincompwidth=\count168
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'authortitle.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count169
+\c@savedafterword=\count170
+\c@annotator=\count171
+\c@savedannotator=\count172
+\c@author=\count173
+\c@savedauthor=\count174
+\c@bookauthor=\count175
+\c@savedbookauthor=\count176
+\c@commentator=\count177
+\c@savedcommentator=\count178
+\c@editor=\count179
+\c@savededitor=\count180
+\c@editora=\count181
+\c@savededitora=\count182
+\c@editorb=\count183
+\c@savededitorb=\count184
+\c@editorc=\count185
+\c@savededitorc=\count186
+\c@foreword=\count187
+\c@savedforeword=\count188
+\c@holder=\count189
+\c@savedholder=\count190
+\c@introduction=\count191
+\c@savedintroduction=\count192
+\c@namea=\count193
+\c@savednamea=\count194
+\c@nameb=\count195
+\c@savednameb=\count196
+\c@namec=\count197
+\c@savednamec=\count198
+\c@translator=\count199
+\c@savedtranslator=\count266
+\c@shortauthor=\count267
+\c@savedshortauthor=\count268
+\c@shorteditor=\count269
+\c@savedshorteditor=\count270
+\c@labelname=\count271
+\c@savedlabelname=\count272
+\c@institution=\count273
+\c@savedinstitution=\count274
+\c@lista=\count275
+\c@savedlista=\count276
+\c@listb=\count277
+\c@savedlistb=\count278
+\c@listc=\count279
+\c@savedlistc=\count280
+\c@listd=\count281
+\c@savedlistd=\count282
+\c@liste=\count283
+\c@savedliste=\count284
+\c@listf=\count285
+\c@savedlistf=\count286
+\c@location=\count287
+\c@savedlocation=\count288
+\c@organization=\count289
+\c@savedorganization=\count290
+\c@origlocation=\count291
+\c@savedoriglocation=\count292
+\c@origpublisher=\count293
+\c@savedorigpublisher=\count294
+\c@publisher=\count295
+\c@savedpublisher=\count296
+\c@language=\count297
+\c@savedlanguage=\count298
+\c@origlanguage=\count299
+\c@savedoriglanguage=\count300
+\c@pageref=\count301
+\c@savedpageref=\count302
+\shorthandwidth=\skip65
+\shortjournalwidth=\skip66
+\shortserieswidth=\skip67
+\shorttitlewidth=\skip68
+\shortauthorwidth=\skip69
+\shorteditorwidth=\skip70
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count303
+\c@textcitetotal=\count304
+\c@textcitemaxnames=\count305
+\c@biburlnumpenalty=\count306
+\c@biburlucpenalty=\count307
+\c@biburllcpenalty=\count308
+\c@smartand=\count309
+)
+Package biblatex Info: Trying to load bibliography style 'authortitle'...
+Package biblatex Info: ... file 'authortitle.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/authortitle.bbx
+File: authortitle.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count310
+\c@bbx:relatedtotal=\count311
+))
+Package biblatex Info: Trying to load citation style 'authortitle'...
+Package biblatex Info: ... file 'authortitle.cbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/authortitle.cbx
+File: authortitle.cbx 2017/12/19 v3.10 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)) (/usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+ (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018/02/21 L3 programming layer (loader) 
+ (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018/02/21 L3 programming layer (code)
+\c_max_int=\count312
+\l_tmpa_int=\count313
+\l_tmpb_int=\count314
+\g_tmpa_int=\count315
+\g_tmpb_int=\count316
+\g__intarray_font_int=\count317
+\g__prg_map_int=\count318
+\c_log_iow=\count319
+\l_iow_line_count_int=\count320
+\l__iow_line_target_int=\count321
+\l__iow_one_indent_int=\count322
+\l__iow_indent_int=\count323
+\c_zero_dim=\dimen157
+\c_max_dim=\dimen158
+\l_tmpa_dim=\dimen159
+\l_tmpb_dim=\dimen160
+\g_tmpa_dim=\dimen161
+\g_tmpb_dim=\dimen162
+\c_zero_skip=\skip71
+\c_max_skip=\skip72
+\l_tmpa_skip=\skip73
+\l_tmpb_skip=\skip74
+\g_tmpa_skip=\skip75
+\g_tmpb_skip=\skip76
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count324
+\c__fp_leading_shift_int=\count325
+\c__fp_middle_shift_int=\count326
+\c__fp_trailing_shift_int=\count327
+\c__fp_big_leading_shift_int=\count328
+\c__fp_big_middle_shift_int=\count329
+\c__fp_big_trailing_shift_int=\count330
+\c__fp_Bigg_leading_shift_int=\count331
+\c__fp_Bigg_middle_shift_int=\count332
+\c__fp_Bigg_trailing_shift_int=\count333
+\c__fp_rand_size_int=\count334
+\c__fp_rand_four_int=\count335
+\c__fp_rand_eight_int=\count336
+\l__sort_length_int=\count337
+\l__sort_min_int=\count338
+\l__sort_top_int=\count339
+\l__sort_max_int=\count340
+\l__sort_true_max_int=\count341
+\l__sort_block_int=\count342
+\l__sort_begin_int=\count343
+\l__sort_end_int=\count344
+\l__sort_A_int=\count345
+\l__sort_B_int=\count346
+\l__sort_C_int=\count347
+\l__tl_build_start_index_int=\count348
+\l__tl_build_index_int=\count349
+\l__tl_analysis_normal_int=\count350
+\l__tl_analysis_index_int=\count351
+\l__tl_analysis_nesting_int=\count352
+\l__tl_analysis_type_int=\count353
+\l__regex_internal_a_int=\count354
+\l__regex_internal_b_int=\count355
+\l__regex_internal_c_int=\count356
+\l__regex_balance_int=\count357
+\l__regex_group_level_int=\count358
+\l__regex_mode_int=\count359
+\c__regex_cs_in_class_mode_int=\count360
+\c__regex_cs_mode_int=\count361
+\l__regex_catcodes_int=\count362
+\l__regex_default_catcodes_int=\count363
+\c__regex_catcode_D_int=\count364
+\c__regex_catcode_S_int=\count365
+\c__regex_catcode_L_int=\count366
+\c__regex_catcode_O_int=\count367
+\c__regex_catcode_A_int=\count368
+\c__regex_all_catcodes_int=\count369
+\l__regex_show_lines_int=\count370
+\l__regex_min_state_int=\count371
+\l__regex_max_state_int=\count372
+\l__regex_left_state_int=\count373
+\l__regex_right_state_int=\count374
+\l__regex_capturing_group_int=\count375
+\l__regex_min_pos_int=\count376
+\l__regex_max_pos_int=\count377
+\l__regex_curr_pos_int=\count378
+\l__regex_start_pos_int=\count379
+\l__regex_success_pos_int=\count380
+\l__regex_curr_char_int=\count381
+\l__regex_curr_catcode_int=\count382
+\l__regex_last_char_int=\count383
+\l__regex_case_changed_char_int=\count384
+\l__regex_curr_state_int=\count385
+\l__regex_step_int=\count386
+\l__regex_min_active_int=\count387
+\l__regex_max_active_int=\count388
+\l__regex_replacement_csnames_int=\count389
+\l__regex_match_count_int=\count390
+\l__regex_min_submatch_int=\count391
+\l__regex_submatch_int=\count392
+\l__regex_zeroth_submatch_int=\count393
+\g__regex_trace_regex_int=\count394
+\c_empty_box=\box59
+\l_tmpa_box=\box60
+\l_tmpb_box=\box61
+\g_tmpa_box=\box62
+\g_tmpb_box=\box63
+\l__box_top_dim=\dimen163
+\l__box_bottom_dim=\dimen164
+\l__box_left_dim=\dimen165
+\l__box_right_dim=\dimen166
+\l__box_top_new_dim=\dimen167
+\l__box_bottom_new_dim=\dimen168
+\l__box_left_new_dim=\dimen169
+\l__box_right_new_dim=\dimen170
+\l__box_internal_box=\box64
+\l__coffin_internal_box=\box65
+\l__coffin_internal_dim=\dimen171
+\l__coffin_offset_x_dim=\dimen172
+\l__coffin_offset_y_dim=\dimen173
+\l__coffin_x_dim=\dimen174
+\l__coffin_y_dim=\dimen175
+\l__coffin_x_prime_dim=\dimen176
+\l__coffin_y_prime_dim=\dimen177
+\c_empty_coffin=\box66
+\l__coffin_aligned_coffin=\box67
+\l__coffin_aligned_internal_coffin=\box68
+\l_tmpa_coffin=\box69
+\l_tmpb_coffin=\box70
+\l__coffin_display_coffin=\box71
+\l__coffin_display_coord_coffin=\box72
+\l__coffin_display_pole_coffin=\box73
+\l__coffin_display_offset_dim=\dimen178
+\l__coffin_display_x_dim=\dimen179
+\l__coffin_display_y_dim=\dimen180
+\l__coffin_bounding_shift_dim=\dimen181
+\l__coffin_left_corner_dim=\dimen182
+\l__coffin_right_corner_dim=\dimen183
+\l__coffin_bottom_corner_dim=\dimen184
+\l__coffin_top_corner_dim=\dimen185
+\l__coffin_scaled_total_height_dim=\dimen186
+\l__coffin_scaled_width_dim=\dimen187
+) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count395
+\l__driver_tmp_box=\box74
+))
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count396
+\g__xparse_grabber_int=\count397
+\l__xparse_m_args_int=\count398
+\l__xparse_mandatory_args_int=\count399
+\l__xparse_v_nesting_int=\count400
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+Package: zref-abspage 2016/05/21 v2.26 Module abspage for zref (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty
+Package: zref-base 2016/05/21 v2.26 Module base for zref (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count401
+Package zref Info: New property: abspage on input line 62.
+) (/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip77
+\c@mdf@globalstyle@cnt=\count402
+\mdf@skipabove@length=\skip78
+\mdf@skipbelow@length=\skip79
+\mdf@leftmargin@length=\skip80
+\mdf@rightmargin@length=\skip81
+\mdf@innerleftmargin@length=\skip82
+\mdf@innerrightmargin@length=\skip83
+\mdf@innertopmargin@length=\skip84
+\mdf@innerbottommargin@length=\skip85
+\mdf@splittopskip@length=\skip86
+\mdf@splitbottomskip@length=\skip87
+\mdf@outermargin@length=\skip88
+\mdf@innermargin@length=\skip89
+\mdf@linewidth@length=\skip90
+\mdf@innerlinewidth@length=\skip91
+\mdf@middlelinewidth@length=\skip92
+\mdf@outerlinewidth@length=\skip93
+\mdf@roundcorner@length=\skip94
+\mdf@footenotedistance@length=\skip95
+\mdf@userdefinedwidth@length=\skip96
+\mdf@needspace@length=\skip97
+\mdf@frametitleaboveskip@length=\skip98
+\mdf@frametitlebelowskip@length=\skip99
+\mdf@frametitlerulewidth@length=\skip100
+\mdf@frametitleleftmargin@length=\skip101
+\mdf@frametitlerightmargin@length=\skip102
+\mdf@shadowsize@length=\skip103
+\mdf@extratopheight@length=\skip104
+\mdf@subtitleabovelinewidth@length=\skip105
+\mdf@subtitlebelowlinewidth@length=\skip106
+\mdf@subtitleaboveskip@length=\skip107
+\mdf@subtitlebelowskip@length=\skip108
+\mdf@subtitleinneraboveskip@length=\skip109
+\mdf@subtitleinnerbelowskip@length=\skip110
+\mdf@subsubtitleabovelinewidth@length=\skip111
+\mdf@subsubtitlebelowlinewidth@length=\skip112
+\mdf@subsubtitleaboveskip@length=\skip113
+\mdf@subsubtitlebelowskip@length=\skip114
+\mdf@subsubtitleinneraboveskip@length=\skip115
+\mdf@subsubtitleinnerbelowskip@length=\skip116
+ (/usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box75
+\mdf@footnotebox=\box76
+\mdf@splitbox@one=\box77
+\mdf@splitbox@two=\box78
+\mdf@splitbox@save=\box79
+\mdfsplitboxwidth=\skip117
+\mdfsplitboxtotalwidth=\skip118
+\mdfsplitboxheight=\skip119
+\mdfsplitboxdepth=\skip120
+\mdfsplitboxtotalheight=\skip121
+\mdfframetitleboxwidth=\skip122
+\mdfframetitleboxtotalwidth=\skip123
+\mdfframetitleboxheight=\skip124
+\mdfframetitleboxdepth=\skip125
+\mdfframetitleboxtotalheight=\skip126
+\mdffootnoteboxwidth=\skip127
+\mdffootnoteboxtotalwidth=\skip128
+\mdffootnoteboxheight=\skip129
+\mdffootnoteboxdepth=\skip130
+\mdffootnoteboxtotalheight=\skip131
+\mdftotallinewidth=\skip132
+\mdfboundingboxwidth=\skip133
+\mdfboundingboxtotalwidth=\skip134
+\mdfboundingboxheight=\skip135
+\mdfboundingboxdepth=\skip136
+\mdfboundingboxtotalheight=\skip137
+\mdf@freevspace@length=\skip138
+\mdf@horizontalwidthofbox@length=\skip139
+\mdf@verticalmarginwhole@length=\skip140
+\mdf@horizontalspaceofbox=\skip141
+\mdfsubtitleheight=\skip142
+\mdfsubsubtitleheight=\skip143
+\c@mdfcountframes=\count403
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newmdtheoremenv with sig. 'O{} m o m o ' on line 601.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \mdtheorem with sig. ' O{} m o m o ' on line 701.
+.................................................
+\mdf@envdepth=\count404
+\c@mdf@env@i=\count405
+\c@mdf@env@ii=\count406
+\c@mdf@zref@counter=\count407
+Package zref Info: New property: mdf@pagevalue on input line 895.
+) (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (/usr/share/texlive/texmf-dist/tex/latex/import/import.sty
+Package: import 2009/03/23  v 5.1
+) (/usr/share/texlive/texmf-dist/tex/latex/xifthen/xifthen.sty
+Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
+ (/usr/share/texlive/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
+)) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/transparent.sty
+Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen188
+\extrarowheight=\dimen189
+\NC@list=\toks32
+\extratabsurround=\skip144
+\backup@length=\skip145
+)
+\TX@col@width=\dimen190
+\TX@old@table=\dimen191
+\TX@old@col=\dimen192
+\TX@target=\dimen193
+\TX@delta=\dimen194
+\TX@cols=\count408
+\TX@ftn=\toks33
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+\@linkdim=\dimen195
+\Hy@linkcounter=\count409
+\Hy@pagecounter=\count410
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count411
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count412
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen196
+\Fld@menulength=\count413
+\Field@Width=\dimen197
+\Fld@charsize=\dimen198
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count414
+\c@Item=\count415
+\c@Hfootnote=\count416
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\HyAnn@Count=\count417
+\Fld@listcount=\count418
+\c@bookmark@seq@number=\count419
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+)
+\Hy@SectionHShift=\skip146
+)
+\c@theo=\count420
+
+
+./main.tex:51: LaTeX Error: Command \qed already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \newcommand{\qed}{\rule{2mm}{2mm}}
+                                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
+)
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count421
+\@quotereset=\count422
+(./main.aux (./chapters/lecture1.aux
+
+LaTeX Warning: Label `subsec:Approximation Result' multiply defined.
+
+
+LaTeX Warning: Label `th:' multiply defined.
+
+) (./chapters/ch2.aux
+
+LaTeX Warning: Label `prop:' multiply defined.
+
+
+LaTeX Warning: Label `subsec:Properties' multiply defined.
+
+
+LaTeX Warning: Label `def:' multiply defined.
+
+
+LaTeX Warning: Label `def:' multiply defined.
+
+
+LaTeX Warning: Label `def:' multiply defined.
+
+
+LaTeX Warning: Label `def:' multiply defined.
+
+
+LaTeX Warning: Label `def:' multiply defined.
+
+./chapters/ch2.aux:52: Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.52 ...and Bernstein polynomials}{section.2.4}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./chapters/ch2.aux:52: Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.52 ...and Bernstein polynomials}{section.2.4}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+./chapters/ch2.aux:52: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 ...and Bernstein polynomials}{section.2.4}{}}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./chapters/ch2.aux:52: Missing number, treated as zero.
+<to be read again> 
+                   \accent@spacefactor 
+l.52 ...and Bernstein polynomials}{section.2.4}{}}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./chapters/ch2.aux:52: Bad space factor (0).
+<to be read again> 
+                   \accent@spacefactor 
+l.52 ...and Bernstein polynomials}{section.2.4}{}}
+                                                  
+I allow only values in the range 1..32767 here.
+
+./chapters/ch2.aux:52: Extra \endcsname.
+\@namedef ...xpandafter \def \csname #1\endcsname 
+                                                  
+l.52 ...and Bernstein polynomials}{section.2.4}{}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+./chapters/ch2.aux:52: Extra }, or forgotten \endgroup.
+\@newl@bel ...ined}}\global \@namedef {#1@#2}{#3}}
+                                                  
+l.52 ...and Bernstein polynomials}{section.2.4}{}}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Label `subsec:Solutions' multiply defined.
+
+) (./chapters/ch3.aux
+
+LaTeX Warning: Label `def:' multiply defined.
+
+
+LaTeX Warning: Label `def:' multiply defined.
+
+
+LaTeX Warning: Label `def:' multiply defined.
+
+
+LaTeX Warning: Label `def:' multiply defined.
+
+) (./chapters/ch4.aux
+
+LaTeX Warning: Label `def:' multiply defined.
+
+
+LaTeX Warning: Label `def:' multiply defined.
+
+
+LaTeX Warning: Label `def:' multiply defined.
+
+
+LaTeX Warning: Label `th:' multiply defined.
+
+))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+Overfull \hbox (110.33408pt too wide) in paragraph at lines 52--13
+\OT1/cmr/m/n/12 stein poly-no-mi-als-sec-tion.2.4                                                                                                                                                           
+ []
+
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count423
+\scratchdimen=\dimen199
+\scratchbox=\box80
+\nofMPsegments=\count424
+\nofMParguments=\count425
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count426
+\MPscratchDim=\dimen256
+\MPnumerator=\count427
+\makeMPintoPDFobject=\count428
+\everyMPtoPDFconversion=\toks35
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\AtBeginShipoutBox=\box81
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(65.55515pt, 433.62pt, 98.33273pt)
+* v-part:(T,H,B)=(77.84674pt, 650.43pt, 116.77011pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=433.62pt
+* \textheight=650.43pt
+* \oddsidemargin=-6.71484pt
+* \evensidemargin=26.06274pt
+* \topmargin=-26.29704pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=98.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+(./main.bbl)
+Package biblatex Info: Reference section=0 on input line 64.
+Package biblatex Info: Reference segment=0 on input line 64.
+Package hyperref Info: Link coloring OFF on input line 64.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count429
+)
+LaTeX Info: Redefining \ref on input line 64.
+LaTeX Info: Redefining \pageref on input line 64.
+LaTeX Info: Redefining \nameref on input line 64.
+ (./main.out) (./main.out)
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+] [2
+
+]
+LaTeX Font Info:    Try loading font information for U+esvect on input line 66.
+ (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
+File: uesvect.fd 
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 66.
+ (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.66 \tableofcontents
+                      [1]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.66 \tableofcontents
+                      [2
+
+] (./main.toc [3])
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ [4]
+\openout2 = `chapters/lecture1.aux'.
+
+ (./chapters/lecture1.tex
+Chapter 1.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 5.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
+ [5
+
+
+]
+Package mdframed Info: mdframed works in twoside mode on input line 32.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 32.
+ [6]
+Package mdframed Info: mdframed works in twoside mode on input line 135.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 135.
+ [7]
+Package mdframed Info: mdframed works in twoside mode on input line 200.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 200.
+ [8]
+Underfull \hbox (badness 10000) in paragraph at lines 243--250
+
+ []
+
+[9] [10] (./figures/piecewisepoly.pdf_tex
+<./figures/piecewisepoly.pdf, id=332, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/piecewisepoly.pdf Graphic file (type pdf)
+<use ./figures/piecewisepoly.pdf, page 1>
+Package pdftex.def Info: ./figures/piecewisepoly.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/piecewisepoly.pdf, id=333, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/piecewisepoly.pdf Graphic file (type pdf)
+<use ./figures/piecewisepoly.pdf, page 2>
+Package pdftex.def Info: ./figures/piecewisepoly.pdf , page2 used on input line 58.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/piecewisepoly.pdf, id=334, page=3, 682.86612pt x 341.43306pt>
+File: ./figures/piecewisepoly.pdf Graphic file (type pdf)
+<use ./figures/piecewisepoly.pdf, page 3>
+Package pdftex.def Info: ./figures/piecewisepoly.pdf , page3 used on input line 61.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+)
+Package mdframed Info: mdframed works in twoside mode on input line 384.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 384.
+Package mdframed Info: Not enough space on this page on input line 397.
+ [11]
+Package mdframed Info: Not enough space on this page on input line 397.
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--402
+
+ []
+
+[12 <./figures/piecewisepoly.pdf> <./figures/piecewisepoly.pdf> <./figures/piecewisepoly.pdf>] (./figures/cubicbspline.pdf_tex
+<./figures/cubicbspline.pdf, id=357, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/cubicbspline.pdf Graphic file (type pdf)
+<use ./figures/cubicbspline.pdf, page 1>
+Package pdftex.def Info: ./figures/cubicbspline.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/cubicbspline.pdf, id=358, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/cubicbspline.pdf Graphic file (type pdf)
+<use ./figures/cubicbspline.pdf, page 2>
+Package pdftex.def Info: ./figures/cubicbspline.pdf , page2 used on input line 58.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/cubicbspline.pdf, id=359, page=3, 682.86612pt x 341.43306pt>
+File: ./figures/cubicbspline.pdf Graphic file (type pdf)
+<use ./figures/cubicbspline.pdf, page 3>
+Package pdftex.def Info: ./figures/cubicbspline.pdf , page3 used on input line 60.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/cubicbspline.pdf, id=360, page=4, 682.86612pt x 341.43306pt>
+File: ./figures/cubicbspline.pdf Graphic file (type pdf)
+<use ./figures/cubicbspline.pdf, page 4>
+Package pdftex.def Info: ./figures/cubicbspline.pdf , page4 used on input line 62.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/cubicbspline.pdf, id=361, page=5, 682.86612pt x 341.43306pt>
+File: ./figures/cubicbspline.pdf Graphic file (type pdf)
+<use ./figures/cubicbspline.pdf, page 5>
+Package pdftex.def Info: ./figures/cubicbspline.pdf , page5 used on input line 64.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/cubicbspline.pdf, id=362, page=6, 682.86612pt x 341.43306pt>
+File: ./figures/cubicbspline.pdf Graphic file (type pdf)
+<use ./figures/cubicbspline.pdf, page 6>
+Package pdftex.def Info: ./figures/cubicbspline.pdf , page6 used on input line 66.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+)
+Package mdframed Info: mdframed works in twoside mode on input line 442.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 442.
+ [13 <./figures/cubicbspline.pdf> <./figures/cubicbspline.pdf> <./figures/cubicbspline.pdf> <./figures/cubicbspline.pdf> <./figures/cubicbspline.pdf> <./figures/cubicbspline.pdf>] (./figures/hpwlin.pdf_tex
+<./figures/hpwlin.pdf, id=375, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/hpwlin.pdf Graphic file (type pdf)
+<use ./figures/hpwlin.pdf, page 1>
+Package pdftex.def Info: ./figures/hpwlin.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) [14 <./figures/hpwlin.pdf>]
+./chapters/lecture1.tex:531: Undefined control sequence.
+l.531 ... $ e(t_i) = 0 $ $ e'(a) = e'(b) = ? \then
+                                                   e \equiv 0 $.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[15]
+Package mdframed Info: mdframed works in twoside mode on input line 541.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 541.
+ [16] [17]
+./chapters/lecture1.tex:661: Misplaced alignment tab character &.
+l.661 p + \boldsymbol{u} + a_2 + a_3 &
+                                      = q \implies a_2 + a_3 = q - p - \bold...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[18]) [19]
+\openout2 = `chapters/ch2.aux'.
+
+ (./chapters/ch2.tex [20
+
+
+
+]
+Chapter 2.
+[21]
+./chapters/ch2.tex:53: Double superscript.
+<recently read> ^
+                 
+l.53             B _{ i }^{ n  } '
+                                  (t) = n \left( B _{ i-1  }^{ n-1 } (t) - B...
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+[22]
+./chapters/ch2.tex:162: Missing $ inserted.
+<inserted text> 
+                $
+l.162 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./chapters/ch2.tex:162: Display math should end with $$.
+<to be read again> 
+                   \par 
+l.162 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+./chapters/ch2.tex:163: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.163 \]
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./chapters/ch2.tex:163: Missing $ inserted.
+<inserted text> 
+                $
+l.163 \]
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapters/ch2.tex:163: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.163 \]
+        
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./chapters/ch2.tex:222: Double superscript.
+l.222     B' _{ i }^
+                    { n  } (t) = \begin{pmatrix*}
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+[23] [24]
+./chapters/ch2.tex:330: Undefined control sequence.
+l.330 ..., \cdots, p_n  $ with associated $ \lamda
+                                                  _i  $
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./chapters/ch2.tex:333: Undefined control sequence.
+l.333 ...ambda_ip_i = \left( \sum_{i=1}^{n} \lamda
+                                                  _i\right) g
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./chapters/ch2.tex:333: Double subscript.
+l.333 ...mbda_ip_i = \left( \sum_{i=1}^{n} \lamda_
+                                                  i\right) g
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 358.
+[25] [26] (./figures/convex-hull.pdf_tex
+<./figures/convex-hull.pdf, id=475, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/convex-hull.pdf Graphic file (type pdf)
+<use ./figures/convex-hull.pdf, page 1>
+Package pdftex.def Info: ./figures/convex-hull.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) (./figures/variance-reduction.pdf_tex
+<./figures/variance-reduction.pdf, id=476, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/variance-reduction.pdf Graphic file (type pdf)
+<use ./figures/variance-reduction.pdf, page 1>
+Package pdftex.def Info: ./figures/variance-reduction.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) [27 <./figures/convex-hull.pdf>]
+./chapters/ch2.tex:468: Missing $ inserted.
+<inserted text> 
+                $
+l.468 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./chapters/ch2.tex:468: Missing } inserted.
+<inserted text> 
+                }
+l.468 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapters/ch2.tex:468: Display math should end with $$.
+<to be read again> 
+                   \@@par 
+l.468 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./chapters/ch2.tex:468: Extra }, or forgotten \endgroup.
+\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.468 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./chapters/ch2.tex:469: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.469         \]
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./chapters/ch2.tex:469: Missing $ inserted.
+<inserted text> 
+                $
+l.469         \]
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapters/ch2.tex:469: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.469         \]
+                
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./chapters/ch2.tex:485: Missing $ inserted.
+<inserted text> 
+                $
+l.485 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./chapters/ch2.tex:485: Missing } inserted.
+<inserted text> 
+                }
+l.485 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapters/ch2.tex:485: Display math should end with $$.
+<to be read again> 
+                   \@@par 
+l.485 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./chapters/ch2.tex:485: Extra }, or forgotten \endgroup.
+\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.485 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./chapters/ch2.tex:486: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.486         \]
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./chapters/ch2.tex:486: Missing $ inserted.
+<inserted text> 
+                $
+l.486         \]
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapters/ch2.tex:486: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.486         \]
+                
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./chapters/ch2.tex:494: Missing $ inserted.
+<inserted text> 
+                $
+l.494 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./chapters/ch2.tex:494: Missing } inserted.
+<inserted text> 
+                }
+l.494 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapters/ch2.tex:494: Missing } inserted.
+<inserted text> 
+                }
+l.494 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapters/ch2.tex:494: Display math should end with $$.
+<to be read again> 
+                   \@@par 
+l.494 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+[28 <./figures/variance-reduction.pdf>]
+./chapters/ch2.tex:494: Extra }, or forgotten \endgroup.
+\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.494 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./chapters/ch2.tex:495: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.495         \]
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./chapters/ch2.tex:495: Missing $ inserted.
+<inserted text> 
+                $
+l.495         \]
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapters/ch2.tex:495: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.495         \]
+                
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./chapters/ch2.tex:523: Double superscript.
+<recently read> ^
+                 
+l.523             \end{align*}
+                              
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+./chapters/ch2.tex:523: Double superscript.
+<recently read> ^
+                 
+l.523             \end{align*}
+                              
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+./chapters/ch2.tex:532: Missing } inserted.
+<inserted text> 
+                }
+l.532 ...- \Delta P_i  = P_{i+2} - 2P_{i+1] + P_i$
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[29]
+./chapters/ch2.tex:546: Missing { inserted.
+<to be read again> 
+                   _
+l.546         \end{align*}
+                          
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./chapters/ch2.tex:546: Missing } inserted.
+<inserted text> 
+                }
+l.546         \end{align*}
+                          
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./chapters/ch2.tex:546: Missing { inserted.
+<to be read again> 
+                   _
+l.546         \end{align*}
+                          
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./chapters/ch2.tex:546: Missing } inserted.
+<inserted text> 
+                }
+l.546         \end{align*}
+                          
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+(./figures/bezier-curve-derivatives.pdf_tex
+<./figures/bezier-curve-derivatives.pdf, id=507, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/bezier-curve-derivatives.pdf Graphic file (type pdf)
+<use ./figures/bezier-curve-derivatives.pdf, page 1>
+Package pdftex.def Info: ./figures/bezier-curve-derivatives.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+)
+Overfull \hbox (2.72583pt too wide) in paragraph at lines 570--570
+[]\OT1/cmr/bx/n/17.28 Algorithms to eval-u-ate Bezier Curves and their
+ []
+
+
+Underfull \vbox (badness 2269) has occurred while \output is active []
+
+ [30 <./figures/bezier-curve-derivatives.pdf>]
+./chapters/ch2.tex:610: Missing $ inserted.
+<inserted text> 
+                $
+l.610 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./chapters/ch2.tex:610: Display math should end with $$.
+<to be read again> 
+                   \par 
+l.610 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+./chapters/ch2.tex:611: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.611 \]
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./chapters/ch2.tex:611: Missing $ inserted.
+<inserted text> 
+                $
+l.611 \]
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapters/ch2.tex:611: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.611 \]
+        
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (24.79366pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 2.3.  ALGORITHMS TO EVALUATE BEZIER CURVES AND THEIR DERIVATIVES \OT1/cmr/m/n/12 31
+ []
+
+[31]
+<figures/General-process-of-De-Casteljau-algorithm.png, id=524, 681.54625pt x 632.3625pt>
+File: figures/General-process-of-De-Casteljau-algorithm.png Graphic file (type png)
+<use figures/General-process-of-De-Casteljau-algorithm.png>
+Package pdftex.def Info: figures/General-process-of-De-Casteljau-algorithm.png  used on input line 656.
+(pdftex.def)             Requested size: 275.99352pt x 256.0748pt.
+ [32]
+Overfull \hbox (24.79366pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 2.3.  ALGORITHMS TO EVALUATE BEZIER CURVES AND THEIR DERIVATIVES \OT1/cmr/m/n/12 33
+ []
+
+[33 <./figures/General-process-of-De-Casteljau-algorithm.png>] [34]
+./chapters/ch2.tex:834: Missing $ inserted.
+<inserted text> 
+                $
+l.834 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./chapters/ch2.tex:834: Missing } inserted.
+<inserted text> 
+                }
+l.834 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapters/ch2.tex:834: Display math should end with $$.
+<to be read again> 
+                   \@@par 
+l.834 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+[35]
+./chapters/ch2.tex:834: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.834 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./chapters/ch2.tex:835: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.835         \]
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./chapters/ch2.tex:835: Missing $ inserted.
+<inserted text> 
+                $
+l.835         \]
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapters/ch2.tex:835: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.835         \]
+                
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+[36] (./figures/e4p3.pdf_tex
+<./figures/e4p3.pdf, id=579, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/e4p3.pdf Graphic file (type pdf)
+<use ./figures/e4p3.pdf, page 1>
+Package pdftex.def Info: ./figures/e4p3.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) [37] (./figures/t2e4.pdf_tex
+<./figures/t2e4.pdf, id=594, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/t2e4.pdf Graphic file (type pdf)
+<use ./figures/t2e4.pdf, page 1>
+Package pdftex.def Info: ./figures/t2e4.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/t2e4.pdf, id=595, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/t2e4.pdf Graphic file (type pdf)
+<use ./figures/t2e4.pdf, page 2>
+Package pdftex.def Info: ./figures/t2e4.pdf , page2 used on input line 60.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/t2e4.pdf, id=596, page=3, 682.86612pt x 341.43306pt>
+File: ./figures/t2e4.pdf Graphic file (type pdf)
+<use ./figures/t2e4.pdf, page 3>
+Package pdftex.def Info: ./figures/t2e4.pdf , page3 used on input line 62.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/t2e4.pdf, id=597, page=4, 682.86612pt x 341.43306pt>
+File: ./figures/t2e4.pdf Graphic file (type pdf)
+<use ./figures/t2e4.pdf, page 4>
+Package pdftex.def Info: ./figures/t2e4.pdf , page4 used on input line 65.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) [38 <./figures/e4p3.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39 <./figures/t2e4.pdf> <./figures/t2e4.pdf> <./figures/t2e4.pdf> <./figures/t2e4.pdf>]) [40]
+\openout2 = `chapters/ch3.aux'.
+
+ (./chapters/ch3.tex
+Chapter 3.
+(./figures/planar-curve.pdf_tex
+<./figures/planar-curve.pdf, id=626, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/planar-curve.pdf Graphic file (type pdf)
+<use ./figures/planar-curve.pdf, page 1>
+Package pdftex.def Info: ./figures/planar-curve.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/planar-curve.pdf, id=627, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/planar-curve.pdf Graphic file (type pdf)
+<use ./figures/planar-curve.pdf, page 2>
+Package pdftex.def Info: ./figures/planar-curve.pdf , page2 used on input line 60.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+)
+Overfull \hbox (50.14006pt too wide) in paragraph at lines 23--27
+[][]\OT1/cmr/bx/n/12 Definition 3.1.2 \OT1/cmr/m/n/12 (Im-plicit Curves)\OT1/cmr/bx/n/12 . []\OT1/cmr/m/it/12 Let $\OML/cmm/m/it/12 f [] \U/msb/m/n/12 R[] \OMS/cmsy/m/n/12 ! \U/msb/m/n/12 R$ \OT1/cmr/m/it/12 then $\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 ([]) = []$
+ []
+
+[41
+
+
+
+ <./figures/planar-curve.pdf> <./figures/planar-curve.pdf>] (./figures/example313.pdf_tex
+<./figures/example313.pdf, id=638, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/example313.pdf Graphic file (type pdf)
+<use ./figures/example313.pdf, page 1>
+Package pdftex.def Info: ./figures/example313.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) [42 <./figures/example313.pdf>] (./figures/example315.pdf_tex
+<./figures/example315.pdf, id=648, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/example315.pdf Graphic file (type pdf)
+<use ./figures/example315.pdf, page 1>
+Package pdftex.def Info: ./figures/example315.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) [43 <./figures/example315.pdf>] (./figures/linearinependenceoftan.pdf_tex
+<./figures/linearinependenceoftan.pdf, id=657, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/linearinependenceoftan.pdf Graphic file (type pdf)
+<use ./figures/linearinependenceoftan.pdf, page 1>
+Package pdftex.def Info: ./figures/linearinependenceoftan.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) (./figures/pqcurvecharacteristics.pdf_tex
+<./figures/pqcurvecharacteristics.pdf, id=658, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/pqcurvecharacteristics.pdf Graphic file (type pdf)
+<use ./figures/pqcurvecharacteristics.pdf, page 1>
+Package pdftex.def Info: ./figures/pqcurvecharacteristics.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/pqcurvecharacteristics.pdf, id=659, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/pqcurvecharacteristics.pdf Graphic file (type pdf)
+<use ./figures/pqcurvecharacteristics.pdf, page 2>
+Package pdftex.def Info: ./figures/pqcurvecharacteristics.pdf , page2 used on input line 61.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+
+ []
+
+[44 <./figures/linearinependenceoftan.pdf>]
+
+./chapters/ch3.tex:126: LaTeX Error: \begin{defn} on input line 121 ended by \end{defn }.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 \end{defn }
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[45 <./figures/pqcurvecharacteristics.pdf> <./figures/pqcurvecharacteristics.pdf>] (./figures/reparamaterized-curve.pdf_tex
+<./figures/reparamaterized-curve.pdf, id=676, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/reparamaterized-curve.pdf Graphic file (type pdf)
+<use ./figures/reparamaterized-curve.pdf, page 1>
+Package pdftex.def Info: ./figures/reparamaterized-curve.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/reparamaterized-curve.pdf, id=677, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/reparamaterized-curve.pdf Graphic file (type pdf)
+<use ./figures/reparamaterized-curve.pdf, page 2>
+Package pdftex.def Info: ./figures/reparamaterized-curve.pdf , page2 used on input line 60.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) [46 <./figures/reparamaterized-curve.pdf> <./figures/reparamaterized-curve.pdf>] (./figures/regular-and-non-regular-curves.pdf_tex
+<./figures/regular-and-non-regular-curves.pdf, id=689, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/regular-and-non-regular-curves.pdf Graphic file (type pdf)
+<use ./figures/regular-and-non-regular-curves.pdf, page 1>
+Package pdftex.def Info: ./figures/regular-and-non-regular-curves.pdf , page1 used on input line 60.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) (./figures/c1-but-not-c2.pdf_tex
+<./figures/c1-but-not-c2.pdf, id=690, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/c1-but-not-c2.pdf Graphic file (type pdf)
+<use ./figures/c1-but-not-c2.pdf, page 1>
+Package pdftex.def Info: ./figures/c1-but-not-c2.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) [47 <./figures/regular-and-non-regular-curves.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+[48 <./figures/c1-but-not-c2.pdf>] (./figures/length-of-a-curve.pdf_tex
+<./figures/length-of-a-curve.pdf, id=709, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/length-of-a-curve.pdf Graphic file (type pdf)
+<use ./figures/length-of-a-curve.pdf, page 1>
+Package pdftex.def Info: ./figures/length-of-a-curve.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/length-of-a-curve.pdf, id=710, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/length-of-a-curve.pdf Graphic file (type pdf)
+<use ./figures/length-of-a-curve.pdf, page 2>
+Package pdftex.def Info: ./figures/length-of-a-curve.pdf , page2 used on input line 59.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/length-of-a-curve.pdf, id=711, page=3, 682.86612pt x 341.43306pt>
+File: ./figures/length-of-a-curve.pdf Graphic file (type pdf)
+<use ./figures/length-of-a-curve.pdf, page 3>
+Package pdftex.def Info: ./figures/length-of-a-curve.pdf , page3 used on input line 62.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+)
+./chapters/ch3.tex:303: Undefined control sequence.
+<argument>  \simga 
+                   : I &\to \mathbb {R} \\ t &\to \int \limits _{t_0}^{t} \|...
+l.303     \end{align*}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./chapters/ch3.tex:303: Undefined control sequence.
+<argument>  \simga 
+                   : I &\to \mathbb {R} \\ t &\to \int \limits _{t_0}^{t} \|...
+l.303     \end{align*}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[49 <./figures/length-of-a-curve.pdf> <./figures/length-of-a-curve.pdf> <./figures/length-of-a-curve.pdf>] (./figures/arc-length-paramatrization.pdf_tex
+<./figures/arc-length-paramatrization.pdf, id=720, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/arc-length-paramatrization.pdf Graphic file (type pdf)
+<use ./figures/arc-length-paramatrization.pdf, page 1>
+Package pdftex.def Info: ./figures/arc-length-paramatrization.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/arc-length-paramatrization.pdf, id=721, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/arc-length-paramatrization.pdf Graphic file (type pdf)
+<use ./figures/arc-length-paramatrization.pdf, page 2>
+Package pdftex.def Info: ./figures/arc-length-paramatrization.pdf , page2 used on input line 58.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/arc-length-paramatrization.pdf, id=722, page=3, 682.86612pt x 341.43306pt>
+File: ./figures/arc-length-paramatrization.pdf Graphic file (type pdf)
+<use ./figures/arc-length-paramatrization.pdf, page 3>
+Package pdftex.def Info: ./figures/arc-length-paramatrization.pdf , page3 used on input line 61.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) [50 <./figures/arc-length-paramatrization.pdf> <./figures/arc-length-paramatrization.pdf> <./figures/arc-length-paramatrization.pdf>] [51] (./figures/curvature.pdf_tex
+<./figures/curvature.pdf, id=740, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/curvature.pdf Graphic file (type pdf)
+<use ./figures/curvature.pdf, page 1>
+Package pdftex.def Info: ./figures/curvature.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/curvature.pdf, id=741, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/curvature.pdf Graphic file (type pdf)
+<use ./figures/curvature.pdf, page 2>
+Package pdftex.def Info: ./figures/curvature.pdf , page2 used on input line 61.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/curvature.pdf, id=742, page=3, 682.86612pt x 341.43306pt>
+File: ./figures/curvature.pdf Graphic file (type pdf)
+<use ./figures/curvature.pdf, page 3>
+Package pdftex.def Info: ./figures/curvature.pdf , page3 used on input line 63.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) [52 <./figures/curvature.pdf> <./figures/curvature.pdf> <./figures/curvature.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 483.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 483.
+
+Overfull \hbox (4.87877pt too wide) in paragraph at lines 484--486
+[][]\OT1/cmr/bx/n/12 Theorem 3.6.5 \OT1/cmr/m/n/12 (To-tal Cur-va-ture)\OT1/cmr/bx/n/12 . []\OT1/cmr/m/it/12 Let $\OML/cmm/m/it/12 f [] I \OMS/cmsy/m/n/12 ^^Z \U/msb/m/n/12 R \OMS/cmsy/m/n/12 ! \U/msb/m/n/12 R[]$ \OT1/cmr/m/it/12 pla-nar curve parametrized
+ []
+
+./chapters/ch3.tex:515: Missing $ inserted.
+<inserted text> 
+                $
+l.515 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./chapters/ch3.tex:515: Missing } inserted.
+<inserted text> 
+                }
+l.515 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapters/ch3.tex:515: Display math should end with $$.
+<to be read again> 
+                   \@@par 
+l.515 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./chapters/ch3.tex:515: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.515 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./chapters/ch3.tex:516: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.516     \]
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./chapters/ch3.tex:516: Missing $ inserted.
+<inserted text> 
+                $
+l.516     \]
+            
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapters/ch3.tex:516: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.516     \]
+            
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+[53] (./figures/total-curvature.pdf_tex
+<./figures/total-curvature.pdf, id=758, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/total-curvature.pdf Graphic file (type pdf)
+<use ./figures/total-curvature.pdf, page 1>
+Package pdftex.def Info: ./figures/total-curvature.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/total-curvature.pdf, id=759, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/total-curvature.pdf Graphic file (type pdf)
+<use ./figures/total-curvature.pdf, page 2>
+Package pdftex.def Info: ./figures/total-curvature.pdf , page2 used on input line 59.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/total-curvature.pdf, id=760, page=3, 682.86612pt x 341.43306pt>
+File: ./figures/total-curvature.pdf Graphic file (type pdf)
+<use ./figures/total-curvature.pdf, page 3>
+Package pdftex.def Info: ./figures/total-curvature.pdf , page3 used on input line 63.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) (./figures/winding-numbers.pdf_tex
+<./figures/winding-numbers.pdf, id=762, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/winding-numbers.pdf Graphic file (type pdf)
+<use ./figures/winding-numbers.pdf, page 1>
+Package pdftex.def Info: ./figures/winding-numbers.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/winding-numbers.pdf, id=763, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/winding-numbers.pdf Graphic file (type pdf)
+<use ./figures/winding-numbers.pdf, page 2>
+Package pdftex.def Info: ./figures/winding-numbers.pdf , page2 used on input line 62.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+)) [54 <./figures/total-curvature.pdf> <./figures/total-curvature.pdf> <./figures/total-curvature.pdf>] [55 <./figures/winding-numbers.pdf> <./figures/winding-numbers.pdf>]
+\openout2 = `chapters/ch4.aux'.
+
+ (./chapters/ch4.tex [56
+
+
+
+]
+Chapter 4.
+(./figures/space-curves.pdf_tex
+<./figures/space-curves.pdf, id=783, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/space-curves.pdf Graphic file (type pdf)
+<use ./figures/space-curves.pdf, page 1>
+Package pdftex.def Info: ./figures/space-curves.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+)
+Underfull \vbox (badness 1466) has occurred while \output is active []
+
+ [57 <./figures/space-curves.pdf>]
+./chapters/ch4.tex:58: Undefined control sequence.
+l.58         \imples
+                     k(s) = \| \bar{f}''(s) \|^{ }_{ } = \| \bar{f}'(s) \wed...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./chapters/ch4.tex:67: Double superscript.
+<recently read> ^
+                 
+l.67         \sigma^{-1} '
+                           (s) \right) ^2 + f'\left( \sigma^{-1}(s) \right) ...
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+(./figures/nt-for-r3.pdf_tex
+<./figures/nt-for-r3.pdf, id=792, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/nt-for-r3.pdf Graphic file (type pdf)
+<use ./figures/nt-for-r3.pdf, page 1>
+Package pdftex.def Info: ./figures/nt-for-r3.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+<./figures/nt-for-r3.pdf, id=793, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/nt-for-r3.pdf Graphic file (type pdf)
+<use ./figures/nt-for-r3.pdf, page 2>
+Package pdftex.def Info: ./figures/nt-for-r3.pdf , page2 used on input line 59.
+(pdftex.def)             Requested size: 433.62pt x 216.81277pt.
+) [58] [59 <./figures/nt-for-r3.pdf> <./figures/nt-for-r3.pdf>]
+./chapters/ch4.tex:183: Undefined control sequence.
+l.183 ...et \left( R(s) f''(s), f'(s) , \underbace
+                                                  {R'(s)f''(s)}_{\text{colinear
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[60]
+./chapters/ch4.tex:215: Missing $ inserted.
+<inserted text> 
+                $
+l.215 ... and $ B'(s) = - \tau(s) N(s)  $ \implies
+                                                   $ B'(s) =
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./chapters/ch4.tex:216: Missing $ inserted.
+<inserted text> 
+                $
+l.216     0 \forall
+                    s $ $ \implies B(s) = \vec{B}_0 $
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (27.52768pt too wide) in paragraph at lines 242--242
+[]\OT1/cmr/bx/n/17.28 Fundamental The-o-rem for Lo-cal The-ory of Curves 
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 244.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 244.
+[61]) [62]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
+ [63
+
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
+ (./main.aux (./chapters/lecture1.aux) (./chapters/ch2.aux
+./chapters/ch2.aux:52: Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.52 ...and Bernstein polynomials}{section.2.4}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./chapters/ch2.aux:52: Extra \endcsname.
+\@newl@bel ... \bbl@tempa \csname #1@#2\endcsname 
+                                                  \def \bbl@tempb {#3}\@safe...
+l.52 ...and Bernstein polynomials}{section.2.4}{}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+) (./chapters/ch3.aux) (./chapters/ch4.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 2B1793BA7C4CC93248CF9896689A5346;3475
+(rerunfilecheck)             After:  180CBFB22A93655608C89873090AA119;3538.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+
+Overfull \hbox (189.80687pt too wide) in paragraph at lines 52--73
+[]\OT1/cmr/m/n/12 ^^Sezier Curves and Bern-stein poly-no-mi-als                                                                                                                                                             
+ []
+
+ ) 
+Here is how much of TeX's memory you used:
+ 25727 strings out of 492982
+ 462730 string characters out of 6134896
+ 910629 words of memory out of 5000000
+ 28553 multiletter control sequences out of 15000+600000
+ 545473 words of font info for 84 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 44i,20n,45p,10414b,2052s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/esvect/vect10.pfb>
+Output written on main.pdf (65 pages, 484995 bytes).
+PDF statistics:
+ 1013 PDF objects out of 1200 (max. 8388607)
+ 861 compressed objects within 9 object streams
+ 316 named destinations out of 1000 (max. 500000)
+ 628 words of extra memory for PDF output out of 10000 (max. 10000000)
+

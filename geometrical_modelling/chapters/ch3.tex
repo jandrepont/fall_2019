@@ -1,0 +1,565 @@
+\chapter{Curves in the Plane}
+\section{Introduction}
+\label{sec:Introduction}
+
+To represent them, we use 
+\begin{defn}[Parametrized Curves]
+    \begin{align*}
+        \gamma : [a,b] &\to \mathbb{R}^d \\
+        t &\to \gamma(t)  
+    \end{align*}
+    \label{def:Parametrized Curves}
+\end{defn}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{planar-curve}
+    \caption{Parametrized Planar Curve}
+    \label{fig:planar-curve}
+\end{figure}
+
+
+\begin{defn}[Implicit Curves]
+    Let $ f : \mathbb{R}^2 \to \mathbb{R} $
+    then $ f^{-1} ( \set{ 0 } ) = \set{ (x,y) \in \mathbb{R}^2, f(x,y) = 0 }  $
+    is a curve.
+    \label{def:Implicit Curves}
+\end{defn}
+
+\begin{exmp}[]
+    \[
+        f(x,y) = x^2 + y^2 -1 
+    \]
+\end{exmp}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{example313}
+    \caption{Example 3.1.3}
+    \label{fig:example313}
+\end{figure}
+
+
+\begin{defn}[Graphs of Functions]
+    $ \varphi : [a,b] \to \mathbb{R} $. 
+    \[
+        \text{graph} \left( \varphi\right) = \set{ \left( t, f(t) \right) , t \in [a,b]  } 
+    \]
+    \label{def:Graphs of Functions}
+\end{defn}
+
+\newpage
+\begin{exmp}[]
+    $ \varphi = \sqrt{1 - t^2}  $ and $ t \in [-1,1]  $ then 
+\end{exmp}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{example315}
+    \caption{Example 3.1.5}
+    \label{fig:example315}
+\end{figure}
+
+
+
+
+
+\section{Generalities on Paramaterized Curves}
+\label{sec:Generalities on Paramaterized Curves}
+\subsection{Reminder}
+\label{subsec:Reminder}
+Let $ f:[a,b] \to \mathbb{R}^2\in \mathscr{ C } ^n $ and $ t_0 \in [a,b] $ then 
+\[
+    f(t) = f(t_0) + \left( t-t_0\right) f'(t_0) + \frac{ \left( t-t_0\right) ^2 }{ 2!  }
+    f''(t_0) + \dots + \frac{ \left( t-t_0\right) ^n }{ n! } f^{(n)} (t_0) + \mathcal{ O
+    } \left( \left( t-t_0\right) ^n\right) 
+\]
+
+In particular, 
+\[
+    \frac{ f(t) - f(t_0)  }{ t - t_0  } = f'(t_0) 
+\]
+let curve be $ \mathscr{ C } = \set{ f(t) }  $ and $ f(t_0) \in \mathscr{ C }  $ and $
+f'(t_0)  $ is a vector tangent to $ \mathscr{ C }  $ at $ f(t_0)  $. 
+
+Some notes about 2nd derivative and how it "attracts" the curve. 
+
+
+\[
+    f(t) = f(t_0) + f^{(p)}(t_0) \frac{ \left( t-t_0\right) ^p }{ p! } + \dots + 
+    f^{(q)}(t_0) \frac{ \left( t-t_0\right) ^q }{ q! } + \mathcal{ O  } \left( \dots\right) 
+\]
+p is the smallest k such that $ f^{(k)}(t_0) \neq 0 $ and q is smallest q such that 
+\[
+    \left( f^{(q)}(t_0),f^{(k)}(t_0)\right)   \text{ independent } 
+\]
+\newpage
+\begin{figure}[ht]
+    \centering
+    \incfig{linearinependenceoftan}
+    \caption{linear independence between derivatives}
+    \label{fig:linearinependenceoftan}
+\end{figure}
+
+Certain characteristics of the curve can be given by the values of $ p,q $. 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{pqcurvecharacteristics}
+    \caption{pqCurveCharacteristics}
+    \label{fig:pqcurvecharacteristics}
+\end{figure}
+
+These values then blah blah blah
+$ \\ $
+\newpage
+
+
+\section{Parametrization and Geometric Curves}
+\label{sec:Parametrization and Geometric Curves}
+\begin{defn}[Parametrized Curve]
+    A Paramterized curve of class $ \mathscr{ C } ^k $ is a map $ f: I \subset
+    \mathbb{R}\to \mathbb{R}^3 \in \mathscr{ C } ^k$, where I is a union of intervals. We
+    denote $ \left( I, f\right)  $ such a curve.
+    \label{def:Parametrized Curve}
+\end{defn }
+
+Remark : 
+\[
+    F(I) \coloneqq \mathscr{ C } 
+\]
+is the geometric support. Interval connected $ \implies \mathscr{ C }  $ is connected. 
+I compact set $ \implies \mathscr{ C }  $ compact set. 
+$ \\ $
+Remark : 
+$ \\ $
+Some curve may have 2 paramterization without the same regularity. 
+\begin{exmp}[]
+    \begin{align*}
+        t &\to \left( t, t^{3/2}\right) t > 0  \\ 
+        t &\to \left( \left | t \right | , - \sqrt{t^3}\right) t \leq 0  \\ 
+    \end{align*}
+    another parametrization is 
+    \[
+        t \to \left( t^2, t^3\right) \in \mathscr{ C } ^{\infty} 
+    \]
+\end{exmp}
+ 
+
+\newpage 
+\subsection{ReParametrization}
+\label{subsec:ReParametrization}
+Let $ f : I \to \mathbb{R}^3 $ param curve in $ \mathscr{ C } ^k $ and $ e : J \to I $ is
+a $ \mathscr{ C } ^k $ diffeomorphism (bijective, $ e'(x) \neq 0, \mathscr{ C } ^k $. 
+Then $ f \circ e : J \to \mathbb{R}^3 $ has the same "geometric curve" and we say that 
+\begin{itemize}
+  \item $ f\circ e $ is a reparametrization of $ f $
+  \item $ e $ is called an admissible change of variable
+\end{itemize}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{reparamaterized-curve}
+    \caption{Reparamaterized Curve}
+    \label{fig:reparamaterized-curve}
+\end{figure}
+
+
+We consider the following equivalence class 
+\begin{defn}[Equivalence Class for Curves]
+    $ \\ $
+    $ \left( I,f\right) \sim \left( J,g\right)  $ if 
+    $
+    \exists e : J \to I,  g = f \circ e  \text{ e admissible change of variable} 
+    $
+    \label{def:}
+\end{defn}
+
+\begin{defn}[Geometric Curve]
+    A geometric curve is an equivalence class of this relation
+    \label{def:Geometric Curve}
+\end{defn}
+
+\section{Regular Curve}
+\label{sec:Regular Curve}
+
+\begin{defn}[Regular Curve]
+    Let $ k \geq 1 $. 
+    We say that a paramatrized curve $ \left( f,I\right)  $ of class $ \mathscr{ C } ^k $
+    is regular if 
+    \[
+        f'(t) \neq 0 \ \forall t \in I
+    \]
+    A geometric curve is regular if there exists a paramatrized which is regular. 
+    \label{def:Regular Curve}
+\end{defn}
+
+If $ \mathscr{ C } $ is of class $ \mathscr{ C } ^1 $, then there exists $ f: I \to
+\mathscr{ C }  $, where $ \mathscr{ C } = f\left( I\right)  $ 
+\[
+    f'(t) \neq 0 \quad f'(t) \text{ is tangent to } \mathscr{ C } ^k \text{ at } f(t)
+\]
+
+If $ \left( I,f\right)  $ is regular then every reparametrization $ \left( J,g \right)  $ 
+is also regular. Indeed : $ \forall t, \ f'(t) \neq 0  $ gives 
+\[
+    g = f \circ e \implies \forall t,  \ g'(t) = \underbrace{f'(e(t))}_{\neq 0} \times 
+    \underbrace{e'(t)}_{\neq 0}  \neq 0
+\]
+
+\begin{exmp}[]
+    A line segment in $ \mathbb{R}^2 $ with $ t \to \left( t, at+b\right)  $ regular,
+    can also be
+    reparametrizated by $ t\to \left( t^3, at^3+b\right)  $ non regular. The reason for this is 
+    \[
+        f'(t) = \left( 3t^2, 3at^2\right) = 0 \text{ at } x = 0
+    \]
+\end{exmp}
+\subsubsection{Remark}
+This curve does not admit a regular paramatrization. 
+
+    
+\begin{figure}[ht]
+    \centering
+    \incfig{regular-and-non-regular-curves}
+    \caption{Regular and Non-regular curves}
+    \label{fig:regular-and-non-regular-curves}
+\end{figure}
+
+However, this is not to say that there does not exist parametrizations of these figures,
+it is just to say that $ f'(a) = 0 $ where a is the non-smooth point. 
+
+Furthermore, we have 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{c1-but-not-c2}
+    \caption{ $ \mathscr{ C } ^1 $ but not $ \mathscr{ C } ^2 $}
+    \label{fig:c1-but-not-c2}
+\end{figure}
+
+This curve is $ \mathscr{ C } ^1 $ since $ f''(x) = 0 $. 
+\newpage 
+
+\section{Metric Properties of Curves}
+\label{sec:Metric Properties of Curves}
+\subsection{Length of curves}
+\label{subsec:Length of curves}
+\begin{defn}[Length of a curve]
+    Let $ f : I = [a,b] \to \mathbb{R}^d $. We see that the straight line segments 
+    obviously have less length than $ \mathscr{ C }  $. $ \\ $
+    Let $ \mathscr{ S }  = \set{ \text{ subdivisions } a=t_0 < \dots < t_n = b } $.
+
+    For $ s \in \mathscr{ S }   $ we denote 
+    \[
+        \gamma(s) = \sum_{i=0}^{N-1} \| f(t_{i+1}) - f(t_i) \|^{ }_{ }  
+    \]If $ \set{ \gamma(s), s \in \mathscr{ S }   }  $ is bounded we say that $ f $ is
+    rectifiable. Its lengh is defined by 
+    \[
+        \gamma(f) = \sup_{s \in \mathscr{ S } } \gamma(s)
+    \]
+    Then If $ f:[a,b] \to \mathbb{R}^d $ is $ \mathscr{ C } ^1 $ then $ f $ is rectifiable
+    and 
+    \[
+        \gamma(f) = \int\limits_{a}^{b} \| f'(t) \|^{ }_{ } \ dt
+    \]
+    \label{def:Length of a curve}
+\end{defn}
+Sketch of proof $ \\ $
+
+\begin{align*}
+    \int\limits_{a}^{b} \| f'(t)  \|^{ }_{ } \ dt &= \sum_{i=1}^{n-1}
+    \int\limits_{t_i}^{t_{i+1}} \| f'(t)  \|^{ }_{ } \ dt \\ 
+\end{align*}
+The right hand side of this term gives us 
+\begin{align*}
+     &\sim \left( t_{i+1} - t_i \right) \| f'(t) \|^{ }_{ }   \\ 
+     &\sim \left( t_{i+1} - t_i \right) \frac{ \| f(t_{i+1} - f(t_i)  )  \|^{ }_{ }  }{
+     \left | t_{i+1} - t_i \right |  }   \\ 
+\end{align*}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{length-of-a-curve}
+    \caption{Length of a Curve}
+    \label{fig:length-of-a-curve}
+\end{figure}
+
+
+
+
+
+\subsection{Arc Length Parametrization}
+\label{subsec:Arc Length Parametrization}
+\begin{defn}[]
+    Let $ \left( I,f\right) \in \mathscr{ C } ^1 $ where $ I = [a,b] ,\ t_0 \in I $. We
+    call arc-length the map 
+    \begin{align*}
+        \simga: I &\to \mathbb{R}  \\
+        t &\to \int\limits_{t_0}^{t} \| f'(\mu) \|^{ }_{ } \ d\mu \\ 
+    \end{align*} 
+    \label{def:}
+\end{defn}
+\subsubsection{Remark}
+$ \left | \sigma(t) \right |  $ is the length of the curve between $ f(t)  $ and $ f(t_0)
+$ where $ \sigma(t) < 0 \iff t<t_0 $
+\subsubsection{Remark}
+If $ f $ is regular then $ \sigma  $ is strictly increasing and $ \sigma'(t) = \| f'(t)
+\|^{ }_{ } > 0 $, therefore, $ \sigma  $ is an admissable change of variable of class $
+\mathscr{ C } ^1 $
+
+\begin{defn}[]
+    $ f\circ \sigma^{-1} $ is an arc-length paramatrization of the curve. 
+    \label{def:}
+\end{defn}
+So every $ \mathscr{ C } ^1 $ regular curve admits an arc-length paramatrization.
+We use, by convention, $ S $ as the parameter of the arc-length parametrization.
+
+\begin{figure}[ht]
+    \centering
+    \incfig{arc-length-paramatrization}
+    \caption{Arc-length Paramatrization}
+    \label{fig:arc-length-paramatrization}
+\end{figure}
+
+
+
+
+
+
+
+
+\begin{prop}[]
+    \begin{itemize}
+      \item  The arc-length paramatrization is unique up to the parameter $ t_0 $ if $ I = [a,b],\
+    t_0 = a $.
+\item $ \forall s \in J, \ \| f'(s) \|^{ }_{ } = 1 $ if $ f $ arc-length param 
+\item $ \forall s \in J, f'(s) \perp f''(s)  $ for $ f $ arc-length
+    \end{itemize}  
+\end{prop}
+\begin{proof}
+    Let $ g $ be any parametrization and $ f = g \circ \sigma^{-1}  $. Then 
+    \[
+        \forall s \ f'(s) = g'\left( \sigma^{-1} (s) \right) \times \left(
+        \sigma^{-1}\right) '(s) = \frac{ g'\left( \sigma^{-1}(s)\right)  }{ \| g'\left(
+    \sigma^{-1}(s)\right)  \|^{ }_{ }  } 
+    \]
+    where 
+    \[ \left( \sigma^{-1}\right)' (s) = \frac{ 1 }{ \sigma'\left(\sigma^{-1}(s)\right) } = 
+    \frac{ 1 }{ \| g'\left( \sigma^{-1}(s)\right)  \|^{ }_{ }  } \]
+    Then $ \| f'(s) \|^{ }_{ } = 1 $ and 
+    \[
+        \forall s \in J \ \| f'(s) \|^{ 2}_{ } = \langle f'(s) , f'(s) \rangle = 1
+    \]
+    We derive, $ \forall s \in J  $
+    \[
+        2 \langle f''(s)  , f'(s)  \rangle = 0 \implies f''(s) \perp f'(s)
+    \]
+\end{proof}
+
+\section{Planar Curves}
+\label{sec:Planar Curves}
+\subsection{Serret-Fresnet Frame}
+\label{subsec:Serret-Fresnet Frame}
+Let $ f : I \to \mathbb{R}^2, \in \mathscr{ C } ^1 $-regular. Then 
+\[
+    T(t) = \frac{ f'(t)  }{ \| f'(t) \|^{ }_{ }  } \quad N(t) = \text{rot}_{ \frac{ \pi }{
+    2}} \left( T(t)\right) 
+\]
+So $ \left( f(t), \boldsymbol{T}(t), \boldsymbol{N} (t) \right)  $ is a frame that is
+called the Serret-Fresnet Frame.
+
+\subsubsection{Remark}
+If arc-length then we have 
+\[
+    T(s) = f'(s) \qquad N(s) = \text{rot} _{ \frac{ \pi }{ 2 } }\left( T(s)\right) 
+\]
+
+\subsection{Curvature}
+\label{subsec:Curvature}
+\begin{defn}[Curvature]
+    Let $ f : I \to \mathbb{R}^2 $ arc-length. The curvature at $ f(s)  $ is defined by 
+    \[
+        k(s) \coloneqq \langle f''(s)  , N(s)  \rangle = \pm \| f''(s) \|^{ }_{ } 
+    \]
+    \label{def:Curvature}
+\end{defn}
+\begin{prop}[]
+    Let $ f : I \to \mathbb{R} $ any parametrization. Then 
+    \[
+        k(u) = \frac{ \text{det} \left( f'(u), f''(u) \right)  }{ \| f'(u) \|^{3 }_{ }  } 
+    \]
+    \label{def:}
+\end{prop}
+
+\begin{proof}
+    We denote $ \overline{f} = f \circ \sigma^{-1}  $ the arc-length parametrization. We
+    put $ u = \sigma^{-1}(s)  $. Then 
+    \begin{align*}
+        \overline{f}'(s) &= f'\left( \sigma^{-1}(s) \right) \frac{ 1 }{ \| f'\left( \sigma^{-1}
+        (s)\right)  \|^{ }_{ }  }  \\
+                     &= \frac{ f'(u) }{ \| f'(u) \|^{ }_{ }  }  \\ 
+    \end{align*}
+    We derive again 
+    \begin{align*}
+        \overline{f}''(s)  &= \frac{ f''(u) }{ \| f'(u) \|^{2 }_{ }  } + f'(u) \frac{ d }{
+        ds}  \\ 
+    \end{align*}
+    where $ \frac{ d }{ ds }  $ is the real value result of the rhs above 
+    \begin{align*}
+        \text{det} \left( \overline{f}'(s), \overline{f}''(s) \right)  &= \text{det}
+        \left( \frac{ f'(u) }{ \| f'(u) \|^{ }_{ }} , \frac{ f''(u) }{ \| f'(u) \|^{2 }_{
+            }}
+        + \lambda u f'(u)   \right)  \\ 
+                                                                       &=
+                                                                       \frac{\text{det}
+                                                                       \left(f'(u), f''(u)
+                                                                   \right)  }{ \| f'(u)
+                                                               \|^{3 }_{ }   }  \\ 
+    \end{align*}
+    And 
+    \begin{align*}
+        \text{det} \left( \overline{f}'(s) , \overline{f}''(s) \right) &= \text{det} \left( T(s),
+        k(s)N(s)\right) \\
+        &= k(s)
+    \end{align*}
+    since, 
+    \[
+        f''(s) = k(s)N(s) 
+    \]
+    \[
+        k(s) \coloneqq \langle f''(s) , N(s) \rangle = \pm \| f''(s) \|^{ }_{ } 
+    \]
+\end{proof}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{curvature}
+    \caption{curvature}
+    \label{fig:curvature}
+\end{figure}
+
+
+
+
+
+
+
+
+\subsection{Osculating Circle and Center of Curvature}
+\label{subsec:Osculating Circle and Center of Curvature}
+\begin{defn}[]
+    \[
+        c(t) = f(t) + \frac{ 1 }{ k(t) } N(t) 
+    \]
+    is called the center of curvature. 
+    \[
+        \frac{ 1 }{ \left | k(t) \right |  } 
+    \]
+    is the radius of curvature at $ f(t) $
+    The circle 
+    \[
+        \mathscr{ C } \left( c(t), \frac{ 1 }{ \left | k(t) \right |  } \right) 
+    \]
+    The evolute of $ f $ is the set of centers of curvatures.
+\end{defn}
+
+
+\subsection{Serret-Fresnet Formula}
+\label{subsec:Serret-Fresnet Formula}
+\begin{prop}[]
+    \[
+        T'(s) = k(s)N(s) \qquad N'(s) = -k(s)T(s)  
+    \]
+    lhs done is done, and rhs is by definition 
+\end{prop}
+
+\subsection{Total Curvature}
+\label{subsec:Total Curvature}
+
+\begin{ftheo}[Total Curvature]
+    Let $ f: I \subset \mathbb{R}\to \mathbb{R}^2 $ planar curve parametrized by
+    arc-length, then 
+    \[
+        \int\limits_{a}^{b} k(s) \ ds = \theta(a,b)
+    \]
+    is the angle between the two tangents at a and b.
+    \label{th:Total Curvature}
+\end{ftheo}
+
+
+\begin{proof}
+    \[
+        f(s) = \begin{pmatrix*}
+            x(s)  \\
+            y(s)  
+        \end{pmatrix*}
+        \quad \theta (s) = \left( (o,x) , T(s) \right) 
+    \]
+    where $ o  $ is the angle between tangent and the x? 
+    Then 
+    \[
+        T(s) = \begin{pmatrix*}
+            \cos \theta (s)   \\
+            \sin \theta (s)   \\
+        \end{pmatrix*}
+        \quad 
+        N(s) = 
+        \begin{pmatrix*}
+            -\sin \theta (s)  \\
+            \cos \theta (s)   
+        \end{pmatrix*}
+        
+    \]
+    However, 
+    \[
+        T'(s) = k(s) N(s) \quad \text{ and } T'(s) = \theta '(s) N(s) 
+    \]
+    then 
+    $ \theta '(s) = k(s)  $. 
+    then 
+    \[
+        \int\limits_{a}^{b} \theta '(s) ds = \theta(b) - \theta(a) 
+    \]
+    which is the difference between the angles. 
+\end{proof}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{total-curvature}
+    \caption{Total Curvature}
+    \label{fig:total-curvature}
+\end{figure}
+
+In figure \ref{fig:total-curvature} we have $ \theta_1\left( a,b\right) = \theta_2\left(
+a,b\right) = \theta_3\left( a,b\right) + 6\pi $. We defined the "winding number" as an
+index refering to the full revolutions around the a curve that is closed of class $
+\mathscr{ C } ^2 $.  
+
+\[
+    k = \frac{ l }{ 2\pi  } \int\limits_{a}^{b} k(s) \ ds \in \mathbb{Z}
+\]
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{winding-numbers}
+    \caption{Winding Numbers}
+    \label{fig:winding-numbers}
+\end{figure}
+
+\subsubsection{Concluding Thoughts}
+\begin{itemize}
+  \item Metrics of a curve are given by the 1st derivative
+  \item Them shape of a curve is given by the second derivative. 
+  \item Arc length parametrization gives constant speed along the curve 
+\end{itemize}
+
+
+
+
+
+

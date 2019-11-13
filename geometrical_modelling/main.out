@@ -1,0 +1,50 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Needs of CAGD}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Lagrange Interpolation}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{Lagrange polynomial}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{Runge Phenomenon}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.3}{Approximation Result}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.4}{Need to check this}{section.1.2}% 7
+\BOOKMARK [1][-]{section.1.3}{Exercise 1 : Lagrange interpolation}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.3.1}{Solutions }{section.1.3}% 9
+\BOOKMARK [1][-]{section.1.4}{Interpolation with Splines}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.4.1}{Minimization Result}{section.1.4}% 11
+\BOOKMARK [2][-]{subsection.1.4.2}{Approximation Result}{section.1.4}% 12
+\BOOKMARK [1][-]{section.1.5}{Exercise 2 : Hermite Interpolation }{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.5.1}{Solutions}{section.1.5}% 14
+\BOOKMARK [0][-]{chapter.2}{Bezier Curves}{}% 15
+\BOOKMARK [1][-]{section.2.1}{Bernstein Polynomials}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.1.1}{Properties}{section.2.1}% 17
+\BOOKMARK [1][-]{section.2.2}{Bezier Curves}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.1}{Refresher on Convex Hull and Barycenter}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.2}{Definition of Bezier Curves}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.3}{Properties}{section.2.2}% 21
+\BOOKMARK [1][-]{section.2.3}{Algorithms to evaluate Bezier Curves and their derivatives}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.3.1}{Derivative of Bezier curve}{section.2.3}% 23
+\BOOKMARK [1][-]{section.2.4}{Tutorial 2: B\351zier Curves and Bernstein polynomials}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.4.1}{Solutions}{section.2.4}% 25
+\BOOKMARK [0][-]{chapter.3}{Curves in the Plane}{}% 26
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.2}{Generalities on Paramaterized Curves}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.2.1}{Reminder}{section.3.2}% 29
+\BOOKMARK [1][-]{section.3.3}{Parametrization and Geometric Curves}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.1}{ReParametrization}{section.3.3}% 31
+\BOOKMARK [1][-]{section.3.4}{Regular Curve}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.5}{Metric Properties of Curves}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.5.1}{Length of curves}{section.3.5}% 34
+\BOOKMARK [2][-]{subsection.3.5.2}{Arc Length Parametrization}{section.3.5}% 35
+\BOOKMARK [1][-]{section.3.6}{Planar Curves}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.6.1}{Serret-Fresnet Frame}{section.3.6}% 37
+\BOOKMARK [2][-]{subsection.3.6.2}{Curvature}{section.3.6}% 38
+\BOOKMARK [2][-]{subsection.3.6.3}{Osculating Circle and Center of Curvature}{section.3.6}% 39
+\BOOKMARK [2][-]{subsection.3.6.4}{Serret-Fresnet Formula}{section.3.6}% 40
+\BOOKMARK [2][-]{subsection.3.6.5}{Total Curvature}{section.3.6}% 41
+\BOOKMARK [0][-]{chapter.4}{Space Curves}{}% 42
+\BOOKMARK [1][-]{section.4.1}{Definition}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.2}{Curvature and Principle Normal}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.3}{Serret-Frenet frame}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.4}{Tortion }{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.5}{Serret-Fresnet Formla}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.6}{Fundamental Theorem for Local Theory of Curves}{chapter.4}% 48
+\BOOKMARK [1][-]{section.4.7}{Tutorial 3: Plane and Space Curves}{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.7.1}{Solutions}{section.4.7}% 50

@@ -1,0 +1,107 @@
+\chapter{End of FT Lecture, FT of distributions} 
+
+$ \delta =  $ u' in the meaning of distributions with $ u(t) = 0 $ for $ t < 0  $ and $
+u(t) = 1 $ for $ t \geq 0 $
+
+\[
+    \forall \varphi\in \mathscr{ D } , \langle \delta  , \varphi  \rangle = \varphi(0)
+\] 
+\[
+    \langle \delta_a  , \varphi \rangle = \varphi(a) 
+\]
+
+product $ f \in \mathscr{ C } ^{\infty} $ and $ T \in \mathscr{ D } '  $. $ \delta T $
+defined as 
+\[
+\forall \varphi \in \mathscr{ D } \ \langle fT , \varphi \rangle = \langle T , f \varphi \rangle 
+\]
+
+
+\subsubsection{Convolution}
+$ s \in \mathscr{ C } '  $ (distribution of compact support) $ \\ $
+$ T \in \mathscr{ S }  $ , $ S * T \in \mathscr{ S } '  $
+$ \\ $
+
+$ f\delta_a = f(a)  $
+and $ \Delta_a = \sum_{}^{} \delta_n a  $ and $ f \Delta_a = \sum_{}^{} f\left( na \right)
+\delta_{na} $ which is the sampling of f with step size a. 
+
+\begin{itemize}
+  \item $ \delta * f = f * \delta = f $
+  \item $ \delta_a * f = \mathscr{ S } _a f  $
+  \item $ \Delta_a * f = \sum_{}^{} \mathscr{ S } _{na} f = ?  $
+  \item $ \Delta_a *f(t) = \sum_{}^{} f\left( t-na\right)  $ a periodic signal with period
+      = a built from f
+\end{itemize}
+
+\subsection{FT of distribution}
+\label{subsec:FT of distribution}
+\begin{defn}[]
+    Let $ f \in \mathscr{L}^1 $ and $ \varphi \in \mathscr{ D }  $
+    \[
+        \langle \widehat{f}  , \varphi \rangle = \int\limits_{  }^{ } \int\limits_{ }^{ }
+        e^{ -2i\pi \lambda u } f(u) \ du \ \varphi(\lambda) \ d\lambda 
+    \]
+    \[
+        = \langle f , \widehat{ \varphi} (u) \rangle 
+    \]
+    we want to have $ \forall T \in \mathscr{ S } ' , \ \langle \widehat{T}  , \varphi
+    \rangle = \langle T , \widehat{ \varphi } \rangle  $ 
+    \label{def:}
+\end{defn}
+
+But it does not work because 
+\[
+    \forall \varphi \in \mathscr{ D } , \widehat{ \varphi } \notin \mathscr{ D } 
+\]
+
+Then, we must have that $ T $ is defined on $ \mathscr{ S } '  $ , 
+\[
+    \forall T \in \mathscr{ S } ' \not \forall \phi \in \mathscr{ S } , \ \langle
+    \widehat{T}  , \varphi \rangle = \langle T , \widehat{ \varphi}  \rangle 
+\]
+
+if $ f \in \mathscr{ L } ^1 \left( \mathscr{ L } ^2 \right) , \ \widehat{T_f} =
+T_{\widehat{f}}  $ 
+$ \\ $
+if $ T \in \mathscr{ S } ' , \mathscr{ F } \left( \mathscr{ F } T\right) =
+\widehat{\widehat{T}} = T_{\sigma}  $. 
+
+\begin{exmp}[]
+$ \widehat{\delta}  $ defined by 
+\begin{align*}
+    \forall \varphi \in \mathscr{ L } ,  \ \langle \widehat{\delta}  , \varphi \rangle  &=
+    \langle \delta  , \widehat{ \varphi}  \rangle \\ 
+      &= \widehat{\phi(0)}  \\ 
+      &= \int\limits_{ }^{ } \varphi(t) \ dt \\ 
+      &= \langle 1 , \varphi \rangle   \\ 
+\end{align*}
+
+$ \widehat{\delta} = 1 $ which is the Heisenberg Principle. 
+\end{exmp}
+
+\begin{align*}
+    \langle \widehat{\delta_a}  , \varphi \rangle  &= \langle \delta_a , \widehat{
+    \varphi}  \rangle  \\ 
+                                                   &= \widehat{ \varphi}(a)  \\ 
+                                                    &= \int\limits_{ }^{ } e^{ -2i\pi at }
+                                                    \varphi(t) \ dt \\ 
+                                                     &= \langle e^{ -2i\pi a \cdot }  ,
+                                                     \varphi(\cdot)  \rangle  \\ 
+\end{align*}
+$ \widehat{\delta_a} = e^{ -2i\pi a \cdot }  $ and $ \widehat{\delta^{(k)}} = \left( 2i\pi
+\right) \delta $
+
+$ \\ $
+\subsection{Sawtooth}
+\label{subsec:Sawtooth}
+\[
+    \widehat{\Delta_a} = \widehat{ \sum_{}^{} \delta_{na} } (\lambda) = \sum_{}^{n}   e^{ 2i\pi na
+    \lambda } 
+\]
+
+Assume $ f \in \mathscr{ L }_p ^1(a) $ where $ a =  $ period 
+Fourier Series of $ f $ 
+
+Something about calculating fourier series using distributions? 
+

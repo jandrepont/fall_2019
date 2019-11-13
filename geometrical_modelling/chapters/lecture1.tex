@@ -1,0 +1,740 @@
+\chapter{Introduction}
+\section{Needs of CAGD}
+\label{sec:Needs of CAGD}
+\begin{itemize}
+  \item Design curves or surfaces
+  \item Bezier curves : $ \\ $Introduced in the 70s
+      \begin{itemize}
+          \item Pierre Bezier (Renault)
+          \item De Casteljau (Citreon)
+      \end{itemize}
+  \item We want polynomials that are smooth without sharp corners. Want local movement so
+      we can change aspects of the curve rather than the entire curve. 
+  \item We stitch together polynomials in order to avoid Runge phenomenon. 
+\end{itemize}
+
+\section{Lagrange Interpolation}
+\label{sec:Lagrange Interpolation}
+\begin{defn}[Problem]
+$ \\ $    We have $ y_0, \cdots, y_n \in  \mathbb{R}^d $ and parameters $ t_0, \cdots,
+    t_n \in \mathbb{R}$.
+    We want to find a function 
+    \[
+        f : [t_0, \cdots, t_n] \to \mathbb{R}^d, \mathscr{ C }^d  \text{ such that } f(t_i) = y_i \qquad
+        0 \leq i \leq n
+    \]
+    \label{def:Problem}
+\end{defn}
+\newpage 
+\subsection{Lagrange polynomial}
+\label{subsec:Lagrange polynomial}
+We find a solution which is a polynomial. 
+\begin{ftheo}[Lagrange Polynomial] $ \\ $
+    Let $ y_0, \cdots, y_n  \in \mathbb{R}^d$ with $ a = t_0 < \cdots < t_n = b $ real
+    numbers. $ \\ $
+    There exists a unique polynomial $ L_n $ that satisfies 
+    \[
+        L_n(t_i) = y_i \qquad \text{ deg}\left( L_n\right)  \leq n
+    \]
+    see drawing for cases of degree $ < n $. For instance, in the case where all the
+    points fall on a straight line.
+    \label{th:Lagrange Polynomial}
+\end{ftheo}
+The polynomial function $ L_n $ is given by 
+\[
+    L_n(t) = \sum_{i=0}^{n} y_i P_i(t)  
+\]
+where 
+\[
+    P_i(t) = \frac{ \prod_{j\neq i} \left( t - t_j\right)  }{ \prod_{j\neq i} \left( t_i -
+    t_j \right)  } \qquad \begin{cases}
+        P_i(t_j) &= 0 \text{ if } j \neq i \\
+                 &=1 \text{ if } j = i
+    \end{cases}
+\]
+
+\begin{proof} $ \\ $
+    We denote $ E : $ the space of polynomial functions of degree $ \leq n  $.
+    $ E \subset \mathbb{R}^{n+1} $.
+    Consider the map 
+    \begin{align*}
+        \varphi : &E \to \mathbb{R}^{n+1} \\ 
+                  &P \to \left( P(t_0) , \cdots , P(t_n) \right) 
+    \end{align*}
+    is a linear map, to show this consider $ P,Q $ and $ \alpha \in \mathbb{R}$. 
+    \begin{align*}
+        (\alpha P + Q)  &= 
+        \begin{pmatrix*}
+           \alpha P\left( t_0\right) + Q\left( t_0\right)   \\
+             \vdots \\
+             \alpha P\left( t_n\right) + Q\left( t_n\right) 
+        \end{pmatrix*}
+         =
+        \left(\begin{pmatrix*}
+             \alpha P\left( t_0\right)  \\
+             \vdots \\
+             \alpha P\left( t_n\right) 
+        \end{pmatrix*}
+        + \begin{pmatrix*}[r]
+             Q\left( t_0\right)  \\
+             \vdots \\
+             Q\left( t_n\right) 
+        \end{pmatrix*} \right) 
+        \\ 
+                        &= \alpha \begin{pmatrix*}
+             P\left( t_0\right) \\
+              \vdots \\
+              P\left( t_n\right) 
+         \end{pmatrix*}
+         + \begin{pmatrix*}
+             Q\left( t_0\right)  \\
+             \vdots \\
+             Q\left( t_n\right) 
+         \end{pmatrix*} \\
+                        &= \alpha \varphi \left( P\right) + \varphi \left( Q\right)  
+    \end{align*} 
+    For uniqueness we need to show that $ \varphi $ is bijective. 
+    We will prove that $ \varphi $ and indeed any linear map is injective if the null
+    space of the map is the set $ \set{0} $. $ \\ $. 
+    \begin{lem}[Linear maps take 0 to 0] $ \\ $
+        Suppose $ T $ is a linear map that takes $ V\to W $. Then $ T(0) = 0 $. 
+        \begin{proof}
+            Since T is linear, we have : 
+            \[
+                T(0) = T(0 + 0) = T(0) + T(0) 
+            \]
+            which is only true when $ T(0) = 0 $
+        \end{proof} 
+        \label{lem:Linear maps take 0 to 0}
+    \end{lem} 
+    \begin{lem}[Injectivity is equivalent to null space equals \{0\}]
+        $ \\ $Let $ T \in \left( V,W\right)  $. Then T is injective if and only if null $ T =
+        \set{0} $
+        \label{lem:Injectivity is equivalent to null space equals 0}
+    \end{lem}
+    \begin{proof}
+        First, suppose that $ T $ is injective. We want to prove that null $ T = \set{0}
+        $. By \ref{lem:Linear maps take 0 to 0} we know that $ \set{0} \subset  $ null $ T
+        $. To prove the inclusion in the other direction suppose that $ v \in N\left(
+        T\right)  $(null of T). Then 
+        \[
+        T(v ) = 0 = T(0) 
+        \]
+        Since $ T $ is injective, this implies that $ v = 0 $. Therefore we can conclude
+        that $ N\left( T\right) = \set{0} $ as desired. 
+        To prove the other direction we begin with $ N\left( T\right) = \set{0}  $ and
+        want to show that $ T $ is injective. Suppose $ u,v \in V $. and $ Tu = Tv $.
+        Then 
+        \[
+            0 = Tu - Tv = T(u-v) 
+        \]
+        thus $ u-v  $ is in $ N\left( T\right)  $ which is $ \set{0}  $. Hence, $ u-v = 0
+        $ which implies that $ u = v  $. Hence $ T $ is injective. 
+    \end{proof}
+    The last theorem we need is the Fundamental Theorem for Linear Maps. 
+    \begin{ftheo}[Fundamental Theorem of Linear Maps]
+        Suppose $ V $ is finite-dimensional and $ T \in \mathcal{ L } \left( V,W\right)
+        $. Then the range $ T $ is finite-dimensional and 
+        \[
+        \text{dim } V = \text{ dim } \mathcal{ N } \left( T\right) + \dim \mathcal{ R }
+        \left( T\right)  
+        \] where $ \mathcal{ R  } \left( T\right)  $ is the range. 
+        \label{th:Fundamental Theorem of Linear Maps}
+    \end{ftheo}
+    We supply the definition for surjective and injective functions in order to begin the
+    proof. 
+    \begin{defn}[Injective]
+        A function $ T : V \to W $ is called injective if $ Tu = Tv  $ implies $ u = v.
+        $
+        \label{def:Injective}
+    \end{defn}
+    \begin{defn}[Surjective]
+        A function $ T : V \to W $ is called surjective if its range equals $ W $.
+        \label{def:Surjective}
+    \end{defn}
+    We can finally now prove \ref{th:Lagrange Polynomial}. We have that $ \varphi  $ is a
+    linear map. The kernel/nullspace of $ \varphi  $ is given by. 
+    \[
+        \mathcal{ N  } \left( \varphi \right) = \set{ P \in E : \varphi\left( P\right) = 0 } 
+    \]
+    Thus, 
+    \[
+    \exists  P \in E, \qquad \varphi = \begin{pmatrix*}
+         0 \\
+         \vdots \\
+         0
+    \end{pmatrix*}
+    \]
+    Then $ P\left( t_i\right) = 0 \ \forall i \in \set{ 0,\cdots, n}  $ where P is of
+    degree $ \leq n $. Now, we can write our polynomial as 
+    \[
+       P =  a_1 + a_2x + a_3x^2 + \cdots + a_nx^{n-1}
+    \]
+    Where $ P\left( t_0\right) = a_1 + a_2t_0 + \cdots + a_nt_0 = 0 $. We can proceed by
+    induction using differentiation to show that 
+    \begin{align*}
+        P' &= a_2 + 2a_3(t_1) + \cdots + \left( n-1\right) a_nt_2^{ n-2 } \implies a_2 = 0  
+    \end{align*}
+    and so on. Giving us that the kernel of $ \varphi $ is $ \set{ 0 }  $. Using
+    \ref{th:Fundamental Theorem of Linear Maps} we have 
+    \begin{align*}
+        \text{dim} E &= \text{dim } \mathcal{ N } \left( \varphi \right) + \text{ dim }
+        \mathcal{ R  } \left( \varphi\right) \\ 
+                     &= 0 + \text{ dim } \mathcal{ R  } \left( \varphi\right)   
+    \end{align*} 
+    By \ref{lem:Injectivity is equivalent to null space equals 0} and \ref{def:Surjective}
+    we have that $ \varphi  $ is bijective and uniqueness of the polynomial used to
+    represent each set of real numbers $ \left( y_0, \cdots, y_n \right) \in \mathbb{R}^d $
+\end{proof}
+
+\subsection{Runge Phenomenon}
+\label{subsec:Runge Phenomenon}
+Consider the function
+\[
+    f(x) = \frac{ 1 }{ 1 + 25x^2 } \qquad \text{ on } [-1,1]
+\]
+where $ t_0, \cdots, t_n $ are uniformly distributed on the interval and $ y_i = f(t_i) $
+
+\subsection{Approximation Result}
+\label{subsec:Approximation Result}
+\begin{ftheo}[]
+    $ \\ $
+    Let $ f : [a,b] \to \mathbb{R} $ of class $ \mathscr{ C }^{n+1}  $
+    and $ L_n  $ the lagrance polynomial associated to $ f $ and the nodes $ a = t_0 < \cdots
+    < t_n = b$ $ \\ $
+    Then 
+    \[
+        \| f - L_n \|^{ }_{ \infty} \leq \frac{ 1 }{ \left( n+1\right) ! } \| q_{n+1} \|^{
+        }_{ \infty } \| f _{  }^{ (n+1) }  \|^{ }_{ \infty} 
+    \]
+    where $ q _{ n+1 }^{  } (t) = \prod _{ i=0 }^{ n  } \left( t - t_i\right)  $
+    \label{th:}
+\end{ftheo}
+$ \| q _{ n+1 }^{  }  \|^{ }_{ \infty}  $ is dependent on the interval. Also, $ \| f _{
+}^{ (n+1) }  \|^{ }_{ \infty}  $ is also unknown. These two can go towards infinity
+depending on the function and the interval.
+
+\begin{proof}
+    We introduce the error function 
+    \[
+    g \coloneqq f - L_n 
+\] and we fix $ t \in [a,b] \setminus \set{ t_i }    $ and we also define 
+\[
+    k(u) \coloneqq g(u) - \frac{ q _{ n+1 }^{  } (u)g(t) }{ q _{ n+1 }^{  } (t) } 
+\]
+Note that $ \forall i $ we have 
+\begin{align*}
+    g(t_i)  &= f(t_i) - L_n\left( t_i\right)  \\ 
+            &= f(t_i) - \sum_{k=0}^{n} y_k P_k(t_i) \\
+            &P_k\left( t_i\right) = 0 \ \forall k \neq i \text{ and } = 1 \text{ if } k=i \\
+     g\left( t_i\right)  &= f\left( t_i\right) - y_k\left( 1\right) \\
+                       0  &= y_k - y_k \\ 
+\end{align*}
+Furthermore, 
+\subsection{Need to check this}
+\label{subsec:Need to check this}
+
+
+\begin{align*}
+    k(t_i) &= g(t_i) - \frac{ q _{ n+1 }^{  } (t_i) g(t) }{ q _{ n+1 }^{  } (t) } \\
+     &= 0 -  \frac{ q _{ n+1 }^{  } (t_i) \left( 0\right)  }{ q _{ n+1 }^{  } (t) } = 0\\ 
+\end{align*}
+
+We now consider when $ t \neq t_i $. The function $ g $ has n+2 distinct real roots, each
+at $ t = x $ and $ t = x_i $ for $ i \in \set{ 0,\cdots, n }  $. 
+We also have $ k(t) = 0$ then $ k $ vanishes
+at $ \left( n+2\right)  $ points then by Rolle's theorem (Mean Value Theorem) $ k' $ vanishes at (n+1)
+$ \\ $
+$ \implies  $ $ k _{  }^{ (n+1) }  $ vanishes at one point denoted by $ \xi  $. 
+$ \\ $
+\[
+    k _{  }^{ n+1 } (\xi) = 0
+\]
+A calculation gives 
+\[
+    0 = k _{  }^{ (n+1) }(\xi) = g _{  }^{ (n+1) } (\xi) - q _{ n+1 }^{ (n+1) } (\xi) \frac{
+    g(t) }{ q _{ n+1 }^{  } (t) } 
+\]
+However, 
+Since $ L_n  $ has dimension $ \leq n  $ then $ g _{  }^{ (n+1) } = f  _{  }^{ (n+1)  } $ 
+and $ q _{ n+1 }^{  } (\xi) = \left(n+1\right) ! $ since it is simply the $ (n+1) $
+derivative of a polynomial with leading term $ t _{  }^{ (n+1) }  $.  
+Then 
+\[
+    f _{  }^{ (n+1) } \left( \xi\right) = \left( n+1\right) ! \frac{ g(t) }{ q _{ n+1 }^{
+    } (t)  } 
+\]
+Then 
+\[
+    \left | g(t) \right | = \frac{ 1 }{ \left( n+1\right) ! } \| q _{ n+1 }^{  } (t)  \|^{
+    }_{ } \left | f _{  }^{ (n+1)  } (\xi) \right | \leq \frac{ 1 }{ \left( n+1\right) ! }
+    \| q _{ n+1 }^{ (t)  }  \|^{ }_{ \infty } \| f _{  }^{ (n+1) }  \|^{ }_{ \infty } 
+\]
+\end{proof}
+
+
+\section{Exercise 1 : Lagrange interpolation}
+\label{sec:Exercise 1 : Lagrange interpolation}
+We first recall the Lagrange Polynomial         
+\begin{defn}[Lagrange Polynomial]
+    Let $ f L [a,b] \to \mathbb{R} $ be a function and $ a\leq x_0 \leq \cdots \leq x_n
+    \leq b $ in [a,b]. The Lagrange polynomial is given by 
+    \[
+        L_n(x) = \sum_{i=0}^{n} y_iP_i(x)\text{, where } P_i(x) = \frac{
+        \prod_{j\neq i}\left( x-x_j\right)  }{ \prod_{j\neq i} \left( x_i - x_j\right)  } 
+    \]
+    \label{def:Lagrange Polynomial}
+\end{defn}
+
+The goal of this exercise is to use another formulation for the Lagrange Polynomial, whose
+calculation is less costly. 
+\begin{enumerate}[]
+    \item Using the above formulation, estimate the number of operations to evaluate
+        $ L_n(x) $. 
+    \item Show that the $ n+1 $ functions 
+        \[
+        x\to1, \text{ and } x\to\left( x-x_0\right) \cdots\left( x-x_k\right) , \ 0\leq k
+        \leq n-1 
+    \] form a basis for the set of polynomial functions on $ [a,b] $ of degree $ \leq  n$. 
+\item We now denote by $ L_k  $ the lagrange polynomial of degree $ \leq n $ that
+    satisfies $ L_k(x_i) = f(x_i) $ for $ 0\leq i \leq k $. We also denote by $ f[x_0,
+    \cdots, x_k ] $ the dominant coefficient. Show by induction that 
+    \[
+        L_n(x) = f(x_0) + \sum_{k=1}^{n} f[x_0, \cdots, x_k] \left( x-x_0\right) \cdots 
+        \left( x-x_{k-1}\right) 
+    \]
+\item Show that for every $ k\geq 1 $
+    \[
+        f[x_0, x_1, \cdots, x_k] = \frac{ f[x_1, \cdots, x_k] - f[x_0, \cdots, x_{k-1}  }{
+        x_k - x_0 } \text{ and } f[x_i] = f(x_i)
+    \] 
+\end{enumerate} 
+\subsection{Solutions }
+\subsubsection{1)}
+We have n+1 points, thus, for 
+\[
+    \sum_{i=0}^{n} y_i P_i(x) 
+\]
+$ P_i(x)  $ gives us n multiplications and n divisions, which is $ \mathcal{ O  } (n)  $.
+Since we do this n times we have $ \mathcal{ O  }(n^2)$. 
+
+\subsubsection{2)}
+\begin{proof}
+Let $ \psi_i  $ be functions such that 
+\begin{align*}
+    \psi_{-1} &\to 1  \\ 
+    \psi_0 &\to (x-x_0)  \\ 
+    \psi_1 &\to (x-x_0)(x-x_1)  \\ 
+           &\vdots \\
+    \psi_n &\to (x-x_0)(x-x_1)\cdots\left( x-x_{n-1}\right)   \\ 
+\end{align*}
+it is sufficient to show that $ \left( \psi_{-1}, \cdots, \psi_{n-1} \right)  $ is
+linearly independent.
+To do this, consider 
+\[
+    P(x) = C_0\psi_{-1} + C_1\psi_{0} + \cdots + C_n\psi_{n-1} = 0
+\]
+
+if $ x = x_0 $ then 
+\[
+    P(x_0) = C_0 + 0 = 0 \iff C_0 = 0
+\]
+Likewise, if $ x = x_1 $
+\[
+    P(x_1) = 0 + C_1\psi_0  + 0 = 0 \iff C_1 = 0
+\]
+we can continue this for all $ x_i$ where $ i \in \set{ -1, \cdots, n-2 }  $. Finally
+giving us 
+\[
+    P(x_{n-2}) = 0 + 0 + \cdots + 0 + C_n\psi_{n-1} = 0 \iff C_n = 0
+\] 
+\end{proof}
+
+\subsubsection{3)}
+For $ k=0 $ we simply have 
+\[
+    L_0(x_0) = f(x_0)  
+\]
+for $ k=1 $ we have 
+\[
+    L_1(x_1) = f(x_0) + f[x_0, x_1](x-x_0)  
+\]
+for $ k + 1 $ we have 
+\begin{align*}
+    L_{k+1} (x) &= L_k(x) + f[x_0, \cdots, x_{k-1} ] \left( x-x_0\right) \cdots\left(
+    x-x_k\right) \\
+        \underbrace{ L_{k+1}(x) - L_k(x)}_{\text{polynomial of degree } \leq k+1 } &= f[x_0, \cdots, x_{k-1} ] \left( x-x_0\right) \cdots\left( x-x_k\right)
+\end{align*}
+this polynomial vanishes at $ x_0, \cdots, x_k $ or $ k+1  $ values. Then $ \alpha  $ is
+the dominant coefficient given by $ L_k(x) + f[x_0, \cdots, x_{k-1} ] $.  
+
+\section{Interpolation with Splines}
+\label{sec:Interpolation with Splines}
+
+The goal is to have piecewise polynomial curve with smooth gluings. 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{piecewisepoly}
+    \caption{piecewise polynomial interpolation}
+    \label{fig:piecewisepoly}
+\end{figure}
+
+
+\begin{ftheo}[Cubic B-spline]
+    Let $ y_0, \cdots, y_n \in \mathbb{R}^{n+1} $ with $ a=t_0 < \cdots < t_n = b $ and $
+    \alpha, \beta \in \mathbb{R}$. There exists a unique 
+    \[
+        S : [a,b] \to \mathbb{R} \qquad \text{ such that } 
+    \]
+    \begin{enumerate}[label={(\roman*)}]
+        \item $ S _{ [t_i, t_{i+1} ] }^{  }  $ is polynomial of degree $ \leq 3 $. 
+        \item $ S $ is of class $ \mathscr{ C } ^2 $
+        \item $ S(t_i) = y_i $
+        \item $ S'(a) = \alpha  $ and $ S'(b) = \beta  $
+    \end{enumerate}
+    \label{th:cubicBspline}
+\end{ftheo}
+
+Sketch of proof
+\begin{proof} $ \\ $
+    \begin{enumerate}
+        \item We denote $ \mathscr{ P }  $ the space of functions $ f : [a,b] \to \mathbb{R}$ of 
+            class $ \mathscr{ C } ^2 $ which are polynomials of degree $ \leq 3 $ on each
+            $ [t_i, t_{i+1}] $.
+            \begin{itemize}
+              \item $ \mathscr{ P }  $ is a vectorial space
+              \item dim $ \left( \mathscr{ P } \right)  $ is $ 4*n $ where n is the number
+                  of intervals and 4 is given by the number of parameters to find each
+                  point. 
+              \item We have 3 conditions for each point if we want to uphold $ \mathscr{ C
+                  } ^2 $ continuity. 
+                  \begin{itemize}
+                      \item $ P_i(t_i) = P_{i+1}(t_i) $ 
+                      \item $ P_i'(t_i) = P'_{i+1}(t_i) $ 
+                      \item $ P_i''(t_i) = P''_{i+1}(t_i) $ 
+                  \end{itemize}
+            \end{itemize} 
+        \item A solution $ S \in \mathscr{ P }  $ of the theorem satisfies 
+            \begin{enumerate}
+                \item $ S'\left( a\right) = \alpha  $
+                \item $ S'\left( b\right) = \beta  $
+                \item $ S\left( t_i\right) = y_i, \ \forall i \in \set{ 0, \cdots, n }  $
+            \end{enumerate}
+            Each line is a linear system in the set of paramters i.e. $ S'(a) = \alpha  $
+            and we know that 
+            $ S(x) = a_0 + a_1x + a_2x^2 + a_3x^3  $ on $ [t_0, t_1]  $ and 
+            $ S'(\alpha) = a_1 + 2x^2 + 3a_3x^2 = \alpha  $ linear in $ \left( a_0, a_1,
+            a_2, a_3\right)  $. These equations are independent (ADMITTED). Thus, there exists
+            a unique solution. 
+    \end{enumerate}
+\end{proof}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{cubicbspline}
+    \caption{cubicBSpline}
+    \label{fig:cubicbspline}
+\end{figure}
+
+\subsection{Minimization Result}
+\label{subsec:Minimization Result}
+\begin{ftheo}[]
+    Let $ y_0, \cdots, y_n \in \mathbb{R}^{n+1}  $ $, a = t_0, \cdots, t_n = b $. $ S  $
+    the spline associated to this interval.  
+    Then, 
+    \[
+    S = argmin \int\limits_{a}^{b} f''(t) ^2 \ dt \qquad f \in E 
+    \]
+    Where $ E = \set{ f:[a,b] \to \mathbb{R} \text{ of class } \mathscr{ C } ^2, f'(a) =
+    \alpha, f'(b) = \beta, f(t_i) = y_i }  $ This is to say that the spline is the
+    solution to this problem with the least curvature or minimal energy. 
+    \label{th:minResult}
+\end{ftheo}
+\begin{proof}
+    Let $ f\in E $, $ e = f - S $ the error. 
+    \begin{enumerate}
+        \item First, we show that for every function $ h : [a,b]  $ piecewise linear
+            continuous on each $ [t_i, t_{i+1} ]  $ 
+\begin{figure}[ht]
+    \centering
+    \incfig{hpwlin}
+    \caption{h(t)} 
+    \label{fig:hpwlin}
+\end{figure}       
+$ \\ $
+            One has : 
+            \[
+                \int\limits_{a}^{b} e''(x)h(x) = 0
+            \]
+            Indeed, 
+            \begin{align*}
+                \int\limits_{a}^{b} e''(x)h(x) =& \sum_{i=0}^{n-1}
+                \int\limits_{t_i}^{t_{i+1}} e''(x)h(x) \ dx \\
+                                                &= \sum_{i=0}^{n-1} \left( \left[e'(x)h(x)
+                                                \right] _{ t_i }^{ t_{i+1}  } - 
+                                                \int\limits_{t_i}^{t_{i+1} } e'(x)h'(x) \
+                                            dx \right) \\
+            \end{align*}
+            for the left hand term we have 
+            \[
+                e'(b)h(b) - e'(a)h(a) = 0 
+            \] since 
+            \[
+                e'(b) = f'(b) - S'(b) = 0 \text{ and } e'(a) = f'(a) - S'(a) = 0 
+            \]
+            For the right hand term 
+            \[
+                h'(x) = \lambda_i \text{ on } [t_i, t_{i+1} ]  
+            \]
+            Then 
+            \begin{align*}
+                \sum_{i=0}^{n-1} \int\limits_{t_i}^{t_{i+1} } e'(x) \lambda_i \ dx 
+                = -\sum_{i=0}^{n-1} \lambda_i \left( e\left(
+                t_{i+1}) - e(t_i) \right) \right)  \ dx 
+            \end{align*}
+            indeed 
+            \[
+                e(t_i) = f(t_i) - S(t_i) = y_i - y_i = 0
+            \]
+        \item 
+            \begin{align*}
+                \int\limits_{a}^{b} \left(f''(x)\right)^2 \ dx &= \int\limits_{a}^{b} \left( e''(x) +
+                    S''(x)
+                \right) ^2 \ dx \\
+                                                               & = \int\limits_{a}^{b}
+                                                               \left(e''(x)\right)^2 \ dx 
+                                                               + \int\limits_{a}^{b}
+                                                               \left(S''(x)\right)^2 \ dx + 2
+                                                  \int\limits_{a}^{b} e''(x)S''(x) \ dx
+            \end{align*} 
+            S is piecewise poly of degree $ \leq 3 $. 
+            Then $ h = S'' $ piecewise linear then 
+            \[
+            \int\limits_{a}^{b} e''h \ dx= 0
+        \] from step (1). 
+        Then 
+        \[
+            \int\limits_{a}^{b} \left(f''(x)\right)^2 \ dx = \int\limits_{a}^{b}
+            \left(e''(x)\right)^2\ dx +
+            \int\limits_{a}^{b} \left(S''(x)\right)^2 \ dx
+        \]
+        Then 
+        \[
+            \int\limits_{a}^{b} \left(f''(x)\right)^2 \ dx \geq \int\limits_{a}^{b}
+            \left(S''(x)\right)^2 \ dx 
+    \] (S is a minimizer, by assumption). 
+    We have equality if and only if 
+    \[
+        \int\limits_{a}^{b} \left(e''(x)\right)^2 \ dx = 0 \iff e''(x) = 0 \text{ because } e'' \text{ is continuous }  
+    \] 
+    Using $ e(t_i) = 0 $ $ e'(a) = e'(b) = ? \then e \equiv 0 $.  
+    \end{enumerate}
+\end{proof}
+If $ f'' \equiv 0 \implies f' = a \implies f(x) = Ax + B$ we don't want zero, but we do
+want minimization of curvature. 
+
+
+
+\subsection{Approximation Result}
+\label{subsec:Approximation Result}
+\begin{ftheo}[]
+    Let $ f:[a,b] \to \mathbb{R} \in \mathscr{ C } ^2 $. $ S  $ the spline associated to $
+    a = t_0 < \dots < t_n = b$. and $ y_i = f(t_i)  $. 
+    Then, 
+    \[
+        \| f - S \|^{ }_{ \infty } \leq \frac{ h^{3/2}  }{ 2 } \| f \|^{ }_{ 2} 
+    \]
+    with $ h = \max \left | t_i - t_{i+1}  \right |  $
+    \[
+        \| f' - S' \|^{ }_{ \infty } \leq h^{1/2} \| f'' \|^{ }_{ 2} 
+    \]
+    \label{th:}
+\end{ftheo}
+\begin{proof}
+    We put $ e = f - S $. 
+    \[
+    \| e'' \|^{ 2}_{ 2} = \int\limits_{a}^{b} e''^2 = \int\limits_{a}^{b} f''^2 -
+    \int\limits_{a}^{b} S''^2 
+    \]
+    \begin{equation}
+        \leq \int\limits_{a}^{b} f''^2 = \| f'' \|^{ 2}_{ 2} \text{ (*) } 
+        \label{eq:fNorm}
+    \end{equation}
+    $ \forall i,\ e(t_i) = 0  $ By Rolle's theorem, this implies 
+    $ \forall i, \ \exists \xi i \in [t_i, t_{i+1} ]  $ s.t. $ e'(\xi_i) = 0  $
+    Then 
+    \[
+        \forall i \in [a,b] ,\ \exists t' \in [a,b] \text{ s.t. } e'(t') = 0 \text{ and }
+        \left | t - t'  \right | \leq h
+    \]
+    Then 
+    \begin{align*}
+        \left | a'(t)  \right | &\leq \left | e'(t) - e'(t')  \right | \\
+                                &\leq \left | \int\limits_{t}^{t'} e''(s) \ ds \right |  \\ 
+                                &\leq \left | \int\limits_{t}^{t'} ds \right | ^{1/2} 
+                                \left | \int\limits_{t}^{t'} e''(s)^2 ds \right | ^{1/2}
+                                \text{ C.S. } \\ 
+                                &\leq h^{1/2} \| e'' \|^{ }_{ 2}  \\ 
+                                &\leq h^{1/2} \| f'' \|^{ }_{ 2} \text{ by (*)}  \\ 
+    \end{align*}
+    Second inequality : 
+    $ \\ $
+    Since $ e(t_i) = 0 \implies \forall t \in [a,b] \ \exists t''  $ s.t. 
+    \[
+    \left | t '-  t''  \right | < \frac{ h }{ 2 } \text{ and } e(t'') = 0
+    \]
+    \begin{align*}
+        \left | e(t)  \right | &\leq \left | e(t) - e(t'')  \right | \\
+         &\leq \left | \int\limits_{t}^{t''} e'(s) \ ds  \right | \\
+         &\leq \left | t - t'' \right | 
+         \| e' \|^{ }_{ \infty } \\ 
+    \end{align*}
+    The left side we have $ \leq \frac{ h }{ 2 }  $ and for the right side we have $
+    h^{1/2} \| f'' \|^{ }_{ 2}  $ 
+    Which gives : 
+    \[
+        \frac{ h^{3/2}  }{ 2 } \| f'' \|^{ }_{ 2} 
+    \]
+\end{proof}
+\section{Exercise 2 : Hermite Interpolation }
+\label{sec:Exercise 2 : Hermite Interpolation }
+Let $ p  $ and $ q $ be two point of $ \mathbb{R}^d $ and $ \boldsymbol{u} , \boldsymbol{v}
+\in \mathbb{R}^d  $ two vectors. The goal of this exercise is to find a polynomial curve $ \gamma :
+[0,1] \to \mathbb{R}^d $ that interpolates the points and its derivatives, namely that
+satisfies 
+\[
+    \gamma(0) = p \quad \gamma'(0) = \boldsymbol{u} \quad \gamma(1) = q \quad \gamma'(1) =
+    \boldsymbol{v} 
+\]
+We first assume that $ d=1 $. The function $ \gamma : [0,1] \to \mathbb{R} $ is thus a
+polynomial function, whose degree is denoted by $ k $. 
+\begin{enumerate}
+    \item What is the minimal degree $ k $ that we have to take if we want to expect a
+        unique solution for any $ p, q, \boldsymbol{u} , \boldsymbol{v }  $? 
+    \item Calculate the coefficients of such a polynomial function $ \gamma $ 
+    \item Write $ \gamma $ under the form 
+        \[
+            \gamma(x) = ph_0(x) + qh_1(x) + \boldsymbol{u} h_2(x)+ \boldsymbol{v} h_3(x)
+        \]
+        where $ h_i $ are the polynomial functions to be determined. 
+$ \\ $    We now suppose that $ d \geq 1 $. 
+    \item Can we still write $ \gamma  $ under the form 
+        \[
+            \gamma(x) = ph_0(x) + qh_1(x) + \boldsymbol{u} h_2(x)+ \boldsymbol{v} h_3(x)
+        \]
+    \item Consider $ [a,b] $ with partition $ a = x_0 < \dots < x_n = b $ of $ [a,b] $
+        with a set of points $ p_0, \cdots, p_n $ and set of vectors $ \boldsymbol{u} _0,
+        \cdots, \boldsymbol{u_n} $
+        Determine the curve $ \gamma : [a,b] \to \mathbb{R}^d $ which is polynomial of
+        degree $ k $ on each interval $ [x_i, x_{i+1}]  $ and that satisfies 
+        \[
+            \gamma(x_i) = p_i \quad \text{ and } \quad \gamma'(x_i) = \boldsymbol{u} _i
+        \]
+\end{enumerate}
+\subsection{Solutions}
+\label{subsec:Solutions}
+\subsubsection{1)}
+We treat each of these conditions as a linear system. For the solution to be unique we
+must solve a system with 4 conditions and 4 unknowns, therefore $ k =4 $. 
+
+\subsubsection{2)}
+We have 
+\begin{align*}
+    \gamma(0) &= p \\
+    \gamma'(0) &= \boldsymbol{u}  \\ 
+    \gamma(1) &= q \\ 
+    \gamma'(1) &= \boldsymbol{v }  
+\end{align*}
+Consier that $ k = 4 $ we have 
+\begin{align*}
+    \begin{pmatrix}[cccc|c]
+        a_0& 0& 0& 0& p \\
+        0& a_1& 0& 0& \boldsymbol{u}  \\
+        a_0& a_1& a_2& a_3&  q\\
+        0& a_1& 2a_2& 3a_3&  \boldsymbol{v} \\
+    \end{pmatrix}
+     &\implies a_0 = p \text{ and } a_1 = \boldsymbol{u}  \\ 
+\end{align*}
+This gives us 
+\[
+p + \boldsymbol{u} + a_2 + a_3 &= q \implies a_2 + a_3 = q - p - \boldsymbol{u}  
+\]
+\[
+\boldsymbol{v } = \boldsymbol{u} + 2\left( q - p - \boldsymbol{u} \right)  
++ a_3 \implies a_3 = \boldsymbol{u} + \boldsymbol{v } -2q + 2p
+\]
+Simple calculations show that 
+\begin{align*}
+    a_0 &= p \\ 
+    a_1 &= \boldsymbol{u}  \\ 
+    a_2 &= -3p + 3q - 2\boldsymbol{u} - \boldsymbol{v }  \\ 
+    a_3 &=  2p - 2q + \boldsymbol{u} + \boldsymbol{v} \\ 
+\end{align*}
+
+\subsubsection{3)}
+The equation can be written as 
+\[
+            \gamma(x) = ph_0(x) + qh_1(x) + \boldsymbol{u} h_2(x)+ \boldsymbol{v} h_3(x)
+\]
+where 
+\begin{align*}
+    h_0(x)  &= 1 -3x^2 + 2x^3 \\ 
+    h_1(x) &= 3x^2 - 2x^3 \\ 
+    h_2(x) &= x -2x^2 + x^3 \\ 
+    h_3(x) &= -x^2 + x^3 \\ 
+\end{align*}
+
+\subsubsection{4)}
+Yes, we simply denote 
+\[
+    \gamma_i(x) = p_ih_0(x) + q_ih_1(x) + \boldsymbol{u}_ih_2(x)+ \boldsymbol{v}_ih_3(x)
+\]
+we then have 
+
+\[
+    \gamma(x) = 
+    \begin{pmatrix*}
+        p_0 \\
+        \vdots \\
+        p_{n-1}
+    \end{pmatrix*}h_0(x) + 
+    \begin{pmatrix*}
+        q_0 \\
+        \vdots \\
+        q_{n-1}
+    \end{pmatrix*}h_1(x) + 
+    \begin{pmatrix*}
+        \boldsymbol{u} _0 \\
+        \vdots \\
+        \boldsymbol{u} _{n-1}
+    \end{pmatrix*}h_2(x) + 
+    \begin{pmatrix*}
+        \boldsymbol{v}_0  \\
+        \vdots \\
+        \boldsymbol{v}_{n-1} 
+    \end{pmatrix*}h_0(x) 
+\]
+
+\subsubsection{5)}
+We first want to have $ t_i, t_{i+1}  $ to be $ [0,1] $
+Thus, for $ t \in [t_i, t_{i+1}]  $ we have 
+\[
+    \frac{ t - t_i }{ t_{i+1} - t_i } 
+\]
+which then gives us 
+\[
+\gamma\left( \frac{ t - t_i }{ t_{i+1} - t_i }\right) 
+\]
+However, we see that the derivate of $ \gamma  $ gives 
+\[
+    \gamma'\left( \frac{ t - t_i }{ t_{i+1} - t_i }\right) = \frac{ 1  }{ 
+    \left( t_{i+1} - t_i \right) } \gamma \left( \frac{ t - t_i }{ t_{i+1} - t_i } \right)  
+\]
+Thus, our equation now becomes 
+\[
+\gamma \left( \frac{ t - t_i }{ t_{i+1} - t_i }\right) = 
+p_ih_0(x) + p_{i+1}h_1(x) + \left( t_{i+1} - t_i \right) \boldsymbol{u}_ih_2(x) 
++ \left(  t_{i+1} - t_i \right) \boldsymbol{u}_{i+1}h_3(x) 
+\]
+

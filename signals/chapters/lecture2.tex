@@ -1,0 +1,688 @@
+\chapter{Discrete Fourier Transform} 
+\label{ch:Discrete Fourier Transform} 
+
+In practice we don't work with the function $ f $, but with the finite vector 
+\begin{equation}
+\left( f(t_0) , f(t_1) , \cdots , f(t_{N-1}) \right)
+\label{eq:function_N_points}
+\end{equation}
+where $ t_i \in [0,T] $ are the N samples assuming that timestep is $ dt  $ or $ h $ and $
+h = t_{k+1} - t_k,\ \forall k\in N$ . Because we have only N points we can only calculate
+N coefficients. 
+$ \\ $
+We want to calculate $ \left( C_n\right),\ n \in \mathbb{Z} $ using
+\ref{eq:function_N_points}. 
+A motivating example for calculating the coefficients can be shown through the trapazoidal
+rule. This is a numerical approximation technique that follows the idea of the Riemann
+integral as a sum of areas under the curve of a function. For a function that is sampled N
+times, we can partition it along [0,T] such that we have partitions $ p_i $ where $ p_i
+= [t_i, t_{i+1}] $. 
+\begin{defn}[Trapazoidal Rule]
+    Let $ \left( f(t_0) , f(t_1) , \cdots , f(t_{N-1}) \right) $ be a function sampled N
+    times over the interval $ [a,b] $ and let $ \set{ x_k }  $ be a partition of this
+    interval such that 
+    \[
+        a = x_0 < x_1 < \cdots < x_{N-1} = b
+    \]
+    where the lengt is given by $ \triangle x_k = x_k -x_{k-1}  $ then 
+    \begin{equation}
+        \int\limits_{a}^{b} f(x) \ dx \approx \sum_{k=1}^{N} \frac{ f(x_{k-1}) + f(x_k)
+        }{ 2 } \triangle x_k 
+        \label{eq:trapazoidal_rule}
+    \end{equation}
+    \label{def:Trapazoidal Rule}
+\end{defn}
+
+Thus, 
+we will be able to calculate only N coefficients, because $ C_n \to 0 $ we calculate $
+\set{ C_n}_{ -\frac{N }{ 2 }\leq n \leq \frac{ N }{ 2 } }  $. We will calculate N
+approximations of 
+$ \set{ C_n}_{ -\frac{N }{ 2 }\leq n \leq \frac{ N }{ 2 }}  $
+    using $ \left( f_0, ..., f_{N-1}\right)  $. \
+
+To calculate $ C^N_n $, we will assume that 
+\[
+    \forall k \in [0, N-1],\qquad  \sum_{n=-
+    \frac{ N }{ 2 } }^{ \frac{ N }{ 2 } -1} C_n^N e_n(t_k) = f(t_k) = f_k 
+\]
+expanding $ e_n(t_k) $
+\[
+    \forall k \in [0, N-1] , \qquad \sum_{n = -\frac{ N }{ 2 } }^{ \frac{ N }{ 2 } -1} C^N_n
+    e^{ \frac{ 2i\pi nk }{ N } } = f_k
+\]
+
+\[
+    \forall k \in [0, N-1] , \qquad \sum_{n = -\frac{ N }{ 2 } }^{ -1 } C^N_n
+    e^{ \frac{ 2i\pi nk }{ N } }  + \sum_{n=0}^{ \frac{ N }{ 2 } -1} C_n^Ne^{ \frac{ 2i\pi nk
+    }{ N } }= f_k 
+\]
+
+
+
+Lets denote $ \omega_N = e^{2i\pi / N}  $ then $ e^{2i\pi nk / N} = \omega_N^{nk} $
+
+\begin{align*}
+    \forall k \in [0,N-1] \qquad \sum_{ n = -\frac{ N }{ 2 } }^{-1} C^N_n\omega_N^{nk} + \sum_{n=0}^{
+    \frac{ N }{ 2 } -1} C_N^n\omega^{kn}_N &= f_k \\
+    %&\sum_{p = \frac{ N }{ 2 } }^{ N - 1} C^N_{p-N} \  \omega ^{k\left(
+    %p-n\right) }_N + \sum_{n=0}^{ \frac{ N }{ 2 } -1} C_n^Nw_n^{nk} = f_k\\
+    %&\text{Since } \omega_N^{k(p-n)} = \omega_N^{  \\ 
+    \sum_{p = \frac{ N }{ 2 } }^{N-1} C^N_{p - N}
+        \omega ^{kp}_N + \sum_{n=0 }^{ \frac{ N }{ 2 } -1} C^N_n \omega^{kn}_N &= f_k
+\end{align*}
+\[
+f_k = \sum_{n=0}^{N-1} F_n\omega_N  
+\]
+where $ F_n = C^N_n  $ for $ 0 \leq n \leq \frac{ N }{ 2 }  $ and $ F_n = C^N_{n - N} $
+for $ \frac{ N }{ 2 } \leq n \leq N $.
+
+
+The discrete Fourier transform calculates
+\[
+\left( F_n\right) \quad \text{ using } \quad \left( f_k\right) 
+\]
+DFT is performed using a fast algorithm called the fast fourier transform. 
+
+$ \\ $
+\underline{Remark: }
+$ \\ $
+\[
+    \sum_{k=0}^{N-1} f_k\omega_N^{-kp} = \sum_{k=0}^{N-1} \sum_{n=0}^{N-1} F_n
+    \omega_n^{nk}\omega_N^{-kp}  
+\]
+\[
+    = \sum_{n = 0}^{N-1} F_n \sum_{k=0}^{N-1} \omega_n^{ k\left( n-p\right) } 
+\]
+However, 
+\[
+    \sum_{k=0}^{N-1} \omega_N^{ k\left( n-p\right) } = 
+    \begin{cases}
+        \overbrace{\frac{ 1 - \omega_N ^{N \left( n-p\right) } }{ 1 - \omega_N ^{n-p}
+        }}^{=0} \qquad
+         &\text{ if }  n \neq p  \\
+        N \qquad &\text{ if } n = p
+    \end{cases}
+\]
+
+so we have 
+\[
+    \sum_{k=0}^{N-1} f_k \omega^{-kp}_N = NF_?
+\]
+\subsection{DFT}
+\label{subsec:DFT}
+\begin{align*}
+    f_0, \cdots f_{N-1}  &\to F_0, \cdots, F_{N-1} \text{ using } F_n = \frac{ 1 }{ N }
+    \sum_{k=0}^{N-1} f_k \omega_N^{-nk} \\
+    F_0, \cdots, F_{N-1}   &\to f_0, \cdots, f_{N-1} \text{ using } f_k =
+    \sum_{n=0}^{N-1} F_n\omega^{kn}_N \\
+                                    &\text{ and } F_N \text{ follows the same coefficient
+                                    labeling as before} \\
+                                    &\text{right before
+     mentioning the DFT}  \\ 
+\end{align*}
+
+If we note $ \Omega_N $ the matrix 
+\[
+    \Omega_n[n,k] = \omega^{nk}_N 
+    
+\]
+which is 
+\[
+\begin{pmatrix*}
+    1& 1& 1& \cdots&  1 \\
+    1&  \omega_N& \omega_N^2& \cdots& \omega_N^{n-1} \\
+    1&  \omega_N^2& \omega_N^4& \cdots& \omega_N^{2(n-1)} \\
+    \vdots& & \ddots& & \vdots& \\
+    1&  \omega_N^{n-1}& \omega_N^{2(n-1)}& \cdots& \omega_N^{(n-1)^2} \\
+\end{pmatrix*}
+
+\]
+$ f = \Omega_NF $, $ F = \frac{ 1 }{ N } \overline{\Omega}_N f $, $ \left( \Omega^{-1}_N =
+\frac{ 1 }{ N } \overline{\Omega}_N\right)  $. 
+
+\underline{Just a note :  }
+$ \\ $
+DFT also allows to obtain F from $ f $ and $ f $ from F. $ F = \frac{ 1 }{ N }
+\Omega_N\overline{f} $.
+
+\section{Properties of DFT}
+\label{sec:Properties of DFT}
+\begin{enumerate}
+    \item $ \left( f_k\right)  $ is N-periodic vector 
+    \item $ \left( F_n\right)  $ is also a periodic vector
+    \item $ \left( C_n^N \right)  $ is also a N periodic sequence, while $ \left(
+        C_n\right)  $ is not a periodic sequence. 
+        \begin{itemize}
+            \item $ \left( C_n \to 0\right)  $ as $ n \to \omega $
+          \item $ C^N_n  $ is an approximation of $ C_n $ only for $ -\frac{ N }{ 2 } \leq
+              n \leq \frac{ N }{ 2 } $ 
+        \end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+    \item \[ \left( f_k\right) \to \left( F_n\right)  \]
+        \[
+            \left( f_{-k} \right) \to F_{-n}
+        \]
+        \[
+            \left( \overline{f_k}\right) \to \overline{F_{-n}} \text{ and vice versa}  
+        \]
+    \item $ \left( f_k\right)  $ odd (even) $ \implies  F_n$ odd(even)
+    \item $ \left( f_k\right)  $ real $ \implies F_{-n} = \overline{F_n} $
+    \item $ \left( f_k\right)  $ real and even then $ F_n $ real and even 
+    \item $ \left( f_k\right)  $ real and odd then $ F_n $ is pure imaginary and odd.
+\end{enumerate}
+
+
+
+(Question) Why are frequencies centered around zero? Why do we shift to -N/2 N/2? 
+
+
+\section{FFT : Pease algorithm}
+\label{sec:FFT : Pease algorithm}
+Let $ N = 2^n,\ n \in \mathbb{N}$. $ W_N = e^{ \frac{ 2i\pi }{ N } },\ m = \frac{ N }{ 2 }
+$. 
+\begin{align*}
+    F_k &= \frac{ 1 }{ N } \sum_{j=0}^{N-1} f_j\omega_N^{-kj} \\
+     &= \frac{ 1 }{ N } \sum_{j=0}^{ \frac{ N }{ 2 } - 1} f_j \omega _{ N }^{ -kj } + 
+     \underbrace{\left( \sum_{j= \frac{ N }{ 2 } }^{N-1} f_j \omega _{ N }^{ -kj }
+     \right)}_{j = s - \frac{ N }{ 2 } } \\
+      &= \frac{ 1 }{ N } \sum_{j=0}^{ \frac{ N }{ 2 } - 1} f_j \omega _{ N }^{ -kj } +
+      \frac{ 1 }{ N } \sum_{s=0}^{ \frac{ N }{ 2 } -1 } f_{s + \frac{ N }{ 2 } } \omega 
+      _{ N }^{ -\left( s + \frac{ N }{ 2 } \right) k }  \\ 
+\end{align*}
+However, 
+\[
+    \omega _{ N }^{ -k \frac{ N }{ 2 }  } = e^{ \frac{ -2i\pi k N  }{ 2N  } } = e^{-ik\pi}
+    = \left( -1\right) ^k
+\]
+Thus, 
+\[
+F_k = \frac{ 1 }{ N } \sum_{j=0}^{ \frac{ N }{ 2 } - 1} \omega _{ N }^{ -jk } \left( f_j +
+\left( -1\right) ^k f_{j+ \frac{ N }{ 2 } } \right) 
+\]
+
+If $ k = 2l $ for $ l \in [0, \cdots, \frac{ N }{ 2 } - 1] $ we have 
+\begin{align*}
+    F_{2l}  &= \frac{ 1 }{ N } \sum_{j=0}^{ \frac{ N }{ 2 } -1} \omega _{ N }^{ -2jl } 
+    \left( f_j + f_{j + \frac{ N }{ 2 } } \right) \\ 
+            &\text{Using } \omega _{ N }^{ -2jl } = e^{ \frac{ 2i\pi j2l }{ N } } = \omega
+            _{ m }^{ jl }  \\
+            & = \frac{ 1 }{ m } \sum_{j=0}^{m-1} \omega _{ m }^{ -jl } \left( f_j +
+            f_{j+m}\right)  \\ 
+\end{align*}
+If $ k = 2l + 1, \ k \in [0, N/2 - 1] $ 
+\begin{align*}
+    F_{2l + 1} &= \frac{ 1 }{ N } \sum_{j=0}^{N/2 - 1} \omega _{ N }^{ -j\left( 2l+1\right)
+    } \left( f_j - f _{ j + N/2  }^{  } \right) \\
+     &= \frac{ 1 }{ N } \sum_{j=0}^{N/2} \omega _{ m }^{ -jl } \omega _{ N }^{ -j } \left(
+     f_j - f _{ j+ N/2 }^{  } \right)  \\ 
+      &= \frac{ 1 }{ 2m } \sum_{j=0}^{m-1} \omega _{ m }^{ -jl } \omega _{ N }^{ -j }
+      \left( f_j - f _{ j + N/2  }^{  } \right)  \\ 
+\end{align*}
+
+Thus, we have 
+\begin{align*}
+    \forall l \in [0, \cdots, m-1]  \\ 
+    F_{2l} &= \frac{ 1 }{ 2 } DFT \left[ f_j + f _{ j+m }^{  } \right] \\ 
+    F_{2l+1} &= \frac{ 1 }{ 2 } DFT \left[ \omega 
+    _{ N }^{ -j } \left(  f_j -f _{ j+m }^{  }\right) \right] \\ 
+\end{align*}
+We have replaced the intial DFT of order N by 2 DFT of order N/2. 
+\newpage 
+\subsection{Visual Representation of the Algorithm and Computation}
+\label{subsec:Visual Representation of the Algorithm and Computation}
+\begin{figure}[ht]
+    \centering
+    \incfig{peasealgorithm}
+    \caption{peaseAlgorithm}
+    \label{fig:peasealgorithm}
+\end{figure}
+
+\begin{exmp}[Computation of $ F_4 $]
+    $ \\ $
+    Consider, $ k = 2 * 2 $, then we have $ l = 2 $ and 
+    \[
+        F_4 = \frac{ 1 }{ 8 } \sum_{j=0}^{3} \omega _{ 8 }^{ -2j2 } \left( f_j + f _{ j+
+        \frac{ N }{ 2 }  }^{  } \right)  
+    \]
+    which can be simplified using 
+    \[
+    \omega _{ N }^{ -2jl } = \omega _{ N }^{ -4j } = e^{ 2i\pi j2l / 8 } = \omega _{ 4 }^{
+    2l} 
+    \]
+    this gives, 
+    \[
+        \frac{ 1 }{ 4 } \sum_{j=0}^{3} \omega _{ 4 }^{ -2j } \left( f_j + f_{j+m} \right) 
+    \]
+    \begin{align*}
+        j = 0 \implies& \omega _{ 4 }^{ 0 } \left( f_0 + f_4 \right) \\
+                      & = \left( f_0 + f_4 \right) \\
+        j = 1 \implies& \omega _{ 4 }^{ -2 } \left( f_1 + f_5 \right) \\
+                      & =  e^{ i\pi} \left( f_1 + f_5 \right) \\
+                      & =  -\left( f_1 + f_5 \right) \\
+        j = 2 \implies& \omega _{ 4 }^{ -4 } \left( f_2 + f_6 \right) \\
+                      & =  e^{ 2i\pi} \left( f_2 + f_6 \right) \\
+                      & =  \left( f_2 + f_6 \right) \\
+        j = 3 \implies& \omega _{ 4 }^{ -6 } \left( f_3 + f_7 \right) \\
+                      & =  e^{ 3i\pi} \left( f_3 + f_7 \right) \\
+                      & =  -\left( f_3 + f_7 \right) \\
+    \end{align*}
+    which gives 
+    \begin{align*}
+        F_4 &= \frac{ 1 }{ 4 } \left( \left( f_0 + f_4 + + f_2 + f_6\right) - \left( f_1 + f_5 + f_3
+        + f_7 \right) \right) \\
+         &= \frac{ 1 }{ 4 } \left( \left( f _{ 0 }^{ 11 } + f _{ 2 }^{ 11 } \right) -
+         \left( f _{ 1 }^{ 11 } + f _{ 3 }^{ 11 } \right) \right)  \\ 
+     &= \frac{ 1 }{ 4 } \left( f _{ 0 }^{ 21 } - f _{ 1 }^{ 21 }   \right)  \\  
+    \end{align*}
+    which is equivalent to \ref{fig:peasealgorithm}. 
+    
+\end{exmp}
+
+
+
+
+
+
+\section{Exercises FFT: Pease Algorithm}
+\label{sec:Exercises FFT: Pease Algorithm}
+Assume that $ N = 2^n, \ n \in \mathbb{N} $. We want to quickly calculate the Discrete
+Fourier Transform 
+\[
+F = \left( F_k\right) \ k=0, \cdots, N-1 
+\] of the vector 
+\[
+f = \left( f_j\right) j = 0,\cdots N-1
+\]
+Let $ \Omega_N $ be the matrix of 
+\[
+\left( \Omega_n\right) _{ k,l } = \omega _{ N }^{ kl } = e _{  }^{ \frac{ 2i\pi kl }{ N }
+}  
+\]
+\begin{enumerate}
+    \item Check that $ f = \Omega_N F $
+    \item Write $ F_k  $ using $ \Omega_N $ and $ f $. 
+\end{enumerate}
+Let $ A_k\left( f\right) = \sum_{j=0}^{N-1} \omega _{ N }^{ kj } f_j $, the $ k^{th} $
+componant of the vector $ \Omega_Nf $. We can write $ A_k $ as the sum of the two
+summations. 
+\[
+A_k = \sum_{j=0}^{N/2 -1 } \omega _{ N }^{ kj } f_j + \sum_{j=N/2}^{N-1} \omega _{ N }^{
+kj } f_j
+\]
+
+\begin{enumerate}
+    \item Write $ A _{ 2k }^{  }  $ and $ A_{sk+1}  $ for $ k = 0, \cdots, N/2 -1 $. 
+    \item Using the prperties $ \omega _{ N }^{ 2kj } = \omega _{ N/2  }^{ kj }   $ and 
+        $ \omega _{ N/2 }^{ k\left( j+lN/2\right)  } = \omega _{ N/2 }^{ kj }  $ write $
+        A_{2lk} $ as a Discrete Fourier Transform of size $ N/2 $. Do the same thing for
+        $ A_{2k+1} $
+    \item If the complexity of a DFT of size N is $ O\left( N^2\right)  $, what is the
+        interest of the previous approach? 
+    \item The Pease algorithm is an iteration of this process. The two DFT of size $ N/2 $
+        will also be performed using the DFT of size $ N/4 $ etc. Draw for $ N=8 $ the
+        data movings and transformations of the 3 steps. Count the number of operations.
+        What is the complexity of the whole process? 
+    \item Write the algorithm for $ N = 2^n $, assuming you have an algorithm to reorder
+        the coefficients at the end. 
+    \item What is the complexity of this algorithm? 
+\end{enumerate}
+\subsection{Solutions}
+\label{subsec:Solutions}
+\subsubsection{1)}
+
+\begin{enumerate}
+    \item 
+We check that $ f = \Omega_N F $
+\begin{align*}
+    F_0 &= \frac{ 1 }{ N } \sum_{k=0}^{N-1} f_k \\
+    F_1 &= \frac{ 1 }{ N } \sum_{k=0}^{N-1} f_k\omega _{ N }^{ -k } \\
+     &\vdots \\ 
+    F_n &= \frac{ 1 }{ N } \sum_{k=0}^{N-1} f_k\omega _{ N }^{ -nk } \\
+\end{align*}
+Thus, $ \Omega_N F  $ gives us 
+\[
+\begin{pmatrix*}
+    1& 1& 1& \cdots&  1 \\
+    1&  \omega_N& \omega_N^2& \cdots& \omega_N^{n-1} \\
+    1&  \omega_N^2& \omega_N^4& \cdots& \omega_N^{2(n-1)} \\
+    \vdots& & \ddots& & \vdots& \\
+    1&  \omega_N^{n-1}& \omega_N^{2(n-1)}& \cdots& \omega_N^{(n-1)^2} \\
+\end{pmatrix*}
+\begin{pmatrix*}
+    F_0 \\
+    F_1 \\
+    F_2 \\
+    \vdots \\
+    F_n
+\end{pmatrix*}
+\]
+\[
+=
+\begin{pmatrix*}[l]
+    F_0& +& F_1& +& \dotsb& +& F_{n-1}\\
+    F_0& +& F_1\omega_N& +& \dotsb& +& F_{n-1}\omega _{ N }^{ n-1 } \\
+    F_0& +& F_1\omega _{ N }^{ 2 }& +& \dotsb& +& F_{n-1}\omega _{ N }^{ 2(n-1) } \\
+       &  &     &  & \vdots & &\\
+    F_0& +& F_1\omega _{ N }^{ n-1 }&  +& \dotsb& +& F_{n-1}\omega _{ N }^{ \left( n-1\right) ^2 } \\
+\end{pmatrix*}
+\] 
+
+\[
+\begin{pmatrix*}[c]
+    \sum_{n=0}^{N-1} F_n \\[0.5em]
+    \sum_{n=0}^{N-1} F_n\omega _{ N }^{ n } \\[0.5em]
+    \sum_{n=0}^{N-1} F_n\omega _{ N }^{ 2n } \\[0.5em]
+     \vdots  \\ 
+     \sum_{n=0}^{N-1} F_n\omega _{ N }^{ (N-1)n } \\[0.5em]
+\end{pmatrix*}
+=
+\begin{pmatrix*}[c]
+    f_0 \\[0.5em]
+    f_1 \\[0.5em]
+    f_2 \\[0.5em]
+    \vdots \\ 
+    f_{N-1} \\[0.5em] 
+\end{pmatrix*}
+\]
+
+\item 
+    \[ F_k = \frac{ 1 }{ N } \sum_{n=0}^{N-1} f_n\omega _{ N }^{ -nk }  \]
+
+\end{enumerate}
+
+\subsubsection{2)}
+Solutions to all of these exercises are given in \ref{sec:FFT : Pease algorithm} 
+
+
+
+
+\section{Exercises : Circular Convolution and DFT}
+\label{sec:Exercises : Circular Convolution and DFT}
+
+\begin{enumerate}
+    \item \textbf{Convolution of two discrete N - periodic signals : } $ \\ $
+        Assume that $ N = 2^n $, with $ n\in \mathbb{N} $. The numerical sequence $
+        (x_k)_{k\in \mathbb{Z}} $ is N periodic if 
+        \[
+            \forall k \in \mathbb{Z}, x_{k+N} = x_k
+        \]
+        The circular convolution between two N - periodic sequences $ (x_k)_{k\in
+        \mathbb{Z}}  $ and $ (y_k)_{k\in \mathbb{Z}} $ is defined by 
+        \begin{equation}
+            \forall k \in \mathbb{Z}, z_k = \left( x*y\right) _k = \sum_{q=0}^{N-1}
+            x_qy_{k-q}
+            \label{eq:circ-conv}    
+        \end{equation} 
+        Let $ (X_p)_{p\in \mathbb{Z}} $ the DFT of the N-periodic sequence $ (x_k)_{k\in
+        \mathbb{Z}} $ 
+        \[
+        X_p = \frac{ 1 }{ N } \sum_{k=0}^{N-1 } x_k \omega _{ N }^{ -kp } 
+        \]
+        with $ \omega_N = e^{ \frac{ 2i\pi }{ N } }  $. The sequences $ (Y_k)_{k\in
+        \mathbb{Z}}  $ and $ (Z_k)_{k\in \mathbb{Z}}  $ are the DFT of $ y_k, z_k $. 
+        \begin{enumerate}[label={(\alph*)}]
+            \item Show that $ z_k $ is a N-periodic sequence. So it is enough to calculate
+                $ z_k $ only for $ k = 0, \cdots, \left( N-1\right)  $. 
+            \item Prove that $ \left( x*y\right) _k = \left( y*x\right) _k $
+            \item How many operations are needed for the calculation of $
+                (z_k)_{k=0,\cdots,N-1} $ using formula \ref{eq:circ-conv}. Give a number
+                for $ n=64 $. 
+            \item Prove that $ (X_p)_{p\in \mathbb{Z}}  $ is also N-periodic. 
+            \item Show that $ Z_p = NX_pY_p, \forall p \in \mathbb{Z} $. 
+            \item Propose another method to calculate $ (z_k)  $. What is the complexity?
+                Give a number for n = 64. 
+            \item Prove that if $ \forall k \in \mathbb{Z}, w_k = x_ky_k $, then 
+                \[
+                    W_p = \sum_{q=0}^{N-1} X_qY_{p-q}
+                \]
+        \end{enumerate}
+    \item \textbf{Convolution of two discrete non-periodic signals : }
+        Let the sequences $ \left( x_k\right) _{l\in \set{ 0, \cdots, \left( M-1\right)  }
+        }  $ and $ \left( h_k\right) _{l\in \set{ 0, \cdots, \left( Q-1\right)  }}$ Assume
+        $ Q < M $ and let 
+       \[
+           y_k = \left( y * h \right) _k = \sum_{q=0}^{Q-1} h_qx_{k-q}  
+       \] 
+       \begin{enumerate}[label={(\alph*)}]
+           \item Show that the support of $ y $ is $ [0, M+Q-1]  $
+           \item If you directly use the convolution formula, what is the cost of
+               calculation of all non null $y_k$?
+           \item In order to perform this calculation, we can : 
+               \begin{itemize}
+                 \item Search $ N = 2^p $ such as $ N \geq \left( M+Q-1\right)  $
+                 \item extend the sequences $ x_k, h_k  $ to $ xk, h_k, k\in \set{ 0, N-1
+                     }  $ adding some zeros and using FFT to calculate $ y_k $. Using this
+                     technique, what is the cost of calculation? 
+               \end{itemize}
+           \item Compare the two methods for $ Q = 200 $ and $ M = 500 $. 
+           \item Compare for $ Q = 85, M = 1000 $. 
+           \item What can you conclude? 
+       \end{enumerate}
+   \item \textbf{Application to matrix diagonalization : } 
+       $ \\ $
+       Assume that, as in C language, we begin with 0 for an array. A $ N $ circulant
+       matrix is a matrix of complex numbers $ a_0, \cdots, a_{N-1}  $ organized such that
+       $ M_{k,l} = a_{\left( k-l\right) \text{Modulo} (N)} $. Notice that $
+       a_{(k)}\text{Modulo} (N) $, $ k\in \mathbb{Z} $ is a periodic sequence. Let $ M $
+       be a circulant matrix, $ y $ and $ x $ are of length $ N $ such that $ y = Mx $. 
+       \begin{enumerate}[label={(\alph*)}]
+           \item Draw a circulant matrix for $ N = 4 $. 
+           \item Show that 
+               \[
+                   y_k = \sum_{q=0}^{N-1} x_qa_{\left( k-q\right) \text{Modulo} (N)}
+               \]
+           \item Deduce that $ M $ can be diagonalized using DFT 
+               \[
+                   \frac{ 1 }{ N } \overbar{\Omega}_N M \Omega_N = \text{diag} \left(
+                   \overbar{\Omega}_Na\right) 
+               \]
+               where diag$ (v) $ denotes a diagonal matrix where diagonal elements are
+               compenets of $ v  $. $ v = \left( v_0, v_1, \cdots, v_{N-1} \right)  $ and
+               $ \left( \Omega_N\right) _{k,l} = \omega _{ N }^{ kl }  $
+       \end{enumerate}
+\end{enumerate}
+\subsection{Solutions}
+\label{subsec:Solutions}
+\subsubsection{1)}
+\begin{enumerate}[label={(\alph*)}]
+    \item ?
+    \item 
+        \begin{align*}
+            \left( x*y\right) _k &= \sum_{q=0}^{N-1} x_qy_{k-q} , \text{ let } p = k-q  \\
+                                 &= \sum_{p=k}^{k-N+1} x_{k-p}y_p  \\ 
+                                 &= \sum_{p=k+1-N}^{k} x_{k-p}y_p \\ 
+                                 &= \sum_{p=k+1-N}^{-1} x_{k-p}y_p + \sum_{p=0}^{k}
+                                 x_{x-p}y_p \qquad \text{ let } s = p+N \\ 
+                                 &= \sum_{p=0}^{k} x_{k-p}y_p + \sum_{s=k+1}^{N-1}
+                                 x_{k+N-s}y_{s-N}   \\ 
+        \end{align*}
+        since $ x_ky_k $ are N periodic we have 
+        \begin{align*}
+           \left( x*y\right) _k  &= \sum_{p=0}^{k} x_{k-p}y_p 
+           + \sum_{s=k+1}^{N-1} x_{k-s}y_{s}   \\  
+                                 &= \sum_{p=0}^{N-1} x_{k-p}y_p \\ 
+                                  &= \left( y*x\right)_k \\ 
+        \end{align*}
+    \item $ z_k = N\text{add}*N\text{mult}   $,  $ 64^2 = 4096 $. 
+    \item 
+        \begin{align*}
+            X_p &= \frac{ 1 }{ N } \sum_{k=0}^{N-1} x_k\omega _{ N }^{ -kp } \\
+            X_{p+N} &= \frac{ 1 }{ N } \sum_{k=0}^{N-1} x_k \underbrace{\omega _{ N }^{
+            -k(p+N) }}_{ e^{ -2i\pi k} = 1} 
+        \end{align*}
+    \item 
+        \begin{align*}
+            Z_p &= NX_pY_p \\ 
+             &= N\left( \frac{ 1 }{ N } \sum_{k=0}^{N-1} x_k\omega _{ N }^{ -pk }  \right)
+             \left( \frac{ 1 }{ N } \sum_{k=0}^{N-1} y_k \omega _{ N }^{ -pk } \right) \\ 
+         &= \frac{ 1 }{ N } \left( \sum_{}^{} x_k\omega _{ N }^{ -pk } \right) \left(
+         \sum_{}^{} y_k\omega _{ N }^{ -pk } \right)  \\ 
+         &= \frac{ 1 }{ N } \sum_{k=0}^{N-1} \sum_{q=0}^{k-1} x_qy_{k-q}\omega_N^{-kp}  \\ 
+        \end{align*}
+        However, 
+        \[
+            \omega _{ N }^{ -kp } = \omega _{ N }^{ -qp } \omega _{ N }^{ -(k-q)p } 
+        \]
+       \begin{align*}
+           Z_p &= \frac{ 1 }{ N } \sum_{k,q=0}^{N-1} x_q\omega _{ N }^{ -qp } y _{ k-q}
+           \omega _{ N }^{ -(k-q)p } \\ 
+            &=  \frac{ 1 }{ N } \sum_{q=0}^{N-1} \sum_{l=q}^{N-q-1} x_q\omega _{ N }^{ -qp
+            } y_l \omega _{ N }^{ -lp } \\ 
+       \end{align*}
+       Note : 
+       \begin{align*}
+           \sum_{l=-q}^{N-q-1} \cdots  &= \sum_{-q}^{-1} + \sum_{0}^{n-q-1}  \\ 
+            &= \sum_{N-q}^{n-1} + \sum_{0}^{N-q-1}  \text{ since N periodic}  \\ 
+             &= \frac{ 1 }{ N } \sum_{q=0}^{N-1} x_q \omega _{ N }^{ -kq }
+             \sum_{l=0}^{N-1} y_l \omega _{ N }^{ -pl } \\
+              &= NX_pY_p \\ 
+       \end{align*} 
+   \item Calc N fourier coefficients for each series is $ 2 \frac{ N }{ 2 }
+       \text{log}_2\left( N\right)  $. 
+       $ Z_p = NX_pY_p = N $ multiplications. 
+       We also obtain $ z_k $ using DFT of $ Z_p \to \frac{ N }{ 2 } log_2(N)  $ the cost
+       is $ \frac{ 3N }{ 2 } \log_2(N) + N  $. Direct method $ \mathcal{ O  } (N^2) $. FFT
+       is $ \mathcal{ O  } \left( N\log_2(N)\right)  $
+   \item use the same proof as (e). 
+\end{enumerate}
+
+\subsubsection{2)}
+\begin{enumerate}[label={(\alph*)}]
+    \item 
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Approximation Error}
+\label{sec:Approximation Error}
+We want to quantify the error of our approximation. We have approximated $ C_n $ using
+only N values, and we calculate only $ N $ approximate coefficients. 
+$ \underline{\text{Idea : } } $ Using $ N $ pts $ f_0, \cdots , f_{N-1} $ we calculat $
+C^N_n $ for $ -\frac{ N }{ 2 } \leq n \leq \frac{ N }{ 2 }  $. $ C_n^N $ is an appromation
+of $ C_n $ Assume 
+\[
+f(t) = \sum_{n=-\infty}^{\infty} C_n e _{  }^{ \frac{ 2i\pi nt }{ T }  } \quad \left( f\in
+\mathscr{ C_P^1(T) } \right) 
+\]
+So 
+\[
+    \forall k \in [0, N-1] \quad f_k = f\left( \frac{ kT }{ N } \right) =
+    \sum_{n=-\infty}^{\omega} C_n e _{  }^{ \frac{ 2i\pi n k T }{ NT }  } 
+\]
+
+\[
+f_k = \sum_{-\infty}^{\omega} C_n \omega _{ N }^{ nk } 
+\]
+We know that
+\[
+\sum_{\infty}^{\infty} \left | C_n \right | < \infty \quad \text{ thus absolutely
+convergent} 
+
+\]
+meaning we can compute the terms and still retain convergence. 
+\[
+f_k = \sum_{-\omega}^{\omega} C_n\omega _{ N }^{ nk } = \sum_{n=0}^{N-1}
+\sum_{q=-\omega}^{\omega} C _{k( qN+n) }^{  } \omega _{ N }^{ qN + n  } 
+\]
+However, we have $ f_k = \sum_{n=0}^{N-1} F_n \omega _{ N }^{ nk }  $ and for $ 0 \leq n
+\leq \frac{ N }{ 2 }  $, $ C^N_n = F_n $ and for $ - \frac{ N }{ 2 } \leq n < 0 $, $ C _{
+n+ N}^{ N } F_n $ By definition we can conlude that 
+
+\[
+f_k = \sum_{n=0}^{N-1} \sum_{q=-\omega}^{\omega} C _{ qN+m }^{  } \omega _{ N }^{ nk  } 
+\]
+By identity we deduce that 
+\begin{ftheo}[]
+    \[
+    C _{ n  }^{ N } = \sum_{q=-\omega}^{\omega} C _{ qN+n }^{  } \implies C _{ n  }^{ N }
+    - C_n = \sum_{q\neq 0}^{} C _{ qN + n }^{  } 
+    \]
+    \label{th:}
+\end{ftheo}
+\subsubsection{Conclusion : }
+$ C_n \to 0 $ quicker the higher N, better the approximation. The more regular the
+function the faster the coefficients converge to 0. 
+$ \\ $. 
+\begin{exmp}[Convergence]
+    Assume 
+    \[
+    f(t) = \sum_{n=-6}^{6} C_n e _{  }^{ \frac{ 2i\pi nt }{ T }  } 
+    \]
+    \begin{enumerate}
+        \item How many points do we need to get $ C_n $? $ \\ $
+            To calculate all the coefficients we need $ N \geq 2p + 1 = 13$ which gets us all
+            of the coefficients without error. 
+            $ \\ $. If we use $ N = 4 $. We have the error 
+            \begin{align*}
+                C^4_0 - C_ 0 &= C_4 + C_{-4} \\
+                C _{ 1 }^{ 4 } - C_1 &= C_5 + C _{ -3 }^{  }  
+        \end{align*}
+        If we use $ N = 8 $, we have 
+        \begin{align*}
+            C _{ 0 }^{ 8 } - C_0 &= 0 \\ 
+            C _{ 1 }^{ 8 } - C_0 &= C_9 + C_{-7} = 0 \\ 
+            C _{ 2 }^{ 8 } - C_0 &= C_{-6} \neq 0 
+        \end{align*}
+    \end{enumerate}
+\end{exmp}
+
+
+\subsubsection{Conclusion again}
+DFT tool for periodic functions, the more regular $ f $ the more regular the error goes to
+o. Thus, DFT is for regular periodic functions that are regular. The FFT we used demands
+$ N = 2^n $. 
